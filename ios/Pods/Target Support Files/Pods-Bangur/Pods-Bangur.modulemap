@@ -1,0 +1,6 @@
+framework module Pods_Bangur {
+  umbrella header "Pods-Bangur-umbrella.h"
+
+  export *
+  module * { export * }
+}
