@@ -542,96 +542,6 @@
                 children: contestPrize
               })]
             })
-          }), Number(addressStatus) === 1 && showPopup && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-            style: _MainStyle.MainStyle.spincontainer,
-            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
-              style: _MainStyle.MainStyle.popbox,
-              space: 5,
-              alignItems: "center",
-              position: "relative",
-              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.TouchableOpacity, {
-                style: {
-                  position: 'absolute',
-                  top: 10,
-                  right: 10,
-                  zIndex: 1,
-                  padding: 5
-                },
-                onPress: function onPress() {
-                  return setShowPopup(false);
-                },
-                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
-                  name: "close",
-                  size: 28,
-                  color: "#333"
-                })
-              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                color: _MainStyle.darkColor,
-                fontSize: "18",
-                fontFamily: _MainStyle.fontBold,
-                textAlign: "center",
-                children: addressMsg
-              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.TouchableOpacity, {
-                onPress: function onPress() {
-                  return _openDialer(customerCareNumber);
-                },
-                children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
-                  alignItems: "center",
-                  space: 2,
-                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
-                    name: "call",
-                    size: 22,
-                    color: _MainStyle.baseColor
-                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                    fontSize: "20",
-                    fontFamily: _MainStyle.fontBold,
-                    color: _MainStyle.baseColor,
-                    children: customerCareNumber
-                  })]
-                })
-              })]
-            })
-          }), Number(addressStatus) === 2 && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-            style: _MainStyle.MainStyle.spincontainer,
-            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
-              style: _MainStyle.MainStyle.popbox,
-              space: 10,
-              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.VStack, {
-                justifyContent: "center",
-                alignItems: "center",
-                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                  color: _MainStyle.darkColor,
-                  fontSize: "22",
-                  fontFamily: _MainStyle.fontBold,
-                  textAlign: "center",
-                  style: {
-                    bottom: 10
-                  },
-                  children: t("Address Verification Pending")
-                })
-              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Stack, {
-                width: '100%',
-                space: 3,
-                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
-                  style: _MainStyle.MainStyle.solidbtn,
-                  onPress: function onPress() {
-                    return navigation.navigate('AddressVerificationPending', {
-                      pageTitle: t('Address Verification Pending'),
-                      addressData: addressData
-                    });
-                  },
-                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                    color: _MainStyle.lightColor,
-                    fontFamily: _MainStyle.fontSemiBold,
-                    fontSize: "20",
-                    style: {
-                      bottom: 7
-                    },
-                    children: t("Verify Address")
-                  })
-                })
-              })]
-            })
           }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
             space: 5,
             padding: 7,
@@ -660,9 +570,8 @@
               children: homeMenu.map(function (item, index) {
                 return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.Pressable, {
                   style: _MainStyle.MainStyle.quickbox,
-                  backgroundColor: item.title == "Add Spouse" ? _MainStyle.spouseColor : item.title == "Spouse Details" ? _MainStyle.spouseColor : _MainStyle.lightColor,
+                  backgroundColor: item.link == "AddSpouse" ? _MainStyle.spouseColor : item.link == "SpouseDetails" ? _MainStyle.spouseColor : _MainStyle.lightColor,
                   onPress: function onPress() {
-                    console.log("Page Title:", item.title);
                     if (item.title === "My Orders") {
                       navigation.navigate('ViewOrder', {
                         rewardId: rewardCatalog,
@@ -678,14 +587,14 @@
                     justifyContent: "center",
                     alignItems: "center",
                     style: _MainStyle.MainStyle.quickicon,
-                    backgroundColor: item.title == "Add Spouse" ? _MainStyle.lightColor : item.title == "Spouse Details" ? _MainStyle.lightColor : _MainStyle.lightGrey,
+                    backgroundColor: item.link == "AddSpouse" ? _MainStyle.lightColor : item.link == "SpouseDetails" ? _MainStyle.lightColor : _MainStyle.lightGrey,
                     children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
                       name: item.icon,
                       size: 30,
-                      color: item.title == "Add Spouse" ? _MainStyle.spouseColor : item.title == "Spouse Details" ? _MainStyle.spouseColor : _MainStyle.baseColor
+                      color: item.link == "AddSpouse" ? _MainStyle.spouseColor : item.link == "SpouseDetails" ? _MainStyle.spouseColor : _MainStyle.baseColor
                     })
                   }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                    color: item.title == "Add Spouse" ? _MainStyle.lightColor : item.title == "Spouse Details" ? _MainStyle.lightColor : _MainStyle.darkColor,
+                    color: item.link == "AddSpouse" ? _MainStyle.lightColor : item.link == "SpouseDetails" ? _MainStyle.lightColor : _MainStyle.darkColor,
                     fontSize: "xs",
                     textAlign: "center",
                     fontFamily: _MainStyle.fontSemiBold,
@@ -701,6 +610,96 @@
               })
             })]
           })]
+        }), Number(addressStatus) === 1 && showPopup && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+          style: _MainStyle.MainStyle.spincontainer,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
+            style: _MainStyle.MainStyle.popbox,
+            space: 5,
+            alignItems: "center",
+            position: "relative",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.TouchableOpacity, {
+              style: {
+                position: 'absolute',
+                top: 10,
+                right: 10,
+                zIndex: 1,
+                padding: 5
+              },
+              onPress: function onPress() {
+                return setShowPopup(false);
+              },
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                name: "close",
+                size: 28,
+                color: "#333"
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+              color: _MainStyle.darkColor,
+              fontSize: "18",
+              fontFamily: _MainStyle.fontBold,
+              textAlign: "center",
+              children: addressMsg
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.TouchableOpacity, {
+              onPress: function onPress() {
+                return _openDialer(customerCareNumber);
+              },
+              children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                alignItems: "center",
+                space: 2,
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                  name: "call",
+                  size: 22,
+                  color: _MainStyle.baseColor
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                  fontSize: "20",
+                  fontFamily: _MainStyle.fontBold,
+                  color: _MainStyle.baseColor,
+                  children: customerCareNumber
+                })]
+              })
+            })]
+          })
+        }), Number(addressStatus) === 2 && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+          style: _MainStyle.MainStyle.spincontainer,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
+            style: _MainStyle.MainStyle.popbox,
+            space: 10,
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.VStack, {
+              justifyContent: "center",
+              alignItems: "center",
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                color: _MainStyle.darkColor,
+                fontSize: "22",
+                fontFamily: _MainStyle.fontBold,
+                textAlign: "center",
+                style: {
+                  bottom: 10
+                },
+                children: t("Address Verification Pending")
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Stack, {
+              width: '100%',
+              space: 3,
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
+                style: _MainStyle.MainStyle.solidbtn,
+                onPress: function onPress() {
+                  return navigation.navigate('AddressVerificationPending', {
+                    pageTitle: t('Address Verification Pending'),
+                    addressData: addressData
+                  });
+                },
+                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                  color: _MainStyle.lightColor,
+                  fontFamily: _MainStyle.fontSemiBold,
+                  fontSize: "20",
+                  style: {
+                    bottom: 7
+                  },
+                  children: t("Verify Address")
+                })
+              })
+            })]
+          })
         }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Footer.default, {
           navigation: navigation,
           component: userType,

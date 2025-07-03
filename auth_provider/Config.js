@@ -1,7 +1,7 @@
 import {Platform} from 'react-native';
 
 export const OS_TYPE = Platform.OS == 'ios' ? 'ios' : 'android';
-export const APP_VERSION = Platform.OS == 'ios' ? '1.0.0' : '1.1.7';
+export const APP_VERSION = Platform.OS == 'ios' ? '1.0.0' : '1.1.9';
 export const secretKey = 'BangurNirmanMitra2';
 
 // UAT base url

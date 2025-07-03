@@ -68,6 +68,7 @@ import RedemptionDetailsScreen from './screens/RedemptionDetails';
 import AddSpouseScreen from './screens/AddSpouse';
 import MySpouseScreen from './screens/SpouseDetails';
 import AddressVerificationScreen from './screens/AddressVerification';
+import GalleryDetailsScreen from './screens/GalleryDetails';
 
 
 const Stack = createStackNavigator();
@@ -303,6 +304,7 @@ const App = () => {
         <Stack.Screen name="ViewOrder" component={ViewOrdersScreen} />
         <Stack.Screen name="UpdateKYC" component={UpdateKYCScreen} />
         <Stack.Screen name="AddressVerificationPending" component={AddressVerificationScreen} />
+        <Stack.Screen name="GalleryDetails" component={GalleryDetailsScreen} />
       </Stack.Navigator>
     );
   }

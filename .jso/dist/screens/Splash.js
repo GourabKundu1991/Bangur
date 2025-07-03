@@ -1,464 +1,433 @@
-function _0x6a78(_0x10dbec, _0x417d5e) {
-    var _0x5ddb97 = _0x3c57();
-    return _0x6a78 = function (_0x13dc29, _0x44a3e7) {
-        _0x13dc29 = _0x13dc29 - (-0x33 * 0x1 + -0x3 * 0x50b + 0x113e);
-        var _0x1f5166 = _0x5ddb97[_0x13dc29];
-        return _0x1f5166;
-    }, _0x6a78(_0x10dbec, _0x417d5e);
+var _0x26b389 = _0x1d93;
+function _0x1d93(_0x3037b8, _0x16d244) {
+    var _0x5accec = _0x11dc();
+    return _0x1d93 = function (_0x1b17d9, _0xa238ba) {
+        _0x1b17d9 = _0x1b17d9 - (-0x2659 + -0x5ec + 0x2cf2);
+        var _0x2ca97a = _0x5accec[_0x1b17d9];
+        return _0x2ca97a;
+    }, _0x1d93(_0x3037b8, _0x16d244);
 }
-var _0x228e52 = _0x6a78;
-(function (_0x3c5e52, _0x193a75) {
-    var _0x2078a5 = _0x6a78, _0x4bc52f = _0x3c5e52();
+(function (_0x49f3fb, _0x38454c) {
+    var _0x45aa07 = _0x1d93, _0x5a2ef7 = _0x49f3fb();
     while (!![]) {
         try {
-            var _0x2667eb = parseInt(_0x2078a5(0x246)) / (-0x1 * 0x424 + -0x913 + 0xd38) * (-parseInt(_0x2078a5(0x22a)) / (0x301 * 0x1 + 0x1375 + -0x1674)) + parseInt(_0x2078a5(0x248)) / (-0x2 * -0xa1b + -0x134 + -0x12ff) * (-parseInt(_0x2078a5(0x26b)) / (0xf * 0xf5 + -0x1ddf * 0x1 + 0xf88)) + parseInt(_0x2078a5(0x262)) / (0x5d * -0x56 + 0x5b7 * 0x2 + -0x1 * -0x13d5) + -parseInt(_0x2078a5(0x264)) / (0xc9 * -0xa + 0xe * 0x285 + -0x1 * 0x1b66) * (parseInt(_0x2078a5(0x24c)) / (-0x3 * -0x582 + 0x20e6 + 0x9 * -0x57d)) + -parseInt(_0x2078a5(0x1f7)) / (-0xf0a + 0x87b + 0x697) * (-parseInt(_0x2078a5(0x1f8)) / (0x3 * 0x22a + -0xf56 + -0x1 * -0x8e1)) + parseInt(_0x2078a5(0x20c)) / (0x11 * -0x216 + -0x1db2 + 0x2 * 0x2099) + parseInt(_0x2078a5(0x232)) / (-0x12 * -0x77 + -0x1243 + -0x35 * -0x30) * (parseInt(_0x2078a5(0x26c)) / (-0x22bd * 0x1 + -0x194d + 0x3c16));
-            if (_0x2667eb === _0x193a75)
+            var _0x349b96 = parseInt(_0x45aa07(0xc0)) / (0x3b3 + 0x4d4 + 0x1 * -0x886) + -parseInt(_0x45aa07(0x10a)) / (-0x1 * 0xfd9 + -0x1748 + 0x2723) * (parseInt(_0x45aa07(0x102)) / (-0x2 * 0x287 + -0x222c + 0x273d)) + -parseInt(_0x45aa07(0x121)) / (-0x171a + 0x1 * 0xacf + 0xc4f) + parseInt(_0x45aa07(0xb6)) / (0xab8 + 0xccb + 0x3e * -0x61) + -parseInt(_0x45aa07(0xad)) / (0x1bfc + 0x1f85 + -0x3b7b) * (-parseInt(_0x45aa07(0xd4)) / (0x20f2 + -0x96 + -0x59 * 0x5d)) + -parseInt(_0x45aa07(0x10f)) / (0x73d + 0x1428 + -0x579 * 0x5) * (-parseInt(_0x45aa07(0xc7)) / (0x1ffa + 0x2 * -0xabc + 0xa79 * -0x1)) + -parseInt(_0x45aa07(0xb1)) / (0x11 * 0x11c + 0xdcd + -0x7 * 0x4a9) * (parseInt(_0x45aa07(0x104)) / (-0xf20 + -0x1 * -0xa03 + 0x528));
+            if (_0x349b96 === _0x38454c)
                 break;
             else
-                _0x4bc52f['push'](_0x4bc52f['shift']());
-        } catch (_0x3149cb) {
-            _0x4bc52f['push'](_0x4bc52f['shift']());
+                _0x5a2ef7['push'](_0x5a2ef7['shift']());
+        } catch (_0x5c3170) {
+            _0x5a2ef7['push'](_0x5a2ef7['shift']());
         }
     }
-}(_0x3c57, 0x7fb1 * -0x5 + -0x131cb + 0x1 * 0x78a67));
-var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[-0x2058 + 0x1009 * 0x1 + 0x1 * 0x104f]);
-Object[_0x228e52(0x20e) + _0x228e52(0x1f2)](exports, _0x228e52(0x23e), { 'value': !![] }), exports[_0x228e52(0x24b)] = undefined;
-var _slicedToArray2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[-0x27 * -0xdc + 0x14f7 + -0x367a])), _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[0x54d * 0x5 + -0x1e2d + -0x9d * -0x6])), _reactNative = _$$_REQUIRE(_dependencyMap[-0x203 + 0x1de8 + 0xa6 * -0x2b]), _nativeBase = _$$_REQUIRE(_dependencyMap[0x1 * -0x1775 + -0x93 * 0x5 + 0x1a58]), _MainStyle = _$$_REQUIRE(_dependencyMap[0x8 * 0x6 + 0x3d7 * -0x7 + -0x1ab6 * -0x1]), _reactI18next = _$$_REQUIRE(_dependencyMap[-0x1304 + -0x4b6 + 0x17c0]), _Config = _$$_REQUIRE(_dependencyMap[-0x738 + -0x28 + 0x767 * 0x1]), _reactNativeDeviceInfo = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[-0x1122 + 0x957 + 0x7d3])), _jailMonkey = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[-0xf * 0x218 + -0x301 * -0x1 + 0x1c70])), _jsxRuntime = _$$_REQUIRE(_dependencyMap[0x1 * -0x3c7 + -0x244d + 0x281e]);
-function _getRequireWildcardCache(_0x17efb8) {
-    var _0x54df32 = _0x228e52, _0x1591c1 = {
-            'hLubc': function (_0x384f70, _0x32f368) {
-                return _0x384f70 != _0x32f368;
-            },
-            'lmdJJ': _0x54df32(0x251)
-        };
-    if (_0x1591c1[_0x54df32(0x256)](_0x1591c1[_0x54df32(0x260)], typeof WeakMap))
-        return null;
-    var _0x379c33 = new WeakMap(), _0x3743b2 = new WeakMap();
-    return (_getRequireWildcardCache = function _0x40ef18(_0xec3208) {
-        return _0xec3208 ? _0x3743b2 : _0x379c33;
-    })(_0x17efb8);
-}
-function _0x3c57() {
-    var _0x3a52e9 = [
-        'Provider',
-        'spaAJ',
-        'useState',
-        'has',
-        'eNDWq',
-        'medium',
-        'CNHZK',
-        'useEffect',
-        'PRAju',
-        'Stack',
-        'VStack',
-        '164674fugOmC',
-        'SJREv',
-        'ebakp',
-        'isEmresult',
-        'MainStyle',
-        'Close',
-        'VoyUC',
-        'NativeBase',
-        '2061829dvymtY',
-        'CrjXb',
-        '70%',
-        'his\x20App',
-        'YtwgU',
-        'nmINK',
-        '#111111',
-        '0|5|1|2|4|',
-        'navigation',
-        'create',
-        'bgimage',
-        'yDKhc',
-        '__esModule',
-        'nEIMO',
-        'dangerColo',
-        'StatusBar',
-        'DFKdR',
-        'vice.\x20Plea',
-        'This\x20is\x20an',
-        'LBnNE',
-        '1dVOVUY',
-        'vYkwO',
-        '6CwOyBU',
-        'Cztga',
-        'ator.\x20Plea',
-        'default',
-        '588BjQeJS',
-        'Text',
-        'hidden',
-        '4|2|6',
-        'UKdRt',
-        'function',
-        'This\x20App\x20r',
-        'un\x20on\x20Emul',
-        'ptor',
-        'call',
-        'hLubc',
-        'NKhBm',
-        'woucM',
-        'bWnqE',
-        'Gueiv',
-        'tor',
-        'round',
-        'View',
-        'jsx',
-        'tion',
-        'lmdJJ',
-        'QRXOi',
-        '585315SBaJet',
-        'JbVbG',
-        '20802AvoUkS',
-        'center',
-        'TpumG',
-        'split',
-        'OwCrB',
-        'evice\x20to\x20u',
-        'absolute',
-        '339688QZADEQ',
-        '12eeUCst',
-        '5|1|0|7|3|',
-        'jsxs',
-        'StyleSheet',
-        'Real\x20Devic',
-        'QlrLF',
-        'lightColor',
-        'Image',
-        '3|6',
-        'erty',
-        'kgClf',
-        'xlqrS',
-        'cover',
-        'ertyDescri',
-        '2095928rSynLa',
-        '9RPIuxQ',
-        '100%',
-        'spincontai',
-        'Intro',
-        'msGhj',
-        'object',
-        'se\x20run\x20in\x20',
-        'uZZfb',
-        'dark-conte',
-        'se\x20this\x20Ap',
-        'e\x20to\x20use\x20t',
-        'useTransla',
-        'replace',
-        'xcmBv',
-        'Alert',
-        'Unrooted\x20D',
-        'logo',
-        'get',
-        '...',
-        'WBidC',
-        '2293710DwIKyo',
-        'useIsEmula',
-        'defineProp',
-        'Button',
-        'VovkY',
-        'set',
-        'ner',
-        'gmcWm',
-        'dPQNd',
-        'hasOwnProp',
-        'BlnOs',
-        'FBfYf',
-        '#ffffff',
-        'getOwnProp',
+}(_0x11dc, 0x1 * 0x1451ff + 0x7e567 * -0x1 + 0x2af47 * 0x1));
+function _0x11dc() {
+    var _0x3a32ae = [
         'ImageBackg',
-        'LJYhk',
+        'WUoVj',
+        '155646NrBalT',
+        'getOwnProp',
+        'StatusBar',
+        'wudIt',
+        'medium',
+        'cpkZo',
+        'Close',
+        'get',
+        'hasOwnProp',
+        'qNHlE',
+        'navigation',
+        'StyleSheet',
+        'JIaiu',
+        '441BhXPrv',
+        'jsx',
+        'JkWvO',
+        'HZFKB',
+        'isEmresult',
+        'This\x20App\x20r',
+        'ner',
+        'logo',
+        'pQkRN',
+        'un\x20on\x20Emul',
+        'WWKeq',
+        'xCzRP',
+        'dqlwC',
+        '6|0',
+        'call',
+        'HLhth',
+        'ioerA',
+        'has',
+        'set',
+        '70%',
+        'BuYTi',
+        'useEffect',
+        'erty',
+        'NJUkz',
+        'Button',
+        '7|2|3|6|4|',
+        'XVMps',
+        'Cobkl',
+        'IXyET',
+        'function',
+        'tor',
+        '\x20Rooted\x20De',
+        'pQmJZ',
+        'cover',
+        'DmzqZ',
+        'his\x20App',
+        '100%',
+        'lightColor',
+        'CNgbL',
+        'pynfW',
+        'dangerColo',
+        'This\x20is\x20an',
+        'se\x20this\x20Ap',
+        '5|0|1',
+        'oVACQ',
+        'Provider',
+        '390495ovzAec',
+        'wjNMk',
+        '14326576WesifU',
+        'ator.\x20Plea',
+        'NativeBase',
+        'MainStyle',
+        'se\x20run\x20in\x20',
+        'Real\x20Devic',
+        '12GjOKZm',
+        'split',
+        'Image',
+        'ptor',
+        'create',
+        '880jVelEw',
+        'ZjbbL',
+        'tion',
+        'dark-conte',
+        '#ffffff',
+        '3|5|4|1|2|',
+        'joKYx',
+        'tjVAV',
+        'xfNuX',
         'bold',
-        'ozWAO',
-        '\x20Rooted\x20De'
+        'replace',
+        'fCfmZ',
+        'GcGFg',
+        'defineProp',
+        '__esModule',
+        'spincontai',
+        'NCUIb',
+        '#111111',
+        '2187908qETtBF',
+        'hDccj',
+        'vice.\x20Plea',
+        'Text',
+        'e\x20to\x20use\x20t',
+        'JAUfB',
+        'VStack',
+        'View',
+        'gnnRP',
+        'absolute',
+        'WlYRR',
+        'useState',
+        '91278YwCmnw',
+        'Alert',
+        'useIsEmula',
+        'bgimage',
+        '10TQnosl',
+        '...',
+        'jsxs',
+        'hidden',
+        'center',
+        '2467120GZMNme',
+        'ertyDescri',
+        'round',
+        'evice\x20to\x20u',
+        'useTransla',
+        'mQZLw',
+        'object',
+        'Mwpzd',
+        'Stack',
+        'Unrooted\x20D',
+        '266375YuNJtq',
+        'default',
+        'xTpzm',
+        'Intro',
+        'nQIlx'
     ];
-    _0x3c57 = function () {
-        return _0x3a52e9;
+    _0x11dc = function () {
+        return _0x3a32ae;
     };
-    return _0x3c57();
+    return _0x11dc();
 }
-function _interopRequireWildcard(_0x3aa72e, _0x5dc596) {
-    var _0x6bbd01 = _0x228e52, _0x2e0a41 = {
-            'uZZfb': _0x6bbd01(0x239) + _0x6bbd01(0x1f1),
-            'SJREv': function (_0x5ecf5d, _0x2cfb97) {
-                return _0x5ecf5d && _0x2cfb97;
+var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0x1fe3 * 0x1 + -0xe75 + -0x116e]);
+Object[_0x26b389(0x11c) + _0x26b389(0xea)](exports, _0x26b389(0x11d), { 'value': !![] }), exports[_0x26b389(0xc1)] = undefined;
+var _slicedToArray2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[0x1d * 0x3e + -0x1 * 0x4c6 + 0x23f * -0x1])), _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[0x410 + -0x358 * 0x4 + 0x952])), _reactNative = _$$_REQUIRE(_dependencyMap[-0x2a9 * -0x5 + 0x21d + -0xf67]), _nativeBase = _$$_REQUIRE(_dependencyMap[-0x1f5e + -0x4be + 0x2420]), _MainStyle = _$$_REQUIRE(_dependencyMap[-0x1193 + -0x2 * -0x21d + 0x76 * 0x1d]), _reactI18next = _$$_REQUIRE(_dependencyMap[-0x2589 + -0x1498 + 0x3a27 * 0x1]), _Config = _$$_REQUIRE(_dependencyMap[-0x192 + 0x7b + 0xd * 0x16]), _reactNativeDeviceInfo = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[0x7 * 0x1f7 + -0x59 * 0x3b + 0x6ca])), _jailMonkey = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[0x3 * -0xaac + -0x43 * -0x8b + 0x2 * -0x22a])), _jsxRuntime = _$$_REQUIRE(_dependencyMap[-0x1258 + -0xbaf + 0x1e11]);
+function _getRequireWildcardCache(_0x132e2e) {
+    var _0x637e1a = _0x26b389, _0x296643 = {
+            'xCzRP': function (_0x31cf10, _0x3d9a3f) {
+                return _0x31cf10 != _0x3d9a3f;
             },
-            'eNDWq': function (_0x2abc8a, _0x2b95c4) {
-                return _0x2abc8a(_0x2b95c4);
+            'HLhth': _0x637e1a(0xf1)
+        };
+    if (_0x296643[_0x637e1a(0xdf)](_0x296643[_0x637e1a(0xe3)], typeof WeakMap))
+        return null;
+    var _0x1a4101 = new WeakMap(), _0x1317de = new WeakMap();
+    return (_getRequireWildcardCache = function _0x6222d6(_0x387e69) {
+        return _0x387e69 ? _0x1317de : _0x1a4101;
+    })(_0x132e2e);
+}
+function _interopRequireWildcard(_0x53c82f, _0x1b6043) {
+    var _0x484c14 = _0x26b389, _0x12c80e = {
+            'NCUIb': _0x484c14(0x114) + _0x484c14(0xe1),
+            'gnnRP': function (_0x36526e, _0x46f346) {
+                return _0x36526e && _0x46f346;
             },
-            'CrjXb': function (_0x1920e3, _0x216805) {
-                return _0x1920e3 !== _0x216805;
+            'tjVAV': function (_0x398961, _0x3e558c) {
+                return _0x398961(_0x3e558c);
             },
-            'nEIMO': _0x6bbd01(0x24b),
-            'spaAJ': function (_0x56aa95, _0x4be197) {
-                return _0x56aa95 === _0x4be197;
+            'joKYx': function (_0xac7b3e, _0x46b652) {
+                return _0xac7b3e === _0x46b652;
             },
-            'TpumG': function (_0x56a9f2, _0x1b28cf) {
-                return _0x56a9f2 != _0x1b28cf;
+            'JkWvO': function (_0x175bbb, _0x38a65d) {
+                return _0x175bbb != _0x38a65d;
             },
-            'dPQNd': _0x6bbd01(0x1fd),
-            'VovkY': _0x6bbd01(0x251)
-        }, _0x1abb0 = _0x2e0a41[_0x6bbd01(0x1ff)][_0x6bbd01(0x267)]('|'), _0x51f531 = -0x1a67 + 0xfe7 * 0x2 + -0x567;
+            'fCfmZ': _0x484c14(0xbc),
+            'oVACQ': _0x484c14(0xf1),
+            'Mwpzd': function (_0x4a2d8a, _0x56972c) {
+                return _0x4a2d8a !== _0x56972c;
+            },
+            'ZjbbL': _0x484c14(0xc1)
+        }, _0x4581df = _0x12c80e[_0x484c14(0x11f)][_0x484c14(0x10b)]('|'), _0x4fe46a = -0x32b * 0x3 + 0x14 * 0xff + 0x379 * -0x3;
     while (!![]) {
-        switch (_0x1abb0[_0x51f531++]) {
+        switch (_0x4581df[_0x4fe46a++]) {
         case '0':
-            if (_0x2e0a41[_0x6bbd01(0x22b)](!_0x5dc596, _0x3aa72e) && _0x3aa72e[_0x6bbd01(0x23e)])
-                return _0x3aa72e;
-            continue;
+            return _0x21000f[_0x484c14(0xc1)] = _0x53c82f, _0x1178df && _0x1178df[_0x484c14(0xe6)](_0x53c82f, _0x21000f), _0x21000f;
         case '1':
-            var _0x4e9067 = _0x2e0a41[_0x6bbd01(0x223)](_getRequireWildcardCache, _0x5dc596);
+            if (_0x1178df && _0x1178df[_0x484c14(0xe5)](_0x53c82f))
+                return _0x1178df[_0x484c14(0xce)](_0x53c82f);
             continue;
         case '2':
-            if (_0x4e9067 && _0x4e9067[_0x6bbd01(0x222)](_0x3aa72e))
-                return _0x4e9067[_0x6bbd01(0x209)](_0x3aa72e);
+            var _0x21000f = { '__proto__': null }, _0x343d3d = Object[_0x484c14(0x11c) + _0x484c14(0xea)] && Object[_0x484c14(0xc8) + _0x484c14(0xb7) + _0x484c14(0x10d)];
             continue;
         case '3':
-            for (var _0x215f87 in _0x3aa72e)
-                if (_0x2e0a41[_0x6bbd01(0x233)](_0x2e0a41[_0x6bbd01(0x23f)], _0x215f87) && {}[_0x6bbd01(0x215) + _0x6bbd01(0x1f2)][_0x6bbd01(0x255)](_0x3aa72e, _0x215f87)) {
-                    var _0x11599a = _0x3b015e ? Object[_0x6bbd01(0x219) + _0x6bbd01(0x1f6) + _0x6bbd01(0x254)](_0x3aa72e, _0x215f87) : null;
-                    _0x11599a && (_0x11599a[_0x6bbd01(0x209)] || _0x11599a[_0x6bbd01(0x211)]) ? Object[_0x6bbd01(0x20e) + _0x6bbd01(0x1f2)](_0x53bcff, _0x215f87, _0x11599a) : _0x53bcff[_0x215f87] = _0x3aa72e[_0x215f87];
-                }
+            if (_0x12c80e[_0x484c14(0x129)](!_0x1b6043, _0x53c82f) && _0x53c82f[_0x484c14(0x11d)])
+                return _0x53c82f;
             continue;
         case '4':
-            var _0x53bcff = { '__proto__': null }, _0x3b015e = Object[_0x6bbd01(0x20e) + _0x6bbd01(0x1f2)] && Object[_0x6bbd01(0x219) + _0x6bbd01(0x1f6) + _0x6bbd01(0x254)];
+            var _0x1178df = _0x12c80e[_0x484c14(0x116)](_getRequireWildcardCache, _0x1b6043);
             continue;
         case '5':
-            if (_0x2e0a41[_0x6bbd01(0x220)](null, _0x3aa72e) || _0x2e0a41[_0x6bbd01(0x266)](_0x2e0a41[_0x6bbd01(0x214)], typeof _0x3aa72e) && _0x2e0a41[_0x6bbd01(0x266)](_0x2e0a41[_0x6bbd01(0x210)], typeof _0x3aa72e))
-                return { 'default': _0x3aa72e };
+            if (_0x12c80e[_0x484c14(0x115)](null, _0x53c82f) || _0x12c80e[_0x484c14(0xd6)](_0x12c80e[_0x484c14(0x11a)], typeof _0x53c82f) && _0x12c80e[_0x484c14(0xd6)](_0x12c80e[_0x484c14(0x100)], typeof _0x53c82f))
+                return { 'default': _0x53c82f };
             continue;
         case '6':
-            return _0x53bcff[_0x6bbd01(0x24b)] = _0x3aa72e, _0x4e9067 && _0x4e9067[_0x6bbd01(0x211)](_0x3aa72e, _0x53bcff), _0x53bcff;
+            for (var _0x4a9511 in _0x53c82f)
+                if (_0x12c80e[_0x484c14(0xbd)](_0x12c80e[_0x484c14(0x110)], _0x4a9511) && {}[_0x484c14(0xcf) + _0x484c14(0xea)][_0x484c14(0xe2)](_0x53c82f, _0x4a9511)) {
+                    var _0x51761b = _0x343d3d ? Object[_0x484c14(0xc8) + _0x484c14(0xb7) + _0x484c14(0x10d)](_0x53c82f, _0x4a9511) : null;
+                    _0x51761b && (_0x51761b[_0x484c14(0xce)] || _0x51761b[_0x484c14(0xe6)]) ? Object[_0x484c14(0x11c) + _0x484c14(0xea)](_0x21000f, _0x4a9511, _0x51761b) : _0x21000f[_0x4a9511] = _0x53c82f[_0x4a9511];
+                }
+            continue;
         }
         break;
     }
 }
-var SplashScreen = function SplashScreen(_0x459f6a) {
-        var _0x1a63c7 = _0x228e52, _0x574b16 = {
-                'OwCrB': _0x1a63c7(0x1ea) + _0x1a63c7(0x24f),
-                'YtwgU': _0x1a63c7(0x1fb),
-                'vYkwO': function (_0x566ebe, _0x1cd3e9, _0x12c894) {
-                    return _0x566ebe(_0x1cd3e9, _0x12c894);
+var SplashScreen = function SplashScreen(_0x543e63) {
+        var _0x229f7d = _0x26b389, _0x444d87 = {
+                'DmzqZ': _0x229f7d(0xed) + _0x229f7d(0xff),
+                'WUoVj': _0x229f7d(0x112) + 'nt',
+                'wjNMk': function (_0x15ea17, _0x48fe80) {
+                    return _0x15ea17(_0x48fe80);
                 },
-                'woucM': function (_0x32a9c4) {
-                    return _0x32a9c4();
+                'IXyET': _0x229f7d(0xf5),
+                'WWKeq': _0x229f7d(0x12a),
+                'CNgbL': _0x229f7d(0x113),
+                'nQIlx': _0x229f7d(0xe7),
+                'WlYRR': _0x229f7d(0xb4),
+                'XVMps': _0x229f7d(0xf8),
+                'cpkZo': _0x229f7d(0xb5),
+                'qNHlE': _0x229f7d(0x118),
+                'wudIt': function (_0x49a969, _0x422d75) {
+                    return _0x49a969(_0x422d75);
                 },
-                'gmcWm': _0x1a63c7(0x200) + 'nt',
-                'yDKhc': function (_0x147eaf, _0x34b4ea) {
-                    return _0x147eaf(_0x34b4ea);
+                'HZFKB': _0x229f7d(0xae),
+                'BuYTi': _0x229f7d(0xcb),
+                'ioerA': _0x229f7d(0x120),
+                'GcGFg': function (_0x290629, _0x15a3da) {
+                    return _0x290629(_0x15a3da);
                 },
-                'msGhj': _0x1a63c7(0x1f5),
-                'xcmBv': _0x1a63c7(0x26a),
-                'kgClf': _0x1a63c7(0x218),
-                'QRXOi': _0x1a63c7(0x234),
-                'LBnNE': _0x1a63c7(0x24e),
-                'PRAju': _0x1a63c7(0x1f9),
-                'FBfYf': _0x1a63c7(0x265),
-                'QlrLF': function (_0x3f1ab7, _0x3cbd07) {
-                    return _0x3f1ab7(_0x3cbd07);
+                'xTpzm': _0x229f7d(0xd9) + _0x229f7d(0xdd) + _0x229f7d(0x105) + _0x229f7d(0x108) + _0x229f7d(0x109) + _0x229f7d(0x125) + _0x229f7d(0xf7),
+                'mQZLw': _0x229f7d(0xb2),
+                'JIaiu': function (_0x78dfce, _0x578310) {
+                    return _0x78dfce(_0x578310);
                 },
-                'LJYhk': _0x1a63c7(0x21c),
-                'WBidC': _0x1a63c7(0x206),
-                'bWnqE': _0x1a63c7(0x224),
-                'xlqrS': _0x1a63c7(0x238),
-                'CNHZK': _0x1a63c7(0x252) + _0x1a63c7(0x253) + _0x1a63c7(0x24a) + _0x1a63c7(0x1fe) + _0x1a63c7(0x1ed) + _0x1a63c7(0x202) + _0x1a63c7(0x235),
-                'BlnOs': _0x1a63c7(0x20a),
-                'ebakp': function (_0x234e1f, _0x283a72) {
-                    return _0x234e1f(_0x283a72);
+                'hDccj': _0x229f7d(0xcd),
+                'pQmJZ': _0x229f7d(0xfd) + _0x229f7d(0xf3) + _0x229f7d(0x123) + _0x229f7d(0x108) + _0x229f7d(0xbf) + _0x229f7d(0xb9) + _0x229f7d(0xfe) + 'p',
+                'JAUfB': function (_0x47fe9b, _0x4b1a93) {
+                    return _0x47fe9b(_0x4b1a93);
                 },
-                'NKhBm': _0x1a63c7(0x22f),
-                'nmINK': function (_0x98b3b0, _0x275956) {
-                    return _0x98b3b0(_0x275956);
+                'NJUkz': _0x229f7d(0xc3),
+                'pynfW': function (_0x224acb, _0x20f239, _0x31c562) {
+                    return _0x224acb(_0x20f239, _0x31c562);
                 },
-                'ozWAO': function (_0x2747bc, _0x373afe) {
-                    return _0x2747bc(_0x373afe);
-                },
-                'UKdRt': _0x1a63c7(0x244) + _0x1a63c7(0x21e) + _0x1a63c7(0x243) + _0x1a63c7(0x1fe) + _0x1a63c7(0x207) + _0x1a63c7(0x269) + _0x1a63c7(0x201) + 'p',
-                'JbVbG': function (_0x288294, _0x51a684) {
-                    return _0x288294(_0x51a684);
+                'xfNuX': function (_0x4948d4) {
+                    return _0x4948d4();
                 }
-            }, _0x5c0ad7 = _0x574b16[_0x1a63c7(0x268)][_0x1a63c7(0x267)]('|'), _0xcadc74 = -0x22c6 + -0x153f * 0x1 + 0x3805;
+            }, _0x2f434c = _0x444d87[_0x229f7d(0xf6)][_0x229f7d(0x10b)]('|'), _0x1e0e39 = 0x61 + -0xbb0 * -0x3 + -0x1 * 0x2371;
         while (!![]) {
-            switch (_0x5c0ad7[_0xcadc74++]) {
+            switch (_0x2f434c[_0x1e0e39++]) {
             case '0':
-                var _0x598bcd = (0x228a + 0x1e2 * -0x5 + -0x1 * 0x1920, _reactI18next[_0x1a63c7(0x203) + _0x1a63c7(0x25f)])(), _0x569ad2 = _0x598bcd['t'];
-                continue;
-            case '1':
-                var _0x1d80d7 = _0x459f6a[_0x1a63c7(0x23a)];
-                continue;
-            case '2':
-                (0x7de * 0x2 + 0x22 * -0x82 + 0x188, _react[_0x1a63c7(0x226)])(function () {
-                    var _0xb3dce3 = _0x1a63c7, _0x4e8d0c = { 'Cztga': _0x164326[_0xb3dce3(0x25a)] };
-                    _0x164326[_0xb3dce3(0x230)](setTimeout, function () {
-                        var _0x2a5523 = _0xb3dce3;
-                        _0x1d80d7[_0x2a5523(0x204)](_0x4e8d0c[_0x2a5523(0x249)]);
-                    }, -0x5de * -0x4 + 0x1f0 + -0xe78);
+                (0x7c7 * 0x1 + 0x1f30 + -0x26f7, _react[_0x229f7d(0xe9)])(function () {
+                    var _0x23f951 = _0x229f7d;
+                    _0x541714[_0x23f951(0xef)](setTimeout, function () {
+                        var _0x1ca80b = _0x23f951;
+                        _0x176f86[_0x1ca80b(0x119)](_0x541714[_0x1ca80b(0xe0)]);
+                    }, 0xf01 + 0xbb1 + -0xfc2);
                 }, []);
                 continue;
-            case '3':
-                var _0x22254f = _react[_0x1a63c7(0x24b)][_0x1a63c7(0x221)](![]), _0x4af823 = (0x3ee + 0xc41 + -0x102f, _slicedToArray2[_0x1a63c7(0x24b)])(_0x22254f, 0x1 * 0xd78 + 0xbcc + -0x1942), _0x14b591 = _0x4af823[-0x1 * 0x1f1a + 0x1 * 0xa78 + 0x26 * 0x8b], _0x239625 = _0x4af823[0xbf4 + 0x1 * -0x142 + -0xab1];
-                continue;
-            case '4':
-                var _0x5c5089 = (-0x7a * 0x1b + -0x1 * -0x67e + 0x22 * 0x30, _reactNativeDeviceInfo[_0x1a63c7(0x20d) + _0x1a63c7(0x25b)])(), _0x5aa8dd = _0x5c5089[_0x1a63c7(0x22d)];
-                continue;
-            case '5':
-                var _0x164326 = {
-                    'Gueiv': _0x574b16[_0x1a63c7(0x236)],
-                    'VoyUC': function (_0x3d8d4d, _0x5a0498, _0x431fe3) {
-                        var _0x835699 = _0x1a63c7;
-                        return _0x574b16[_0x835699(0x247)](_0x3d8d4d, _0x5a0498, _0x431fe3);
-                    },
-                    'DFKdR': function (_0x37ff4f) {
-                        var _0x24b3ba = _0x1a63c7;
-                        return _0x574b16[_0x24b3ba(0x258)](_0x37ff4f);
-                    }
-                };
-                continue;
-            case '6':
-                return (-0x1f9d + -0x249 * -0xd + 0x4 * 0x7a, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x231) + _0x1a63c7(0x21f)], {
+            case '1':
+                return (-0x14df + -0x877 + 0x2ef * 0xa, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x106) + _0x229f7d(0x101)], {
                     'children': [
-                        (0x1a * 0x155 + -0x1857 + -0xa4b, _jsxRuntime[_0x1a63c7(0x25e)])(_reactNative[_0x1a63c7(0x241)], {
-                            'barStyle': _0x574b16[_0x1a63c7(0x213)],
-                            'backgroundColor': _MainStyle[_0x1a63c7(0x1ef)]
+                        (0x44e * -0x1 + -0x1891 + 0x1cdf, _jsxRuntime[_0x229f7d(0xd5)])(_reactNative[_0x229f7d(0xc9)], {
+                            'barStyle': _0x444d87[_0x229f7d(0xc6)],
+                            'backgroundColor': _MainStyle[_0x229f7d(0xf9)]
                         }),
-                        (-0xb * 0x199 + 0x69 * 0x5 + 0xf86, _jsxRuntime[_0x1a63c7(0x25e)])(_reactNative[_0x1a63c7(0x21a) + _0x1a63c7(0x25c)], {
-                            'source': _0x574b16[_0x1a63c7(0x23d)](_$$_REQUIRE, _dependencyMap[-0x1f13 + -0x412 * 0x7 + 0x3b9c]),
+                        (-0x1d * -0x1f + 0x12ef * -0x2 + 0x225b, _jsxRuntime[_0x229f7d(0xd5)])(_reactNative[_0x229f7d(0xc5) + _0x229f7d(0xb8)], {
+                            'source': _0x444d87[_0x229f7d(0x103)](_$$_REQUIRE, _dependencyMap[-0xaa9 + -0x4 * -0x4e5 + -0x8e0]),
                             'imageStyle': {
-                                'resizeMode': _0x574b16[_0x1a63c7(0x1fc)],
-                                'position': _0x574b16[_0x1a63c7(0x205)],
+                                'resizeMode': _0x444d87[_0x229f7d(0xf0)],
+                                'position': _0x444d87[_0x229f7d(0xde)],
                                 'bottom': 0x0,
                                 'top': 0x0,
                                 'opacity': 0x1
                             },
-                            'style': styles[_0x1a63c7(0x23c)]
+                            'style': styles[_0x229f7d(0xb0)]
                         }),
-                        _0x297f32 && (0x144e * -0x1 + -0x14e6 + 0x2934, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x25d)], {
-                            'style': _MainStyle[_0x1a63c7(0x22e)][_0x1a63c7(0x1fa) + _0x1a63c7(0x212)],
-                            'children': (0x1cf9 * -0x1 + -0x143f + -0x1f8 * -0x19, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x228)], {
-                                'backgroundColor': _0x574b16[_0x1a63c7(0x1f3)],
+                        _0x1474f1 && (-0x1ee8 + 0x2037 + -0x14f, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0x128)], {
+                            'style': _MainStyle[_0x229f7d(0x107)][_0x229f7d(0x11e) + _0x229f7d(0xda)],
+                            'children': (-0xb * 0x106 + 0x1e13 * -0x1 + 0x1 * 0x2955, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0xbe)], {
+                                'backgroundColor': _0x444d87[_0x229f7d(0xfa)],
                                 'style': {
-                                    'width': _0x574b16[_0x1a63c7(0x261)],
+                                    'width': _0x444d87[_0x229f7d(0xc4)],
                                     'borderRadius': 0xa,
-                                    'overflow': _0x574b16[_0x1a63c7(0x245)]
+                                    'overflow': _0x444d87[_0x229f7d(0x12b)]
                                 },
-                                'children': (-0x22f3 + 0x22 * -0xe6 + 0x417f, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x229)], {
+                                'children': (0x24d7 + 0x89c + -0xd * 0x37f, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x127)], {
                                     'space': 0x1,
-                                    'w': _0x574b16[_0x1a63c7(0x227)],
+                                    'w': _0x444d87[_0x229f7d(0xee)],
                                     'paddingY': '10',
                                     'paddingX': '5',
-                                    'alignItems': _0x574b16[_0x1a63c7(0x217)],
-                                    'justifyContent': _0x574b16[_0x1a63c7(0x217)],
+                                    'alignItems': _0x444d87[_0x229f7d(0xcc)],
+                                    'justifyContent': _0x444d87[_0x229f7d(0xcc)],
                                     'children': [
-                                        (-0xa8 * -0x9 + 0x203f + -0x2627 * 0x1, _jsxRuntime[_0x1a63c7(0x25e)])(_reactNative[_0x1a63c7(0x1f0)], {
-                                            'source': _0x574b16[_0x1a63c7(0x1ee)](_$$_REQUIRE, _dependencyMap[-0x10fc * 0x1 + -0x1e6f + -0x1a3 * -0x1d]),
-                                            'style': _MainStyle[_0x1a63c7(0x22e)][_0x1a63c7(0x208)]
+                                        (0x1 * 0x188f + 0x48 * -0x37 + -0x917, _jsxRuntime[_0x229f7d(0xd5)])(_reactNative[_0x229f7d(0x10c)], {
+                                            'source': _0x444d87[_0x229f7d(0x103)](_$$_REQUIRE, _dependencyMap[-0xef9 + -0x1 * 0x1277 + 0x217c]),
+                                            'style': _MainStyle[_0x229f7d(0x107)][_0x229f7d(0xdb)]
                                         }),
-                                        (-0x2 * 0xb0a + 0x1 * 0x1f0f + -0x8fb, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x24d)], {
+                                        (-0x2 * 0xb1f + -0x16a7 + 0x1 * 0x2ce5, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x124)], {
                                             'mt': 0x5,
                                             'mb': 0x3,
                                             'fontSize': 'xl',
-                                            'fontWeight': _0x574b16[_0x1a63c7(0x21b)],
-                                            'color': _MainStyle[_0x1a63c7(0x240) + 'r'],
+                                            'fontWeight': _0x444d87[_0x229f7d(0xd0)],
+                                            'color': _MainStyle[_0x229f7d(0xfc) + 'r'],
                                             'children': [
-                                                _0x574b16[_0x1a63c7(0x1ee)](_0x569ad2, _0x574b16[_0x1a63c7(0x20b)]),
+                                                _0x444d87[_0x229f7d(0xca)](_0x18533d, _0x444d87[_0x229f7d(0xd7)]),
                                                 '!'
                                             ]
                                         }),
-                                        (0x24 * 0x45 + 0x76a + -0x111e, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x24d)], {
-                                            'textAlign': _0x574b16[_0x1a63c7(0x217)],
+                                        (-0xf65 + -0x1cd1 + 0x2c36, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x124)], {
+                                            'textAlign': _0x444d87[_0x229f7d(0xcc)],
                                             'fontSize': 'sm',
-                                            'fontWeight': _0x574b16[_0x1a63c7(0x259)],
-                                            'color': _0x574b16[_0x1a63c7(0x1f4)],
+                                            'fontWeight': _0x444d87[_0x229f7d(0xe8)],
+                                            'color': _0x444d87[_0x229f7d(0xe4)],
                                             'mb': 0x3,
                                             'children': [
-                                                _0x574b16[_0x1a63c7(0x1ee)](_0x569ad2, _0x574b16[_0x1a63c7(0x225)]),
-                                                _0x574b16[_0x1a63c7(0x216)]
+                                                _0x444d87[_0x229f7d(0x11b)](_0x18533d, _0x444d87[_0x229f7d(0xc2)]),
+                                                _0x444d87[_0x229f7d(0xbb)]
                                             ]
                                         }),
-                                        (0x4fc * -0x5 + 0x2457 + -0xb6b, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x20f)], {
+                                        (-0xaa9 + 0x151f * -0x1 + -0x4 * -0x7f2, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0xec)], {
                                             'size': 'sm',
                                             'style': {
-                                                'backgroundColor': _0x574b16[_0x1a63c7(0x1f4)],
+                                                'backgroundColor': _0x444d87[_0x229f7d(0xe4)],
                                                 'width': 0x96,
                                                 'borderRadius': 0x8,
-                                                'overflow': _0x574b16[_0x1a63c7(0x245)]
+                                                'overflow': _0x444d87[_0x229f7d(0x12b)]
                                             },
-                                            'onPress': function _0x44bfed() {
-                                                var _0x4de41b = _0x1a63c7;
-                                                return _0x164326[_0x4de41b(0x242)](closeApp);
+                                            'onPress': function _0x25b202() {
+                                                var _0x4dfba1 = _0x229f7d;
+                                                return _0x541714[_0x4dfba1(0xdc)](closeApp);
                                             },
                                             'marginY': 0x4,
-                                            'children': (-0x25af + 0x13a8 * 0x1 + 0x1207, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x24d)], {
-                                                'color': _0x574b16[_0x1a63c7(0x1f3)],
+                                            'children': (-0x12f6 + 0x682 * -0x4 + 0x2cfe, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0x124)], {
+                                                'color': _0x444d87[_0x229f7d(0xfa)],
                                                 'fontSize': 'sm',
-                                                'fontWeight': _0x574b16[_0x1a63c7(0x259)],
-                                                'children': _0x574b16[_0x1a63c7(0x22c)](_0x569ad2, _0x574b16[_0x1a63c7(0x257)])
+                                                'fontWeight': _0x444d87[_0x229f7d(0xe8)],
+                                                'children': _0x444d87[_0x229f7d(0xd3)](_0x18533d, _0x444d87[_0x229f7d(0x122)])
                                             })
                                         })
                                     ]
                                 })
                             })
                         }),
-                        _0x14b591 && (0x834 + -0x1b00 + 0x12cc, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x25d)], {
-                            'style': _MainStyle[_0x1a63c7(0x22e)][_0x1a63c7(0x1fa) + _0x1a63c7(0x212)],
-                            'children': (-0x128 * -0x1c + 0x15fe + -0x365e, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x228)], {
-                                'backgroundColor': _0x574b16[_0x1a63c7(0x1f3)],
+                        _0x43cc5d && (-0x14e2 + 0x2 * -0x605 + 0x20ec, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0x128)], {
+                            'style': _MainStyle[_0x229f7d(0x107)][_0x229f7d(0x11e) + _0x229f7d(0xda)],
+                            'children': (0x15a8 + -0x23a7 * 0x1 + 0xdff, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0xbe)], {
+                                'backgroundColor': _0x444d87[_0x229f7d(0xfa)],
                                 'style': {
-                                    'width': _0x574b16[_0x1a63c7(0x261)],
+                                    'width': _0x444d87[_0x229f7d(0xc4)],
                                     'borderRadius': 0xa,
-                                    'overflow': _0x574b16[_0x1a63c7(0x245)]
+                                    'overflow': _0x444d87[_0x229f7d(0x12b)]
                                 },
-                                'children': (0x1 * -0x1224 + -0xf9b + 0x21bf, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x229)], {
+                                'children': (-0x67 * -0x31 + 0x259c + -0x3953, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x127)], {
                                     'space': 0x1,
-                                    'w': _0x574b16[_0x1a63c7(0x227)],
+                                    'w': _0x444d87[_0x229f7d(0xee)],
                                     'paddingY': '10',
                                     'paddingX': '5',
-                                    'alignItems': _0x574b16[_0x1a63c7(0x217)],
-                                    'justifyContent': _0x574b16[_0x1a63c7(0x217)],
+                                    'alignItems': _0x444d87[_0x229f7d(0xcc)],
+                                    'justifyContent': _0x444d87[_0x229f7d(0xcc)],
                                     'children': [
-                                        (-0x1c55 + -0x9 * -0xfb + 0x1382, _jsxRuntime[_0x1a63c7(0x25e)])(_reactNative[_0x1a63c7(0x1f0)], {
-                                            'source': _0x574b16[_0x1a63c7(0x237)](_$$_REQUIRE, _dependencyMap[0x122 + -0x1 * 0x2022 + 0x1 * 0x1f0c]),
-                                            'style': _MainStyle[_0x1a63c7(0x22e)][_0x1a63c7(0x208)]
+                                        (0x2ae * -0x3 + 0xb7b * -0x2 + 0x1f00, _jsxRuntime[_0x229f7d(0xd5)])(_reactNative[_0x229f7d(0x10c)], {
+                                            'source': _0x444d87[_0x229f7d(0xd3)](_$$_REQUIRE, _dependencyMap[0x26 * 0x2 + -0x9 * 0x453 + 0x13 * 0x209]),
+                                            'style': _MainStyle[_0x229f7d(0x107)][_0x229f7d(0xdb)]
                                         }),
-                                        (0xda9 * -0x1 + -0xa81 + 0x182a, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x24d)], {
+                                        (0x1 * 0xc23 + 0x2bd * -0x3 + 0x4 * -0xfb, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x124)], {
                                             'mt': 0x5,
                                             'mb': 0x3,
                                             'fontSize': 'xl',
-                                            'fontWeight': _0x574b16[_0x1a63c7(0x21b)],
-                                            'color': _MainStyle[_0x1a63c7(0x240) + 'r'],
+                                            'fontWeight': _0x444d87[_0x229f7d(0xd0)],
+                                            'color': _MainStyle[_0x229f7d(0xfc) + 'r'],
                                             'children': [
-                                                _0x574b16[_0x1a63c7(0x21d)](_0x569ad2, _0x574b16[_0x1a63c7(0x20b)]),
+                                                _0x444d87[_0x229f7d(0xd3)](_0x18533d, _0x444d87[_0x229f7d(0xd7)]),
                                                 '!'
                                             ]
                                         }),
-                                        (0x1845 + 0x1 * 0x129a + -0x2adf, _jsxRuntime[_0x1a63c7(0x1eb)])(_nativeBase[_0x1a63c7(0x24d)], {
-                                            'textAlign': _0x574b16[_0x1a63c7(0x217)],
+                                        (-0x22f9 + -0x57 * 0x8 + 0x25b1, _jsxRuntime[_0x229f7d(0xb3)])(_nativeBase[_0x229f7d(0x124)], {
+                                            'textAlign': _0x444d87[_0x229f7d(0xcc)],
                                             'fontSize': 'sm',
-                                            'fontWeight': _0x574b16[_0x1a63c7(0x259)],
-                                            'color': _0x574b16[_0x1a63c7(0x1f4)],
+                                            'fontWeight': _0x444d87[_0x229f7d(0xe8)],
+                                            'color': _0x444d87[_0x229f7d(0xe4)],
                                             'mb': 0x3,
                                             'children': [
-                                                _0x574b16[_0x1a63c7(0x22c)](_0x569ad2, _0x574b16[_0x1a63c7(0x250)]),
-                                                _0x574b16[_0x1a63c7(0x216)]
+                                                _0x444d87[_0x229f7d(0x11b)](_0x18533d, _0x444d87[_0x229f7d(0xf4)]),
+                                                _0x444d87[_0x229f7d(0xbb)]
                                             ]
                                         }),
-                                        (-0x3 * 0x653 + 0x1 * -0x18a7 + 0x2ba0, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x20f)], {
+                                        (0x1 * -0x82f + -0x2b * 0x89 + 0x1f32, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0xec)], {
                                             'size': 'sm',
                                             'style': {
-                                                'backgroundColor': _0x574b16[_0x1a63c7(0x1f4)],
+                                                'backgroundColor': _0x444d87[_0x229f7d(0xe4)],
                                                 'width': 0x96,
                                                 'borderRadius': 0x8,
-                                                'overflow': _0x574b16[_0x1a63c7(0x245)]
+                                                'overflow': _0x444d87[_0x229f7d(0x12b)]
                                             },
-                                            'onPress': function _0x4c9cca() {
-                                                var _0x14c50e = _0x1a63c7;
-                                                return _0x164326[_0x14c50e(0x242)](closeApp);
+                                            'onPress': function _0x1b6c70() {
+                                                var _0x4531ec = _0x229f7d;
+                                                return _0x541714[_0x4531ec(0xdc)](closeApp);
                                             },
                                             'marginY': 0x4,
-                                            'children': (0x2390 + 0xff * -0x1f + -0x4af, _jsxRuntime[_0x1a63c7(0x25e)])(_nativeBase[_0x1a63c7(0x24d)], {
-                                                'color': _0x574b16[_0x1a63c7(0x1f3)],
+                                            'children': (-0x1f87 + -0x1e25 * -0x1 + -0x2 * -0xb1, _jsxRuntime[_0x229f7d(0xd5)])(_nativeBase[_0x229f7d(0x124)], {
+                                                'color': _0x444d87[_0x229f7d(0xfa)],
                                                 'fontSize': 'sm',
-                                                'fontWeight': _0x574b16[_0x1a63c7(0x259)],
-                                                'children': _0x574b16[_0x1a63c7(0x263)](_0x569ad2, _0x574b16[_0x1a63c7(0x257)])
+                                                'fontWeight': _0x444d87[_0x229f7d(0xe8)],
+                                                'children': _0x444d87[_0x229f7d(0x126)](_0x18533d, _0x444d87[_0x229f7d(0x122)])
                                             })
                                         })
                                     ]
@@ -467,15 +436,40 @@ var SplashScreen = function SplashScreen(_0x459f6a) {
                         })
                     ]
                 });
+            case '2':
+                var _0x176f86 = _0x543e63[_0x229f7d(0xd1)];
+                continue;
+            case '3':
+                var _0x575cfb = (-0xa * 0x2d7 + 0x23d * 0x7 + 0xcbb, _reactI18next[_0x229f7d(0xba) + _0x229f7d(0x111)])(), _0x18533d = _0x575cfb['t'];
+                continue;
+            case '4':
+                var _0x3f8698 = _react[_0x229f7d(0xc1)][_0x229f7d(0x12c)](![]), _0x4d053f = (0x16 * -0x17 + 0x1 * 0xce3 + -0xae9, _slicedToArray2[_0x229f7d(0xc1)])(_0x3f8698, 0x1c53 + 0x935 * -0x3 + -0xb2 * 0x1), _0x43cc5d = _0x4d053f[0x1c2c + -0x2 * -0x2f1 + 0xb5a * -0x3], _0x34a7e9 = _0x4d053f[-0x1800 + 0x1 * -0xc8c + -0x1 * -0x248d];
+                continue;
+            case '5':
+                var _0x2f4182 = (-0x3 * 0x677 + -0x19 * -0x40 + -0x1 * -0xd25, _reactNativeDeviceInfo[_0x229f7d(0xaf) + _0x229f7d(0xf2)])(), _0x25ae11 = _0x2f4182[_0x229f7d(0xd8)];
+                continue;
+            case '6':
+                var _0x4b5708 = _react[_0x229f7d(0xc1)][_0x229f7d(0x12c)](![]), _0x259af6 = (0x169c + 0x739 * -0x5 + 0xd81, _slicedToArray2[_0x229f7d(0xc1)])(_0x4b5708, 0x1 * 0x761 + 0x4d * -0x33 + 0x22 * 0x3c), _0x1474f1 = _0x259af6[0x3d7 * -0xa + 0x127d + 0x13e9], _0x40e0f7 = _0x259af6[0x1330 + -0x1de3 + 0xab4];
+                continue;
             case '7':
-                var _0x49164b = _react[_0x1a63c7(0x24b)][_0x1a63c7(0x221)](![]), _0x3c9bd5 = (-0xea5 * 0x1 + 0x88c + 0x619, _slicedToArray2[_0x1a63c7(0x24b)])(_0x49164b, 0x11 * 0x14 + 0x26f5 + -0x1 * 0x2847), _0x297f32 = _0x3c9bd5[-0xc8f * 0x3 + 0xe * -0x50 + 0x2a0d], _0x147a99 = _0x3c9bd5[-0x73 * 0x2d + 0xe7a * -0x2 + 0x312c];
+                var _0x541714 = {
+                    'dqlwC': _0x444d87[_0x229f7d(0xeb)],
+                    'Cobkl': function (_0x407178, _0x132e68, _0x5be2a5) {
+                        var _0x3f648c = _0x229f7d;
+                        return _0x444d87[_0x3f648c(0xfb)](_0x407178, _0x132e68, _0x5be2a5);
+                    },
+                    'pQkRN': function (_0x3ae70d) {
+                        var _0x3ef8dc = _0x229f7d;
+                        return _0x444d87[_0x3ef8dc(0x117)](_0x3ae70d);
+                    }
+                };
                 continue;
             }
             break;
         }
-    }, styles = _reactNative[_0x228e52(0x1ec)][_0x228e52(0x23b)]({
+    }, styles = _reactNative[_0x26b389(0xd2)][_0x26b389(0x10e)]({
         'bgimage': {
             'flex': 0x1,
-            'justifyContent': _0x228e52(0x265)
+            'justifyContent': _0x26b389(0xb5)
         }
-    }), _default = exports[_0x228e52(0x24b)] = SplashScreen;
+    }), _default = exports[_0x26b389(0xc1)] = SplashScreen;

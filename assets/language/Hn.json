@@ -151,7 +151,7 @@
         "Thank you. You has been successfully Rejected this transaction of": "धन्यवाद। आपने सफलतापूर्वक इस लेनदेन को अस्वीकार किया है",
         "Approve/Reject More": "अधिक अनुमोदन/अस्वीकृति",
         "Go To Home": "होम पर जाएं",
-        "Login As":"के रूप में लॉगिन करें",
+        "Login As": "के रूप में लॉगिन करें",
         "Point Balance": "अंक शेष",
         "My Profile": "मेरी प्रोफ़ाइल",
         "Status": "स्थिति",
@@ -178,7 +178,7 @@
         "Are you sure?": "क्या आप सुनिश्चित हैं?",
         "Do you really want to Cancel this order?": "क्या आप सच में इस आदेश को रद्द करना चाहते हैं?",
         "Cancel": "रद्द करें",
-        "OK":  "ठीक है",
+        "OK": "ठीक है",
         "Category Type": "वर्ग प्रकार",
         "Sort By": "क्रमबद्ध करें",
         "Filter By Points": "अंकों द्वारा छानें",
@@ -198,32 +198,25 @@
         "Alert": "चेतावनी",
         "Are you sure to logout": "क्या आप वाकई लॉगआउट करना चाहते हैं?",
         "Yes": "हाँ",
-       "Please update your KYC": "कृपया अपना केवाईसी अपडेट करें",
-       "Update KYC": "केवाईसी अपडेट करें",
-       "Thank You": "धन्यवाद",
-       "Your request has been approved": "आपकी अनुरोध को स्वीकृत कर दिया गया है",
-       "Your chance to get lucky": "आपकी किस्मत आजमाने का मौका",
-       "Redemption Details": "रिडेम्पशन विवरण",
-       "Spouse Phone Number accept Only Number / Mobile No. not Valid": "पति/पत्नी का फ़ोन नंबर केवल अंक स्वीकार करता है / मोबाइल नंबर मान्य नहीं है",
-       "Add Spouse": "पति/पत्नी जोड़ें",
-       "Please add your Spouse": "कृपया अपने पति/पत्नी को जोड़ें",
-       "Spouse's Mobile Number": "पति/पत्नी का मोबाइल नंबर",
-       "Spouse Details": "पति/पत्नी का विवरण",
-       "Select Your TSO": "अपना टीएसओ चुनें",
-       "My Orders": "मेरी खरीदारी",
-       "Redemption": "रिडेम्पशन",
-       "Scheme": "योजना",
-       "Address Verification Pending": "पते का सत्यापन लंबित है",
-       "Verify Address": "पते को सत्यापित करें",
-       "Order ID": "ऑर्डर आईडी",
-       "Verification Reason": "सत्यापन का कारण",
-
-
-
-
-
-
-
+        "Please update your KYC": "कृपया अपना केवाईसी अपडेट करें",
+        "Update KYC": "केवाईसी अपडेट करें",
+        "Thank You": "धन्यवाद",
+        "Your request has been approved": "आपकी अनुरोध को स्वीकृत कर दिया गया है",
+        "Your chance to get lucky": "आपकी किस्मत आजमाने का मौका",
+        "Redemption Details": "रिडेम्पशन विवरण",
+        "Spouse Phone Number accept Only Number / Mobile No. not Valid": "पति/पत्नी का फ़ोन नंबर केवल अंक स्वीकार करता है / मोबाइल नंबर मान्य नहीं है",
+        "Add Spouse": "पति/पत्नी जोड़ें",
+        "Please add your Spouse": "कृपया अपने पति/पत्नी को जोड़ें",
+        "Spouse's Mobile Number": "पति/पत्नी का मोबाइल नंबर",
+        "Spouse Details": "पति/पत्नी का विवरण",
+        "Select Your TSO": "अपना टीएसओ चुनें",
+        "My Orders": "मेरी खरीदारी",
+        "Redemption": "रिडेम्पशन",
+        "Scheme": "योजना",
+        "Address Verification Pending": "पते का सत्यापन लंबित है",
+        "Verify Address": "पते को सत्यापित करें",
+        "Order ID": "ऑर्डर आईडी",
+        "Verification Reason": "सत्यापन का कारण",
         "Quick Information": "त्वरित जानकारी",
         "Mobile Number accept Only Number / Mobile No. not Valid": "मोबाइल नंबर केवल अंक स्वीकार करता है / मोबाइल नंबर मान्य नहीं है",
         "Please select DOB same as PAN": "कृपया PAN के समान जन्मतिथि चुनें",
@@ -277,11 +270,6 @@
         "Back": "वापस",
         "Logout": "लॉगआउट",
         "T&C and Privacy Policy": "नियम एवं शर्तें और गोपनीयता नीति",
-
-
-
-
-        
         "I accept the": "मैं स्वीकार करता हूँ",
         "terms & conditions and privacy policy": "नियम और शर्तें और गोपनीयता नीति",
         "of use": "के उपयोग की",
@@ -289,34 +277,23 @@
         "Your registration approval is pending with": "आपके पंजीकरण की स्वीकृति लंबित है",
         "Please Signin to your account": "कृपया अपने खाते में साइन इन करें",
         "Please Sign Up to new account": "कृपया एक नया खाता बनाएं",
-
-
-
         "Aadhaar Number": "आधार नंबर",
         "PAN Number": "पैन नंबर",
         "KYC Details": "केवाईसी विवरण",
         "Personal Details": "व्यक्तिगत विवरण",
-        "Your order has been successfully placed!":"आपका ऑर्डर सफलतापूर्वक रखा गया है!",
-        "Your order ID is":"आपका ऑर्डर आईडी है",
-        "View Order":"आर्डर देखें",
-
+        "Your order has been successfully placed!": "आपका ऑर्डर सफलतापूर्वक रखा गया है!",
+        "Your order ID is": "आपका ऑर्डर आईडी है",
+        "View Order": "आर्डर देखें",
         "Please enter Address line 1": "कृपया पता पंक्ति 1 दर्ज करें",
         "Address line 1 should contain only letters, numbers, and spaces": "पता पंक्ति 1 में केवल अक्षर, संख्या और खाली स्थान होने चाहिए",
         "Address line 2 should contain only letters, numbers, and spaces or be empty": "पता पंक्ति 2 में केवल अक्षर, संख्या और खाली स्थान होने चाहिए या यह खाली हो सकता है",
         "Address line 3 should contain only letters, numbers, and spaces or be empty": "पता पंक्ति 3 में केवल अक्षर, संख्या और खाली स्थान होने चाहिए या यह खाली हो सकता है",
         "Please enter pincode": "कृपया पिनकोड दर्ज करें",
         "Pincode should contain only digits": "पिनकोड में केवल अंक होने चाहिए",
-        "Rewards Store":"रिवॉर्ड स्टोर",
-        "Redeem Now":"अब एवज करें",
-        "No product available for redemption":"रिडेम्प्शन के लिए कोई उत्पाद उपलब्ध नहीं है",
-        "No orders available":"कोई ऑर्डर उपलब्ध नहीं है"
-        
-        
-
-
-
-
-
+        "Rewards Store": "रिवॉर्ड स्टोर",
+        "Redeem Now": "अब एवज करें",
+        "No product available for redemption": "रिडेम्प्शन के लिए कोई उत्पाद उपलब्ध नहीं है",
+        "No orders available": "कोई ऑर्डर उपलब्ध नहीं है",
+        "Stock Available for Allocation": "आवंटन हेतु उपलब्ध स्टॉक"
     }
 }
-

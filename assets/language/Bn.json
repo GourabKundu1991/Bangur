@@ -157,16 +157,13 @@
         "Spouse Details": "স্বামী/স্ত্রীর বিবরণ",
         "My Profile": "আমার প্রোফাইল",
         "Select Your TSO": "আপনার TSO নির্বাচন করুন",
-        "My Orders" : "আমার অর্ডারগুলি",
-        "Redemption" : "রিডেম্পশন",
-        "Scheme" : "পরিকল্পনা",
+        "My Orders": "আমার অর্ডারগুলি",
+        "Redemption": "রিডেম্পশন",
+        "Scheme": "পরিকল্পনা",
         "Address Verification Pending": "ঠিকানার যাচাইকরণ মুলতুবি রয়েছে",
         "Verify Address": "ঠিকানা যাচাই করুন",
         "Order ID": "অর্ডার আইডি",
         "Verification Reason": "যাচাইয়ের কারণ",
-
-
-
         "Quick Information": "দ্রুত তথ্য",
         "Mobile Number accept Only Number / Mobile No. not Valid": "মোবাইল নম্বর শুধুমাত্র সংখ্যা গ্রহণ করে / মোবাইল নম্বর সঠিক নয়",
         "Please select DOB same as PAN": "অনুগ্রহ করে PAN-এর সাথে একই DOB নির্বাচন করুন",
@@ -221,47 +218,26 @@
         "Logout": "প্রস্থান",
         "T&C and Privacy Policy": "শর্তাবলী এবং গোপনীয়তা নীতি",
         "Your request has been approved": "আপনার অনুরোধ অনুমোদিত হয়েছে",
-
-
-
-
-
-
-
- "Login As": "হিসাবে লগইন করুন",
-  "I accept the": "আমি গ্রহণ করছি",
-  "terms & conditions and privacy policy": "শর্তাবলী এবং গোপনীয়তা নীতি",
-  "of use": "ব্যবহারের",
-  "Go Back": "ফিরে যান",
-  "Your registration approval is pending with": "আপনার নিবন্ধনের অনুমোদন অপেক্ষায় রয়েছে",
-  "Please Signin to your account": "আপনার অ্যাকাউন্টে সাইন ইন করুন",
-  "Please Sign Up to new account": "নতুন অ্যাকাউন্ট তৈরি করুন",
-
-
-
-
-  "Aadhaar Number": "আধার নম্বর",
-  "PAN Number": "প্যান নম্বর",
-  "KYC Details": "কেওয়াইসি বিবরণ",
-  "Personal Details": "ব্যক্তিগত বিবরণ",
-
- 
-    "Please enter Address line 1": "ঠিকানা লাইন ১ লিখুন",
-    "Address line 1 should contain only letters, numbers, and spaces": "ঠিকানা লাইন ১-এ শুধুমাত্র অক্ষর, সংখ্যা এবং ফাঁকা স্থান থাকতে পারে",
-    "Address line 2 should contain only letters, numbers, and spaces or be empty": "ঠিকানা লাইন ২-এ শুধুমাত্র অক্ষর, সংখ্যা এবং ফাঁকা স্থান থাকতে পারে অথবা এটি খালি থাকতে পারে",
-    "Address line 3 should contain only letters, numbers, and spaces or be empty": "ঠিকানা লাইন ৩-এ শুধুমাত্র অক্ষর, সংখ্যা এবং ফাঁকা স্থান থাকতে পারে অথবা এটি খালি থাকতে পারে",
-    "Please enter pincode": "পিনকোড লিখুন",
-    "Pincode should contain only digits": "পিনকোডে শুধুমাত্র সংখ্যা থাকতে পারে",
-    "No product available for redemption":"redemption জন্য কোন পণ্য উপলব্ধ নেই",
-    "No orders available":"কোন অর্ডার উপলব্ধ নেই"
-
-  
-
-
-
-
+        "Login As": "হিসাবে লগইন করুন",
+        "I accept the": "আমি গ্রহণ করছি",
+        "terms & conditions and privacy policy": "শর্তাবলী এবং গোপনীয়তা নীতি",
+        "of use": "ব্যবহারের",
+        "Go Back": "ফিরে যান",
+        "Your registration approval is pending with": "আপনার নিবন্ধনের অনুমোদন অপেক্ষায় রয়েছে",
+        "Please Signin to your account": "আপনার অ্যাকাউন্টে সাইন ইন করুন",
+        "Please Sign Up to new account": "নতুন অ্যাকাউন্ট তৈরি করুন",
+        "Aadhaar Number": "আধার নম্বর",
+        "PAN Number": "প্যান নম্বর",
+        "KYC Details": "কেওয়াইসি বিবরণ",
+        "Personal Details": "ব্যক্তিগত বিবরণ",
+        "Please enter Address line 1": "ঠিকানা লাইন ১ লিখুন",
+        "Address line 1 should contain only letters, numbers, and spaces": "ঠিকানা লাইন ১-এ শুধুমাত্র অক্ষর, সংখ্যা এবং ফাঁকা স্থান থাকতে পারে",
+        "Address line 2 should contain only letters, numbers, and spaces or be empty": "ঠিকানা লাইন ২-এ শুধুমাত্র অক্ষর, সংখ্যা এবং ফাঁকা স্থান থাকতে পারে অথবা এটি খালি থাকতে পারে",
+        "Address line 3 should contain only letters, numbers, and spaces or be empty": "ঠিকানা লাইন ৩-এ শুধুমাত্র অক্ষর, সংখ্যা এবং ফাঁকা স্থান থাকতে পারে অথবা এটি খালি থাকতে পারে",
+        "Please enter pincode": "পিনকোড লিখুন",
+        "Pincode should contain only digits": "পিনকোডে শুধুমাত্র সংখ্যা থাকতে পারে",
+        "No product available for redemption": "redemption জন্য কোন পণ্য উপলব্ধ নেই",
+        "No orders available": "কোন অর্ডার উপলব্ধ নেই",
+        "Stock Available for Allocation": "বরাদ্দের জন্য স্টক উপলব্ধ"
     }
 }
-
-
-

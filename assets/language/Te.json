@@ -231,58 +231,51 @@
         "Sub Type": "ఉప రకంर",
         "Redemption Details": "రిడెంప్షన్ వివరాలు",
         "Select Your TSO": "మీ TSO ని ఎంచుకోండి",
-        "My Orders" : "నా ఆర్డర్స్",
-        "Redemption" : "రిడెంప్షన్",
-        "Scheme" : "పథకం",
+        "My Orders": "నా ఆర్డర్స్",
+        "Redemption": "రిడెంప్షన్",
+        "Scheme": "పథకం",
         "Address Verification Pending": "చిరునామా ధృవీకరణ పెండింగ్‌లో ఉంది",
         "Verify Address": "చిరునామాను ధృవీకరించండి",
         "Order ID": "ఆర్డర్ ఐడి",
         "Verification Reason": "ధృవీకరణ కారణం",
-
-
-        
-            "Point Balance": "పాయింట్ బ్యాలెన్స్",
-            "My Profile": "నా ప్రొఫైల్",
-            "Pending With": "వద్ద పెండింగ్",
-            "Allocated By": "వాటా విధించినవారు",
-            "Pending / Approved By": "పెండింగ్ / ఆమోదం పొందినవారు",
-            "View Details": "వివరాలు చూడండి",
-            "Specification": "స్పెసిఫికేషన్",
-            "Remove": "తొలగించు",
-            "Redeem Points": "పాయింట్లను రీడీమ్ చేయండి",
-            "Add New Address": "కొత్త చిరునామాను చేర్చండి",
-            "Redemption Confirmation": "రీడంప్షన్ నిర్ధారణ",
-            "Please confirm the redemption by entering the OTP sent to your registered mobile number": "మీ రిజిస్టర్డ్ మొబైల్ నంబర్‌కు పంపిన OTPని నమోదు చేసి రీడంప్షన్‌ను నిర్ధారించండి",
-            "Order Placement": "ఆర్డర్ ప్లేస్‌మెంట్",
-            "Order Placed successfully": "ఆర్డర్ విజయవంతంగా ప్లేస్ చేయబడింది",
-            "Hi": "హలో",
-            "Track Order": "ఆర్డర్‌ను ట్రాక్ చేయండి",
-            "View Orders": "ఆర్డర్లు చూడండి",
-            "Are you sure?": "మీరు ఖచ్చితంగా ఉన్నారా?",
-            "Do you really want to Cancel this order?": "మీరు ఈ ఆర్డర్‌ను నిజంగా రద్దు చేయాలనుకుంటున్నారా?",
-            "Category Type": "వర్గం రకం",
-            "Sort By": "ఆర్డర్ చేయు",
-            "Filter By Points": "పాయింట్ల ద్వారా ఫిల్టర్ చేయండి",
-            "Clear Filter": "ఫిల్టర్‌ను క్లియర్ చేయండి",
-            "Apply": "వర్తించు",
-            "Clear All Filter": "అన్ని ఫిల్టర్లు క్లియర్ చేయండి",
-            "Low to High": "తక్కువ నుంచి ఎక్కువ",
-            "High to Low": "ఎక్కువ నుంచి తక్కువ",
-            "Points Range": "పాయింట్ల పరిధి",
-            "Update": "నవీకరించు",
-            "Check Now": "ఇప్పుడే తనిఖీ చేయండి",
-            "Trans ID / Product": "ట్రాన్స్ ID / ఉత్పత్తి",
-            "From Date": "తేదీ నుండి",
-            "To Date": "తేదీ వరకు",
-            "Notifications": "నోటిఫికేషన్",
-            "Please update your KYC": "దయచేసి మీ KYC నవీకరించండి",
-            "Update KYC": "KYC నవీకరించండి",
-            "Your request has been approved": "మీ అభ్యర్థన ఆమోదించబడింది",
-            "Your chance to get lucky": "మీ అదృష్టాన్ని పరీక్షించే అవకాశం",
-
-        
-       
-  
+        "Point Balance": "పాయింట్ బ్యాలెన్స్",
+        "My Profile": "నా ప్రొఫైల్",
+        "Pending With": "వద్ద పెండింగ్",
+        "Allocated By": "వాటా విధించినవారు",
+        "Pending / Approved By": "పెండింగ్ / ఆమోదం పొందినవారు",
+        "View Details": "వివరాలు చూడండి",
+        "Specification": "స్పెసిఫికేషన్",
+        "Remove": "తొలగించు",
+        "Redeem Points": "పాయింట్లను రీడీమ్ చేయండి",
+        "Add New Address": "కొత్త చిరునామాను చేర్చండి",
+        "Redemption Confirmation": "రీడంప్షన్ నిర్ధారణ",
+        "Please confirm the redemption by entering the OTP sent to your registered mobile number": "మీ రిజిస్టర్డ్ మొబైల్ నంబర్‌కు పంపిన OTPని నమోదు చేసి రీడంప్షన్‌ను నిర్ధారించండి",
+        "Order Placement": "ఆర్డర్ ప్లేస్‌మెంట్",
+        "Order Placed successfully": "ఆర్డర్ విజయవంతంగా ప్లేస్ చేయబడింది",
+        "Hi": "హలో",
+        "Track Order": "ఆర్డర్‌ను ట్రాక్ చేయండి",
+        "View Orders": "ఆర్డర్లు చూడండి",
+        "Are you sure?": "మీరు ఖచ్చితంగా ఉన్నారా?",
+        "Do you really want to Cancel this order?": "మీరు ఈ ఆర్డర్‌ను నిజంగా రద్దు చేయాలనుకుంటున్నారా?",
+        "Category Type": "వర్గం రకం",
+        "Sort By": "ఆర్డర్ చేయు",
+        "Filter By Points": "పాయింట్ల ద్వారా ఫిల్టర్ చేయండి",
+        "Clear Filter": "ఫిల్టర్‌ను క్లియర్ చేయండి",
+        "Apply": "వర్తించు",
+        "Clear All Filter": "అన్ని ఫిల్టర్లు క్లియర్ చేయండి",
+        "Low to High": "తక్కువ నుంచి ఎక్కువ",
+        "High to Low": "ఎక్కువ నుంచి తక్కువ",
+        "Points Range": "పాయింట్ల పరిధి",
+        "Update": "నవీకరించు",
+        "Check Now": "ఇప్పుడే తనిఖీ చేయండి",
+        "Trans ID / Product": "ట్రాన్స్ ID / ఉత్పత్తి",
+        "From Date": "తేదీ నుండి",
+        "To Date": "తేదీ వరకు",
+        "Notifications": "నోటిఫికేషన్",
+        "Please update your KYC": "దయచేసి మీ KYC నవీకరించండి",
+        "Update KYC": "KYC నవీకరించండి",
+        "Your request has been approved": "మీ అభ్యర్థన ఆమోదించబడింది",
+        "Your chance to get lucky": "మీ అదృష్టాన్ని పరీక్షించే అవకాశం",
         "Register Member": "రిజిస్టర్ సభ్యుడు",
         "View Member": "సభ్యులను చూడండి",
         "Transaction Approvals": "ట్రాన్సాక్షన్ ఆమోదాలు",
@@ -411,13 +404,6 @@
         "Please add your Spouse": "దయచేసి మీ భర్త/భార్యను జోడించండి",
         "Spouse's Mobile Number": "భర్త/భార్య యొక్క మొబైల్ నంబర్",
         "Spouse Details": "భర్త/భార్య యొక్క వివరాలు",
-
-
-
-
-
-
-
         "Quick Information": "త్వరిత సమాచారం",
         "Mobile Number accept Only Number / Mobile No. not Valid": "మొబైల్ నెంబర్ కేవలం నంబర్స్‌ను మాత్రమే అంగీకరిస్తుంది / మొబైల్ నెంబర్ చెల్లదు",
         "Please select DOB same as PAN": "దయచేసి PANకు అనుగుణంగా DOBని ఎంచుకోండి",
@@ -461,16 +447,7 @@
         "Are you sure want to delete your account": "మీ ఖాతాను తొలగించాలనుకుంటున్నారా?",
         "Back": "వెనుకకు",
         "T&C and Privacy Policy": "నియమాలు & ప్రైవసీ పాలసీ",
-
-
-
-
-
-
-        "Login As":"లాగిన్ చేయండి",
-
-
-
+        "Login As": "లాగిన్ చేయండి",
         "I accept the": "నేను అంగీకరిస్తున్నాను",
         "terms & conditions and privacy policy": "నిబంధనలు & షరతులు మరియు గోప్యతా విధానం",
         "of use": "వినియోగానికి",
@@ -478,28 +455,17 @@
         "Your registration approval is pending with": "మీ రిజిస్ట్రేషన్ అనుమతి పెండింగ్‌లో ఉంది",
         "Please Signin to your account": "దయచేసి మీ ఖాతాలో సైన్ ఇన్ చేయండి",
         "Please Sign Up to new account": "దయచేసి కొత్త ఖాతా సృష్టించండి",
-
-
-
-
-      
         "PAN Number": "పాన్ నంబర్",
-
         "Please enter Address line 1": "దయచేసి చిరునామా రేఖ 1 ను నమోదు చేయండి",
         "Address line 1 should contain only letters, numbers, and spaces": "చిరునామా రేఖ 1 లో అక్షరాలు, సంఖ్యలు మరియు ఖాళీ స్థలాలు మాత్రమే ఉండాలి",
         "Address line 2 should contain only letters, numbers, and spaces or be empty": "చిరునామా రేఖ 2 లో అక్షరాలు, సంఖ్యలు మరియు ఖాళీ స్థలాలు మాత్రమే ఉండాలి లేదా ఇది ఖాళీగా ఉండవచ్చు",
         "Address line 3 should contain only letters, numbers, and spaces or be empty": "చిరునామా రేఖ 3 లో అక్షరాలు, సంఖ్యలు మరియు ఖాళీ స్థలాలు మాత్రమే ఉండాలి లేదా ఇది ఖాళీగా ఉండవచ్చు",
         "Please enter pincode": "దయచేసి పిన్‌కోడ్ నమోదు చేయండి",
         "Pincode should contain only digits": "పిన్‌కోడ్‌లో మాత్రమే అంకెలు ఉండాలి",
-        "Rewards Store":"రివార్డ్స్ స్టోర్",
-        "Redeem Now":"ఇప్పుడే రీడీమ్ చేసుకోండి",
-        "No product available for redemption":"విముక్తి కోసం ఏ ఉత్పత్తి అందుబాటులో లేదు",
-        "ஆர்டர்கள் இல்லை":"ఆర్డర్లు అందుబాటులో లేవు"
-
-
-
-
-
-
+        "Rewards Store": "రివార్డ్స్ స్టోర్",
+        "Redeem Now": "ఇప్పుడే రీడీమ్ చేసుకోండి",
+        "No product available for redemption": "విముక్తి కోసం ఏ ఉత్పత్తి అందుబాటులో లేదు",
+        "ஆர்டர்கள் இல்லை": "ఆర్డర్లు అందుబాటులో లేవు",
+        "Stock Available for Allocation": "కేటాయింపుకు అందుబాటులో ఉన్న స్టాక్"
     }
 }

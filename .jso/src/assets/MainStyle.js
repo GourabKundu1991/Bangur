@@ -1,7 +1,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.warningColor = exports.successColor = exports.lightGrey = exports.lightColor = exports.greyColor = exports.fontSemiBold = exports.fontRegular = exports.fontBold = exports.darkGrey = exports.darkColor = exports.dangerColor = exports.baseSemiColor = exports.baseLightColor = exports.baseColor = exports.MainStyle = undefined;
+  exports.warningColor = exports.successColor = exports.spouseColor = exports.lightGrey = exports.lightColor = exports.greyColor = exports.fontSemiBold = exports.fontRegular = exports.fontBold = exports.darkGrey = exports.darkColor = exports.dangerColor = exports.baseSemiColor = exports.baseLightColor = exports.baseColor = exports.MainStyle = undefined;
   var _reactNative = _$$_REQUIRE(_dependencyMap[0]);
   var baseColor = exports.baseColor = "#2A358B";
   var baseLightColor = exports.baseLightColor = "#fbf9fe";
@@ -17,6 +17,7 @@
   var fontRegular = exports.fontRegular = "Mulish-Regular";
   var fontBold = exports.fontBold = "Mulish-Bold";
   var fontSemiBold = exports.fontSemiBold = "Mulish-SemiBold";
+  var spouseColor = exports.spouseColor = "#CF1562";
   var MainStyle = exports.MainStyle = _reactNative.StyleSheet.create({
     spincontainer: {
       position: 'absolute',
@@ -63,7 +64,8 @@
     pagibox: {
       width: 35,
       height: 35,
-      borderRadius: 30
+      borderRadius: 30,
+      overflow: 'hidden'
     },
     popbox: {
       width: '80%',

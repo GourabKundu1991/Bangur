@@ -815,27 +815,11 @@
                     })
                   })
                 })
-              }), MTD != "" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
-                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                  style: _MainStyle.MainStyle.lable,
-                  fontSize: "xs",
-                  children: t("Last 30 Days Sale")
-                }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-                  style: _MainStyle.MainStyle.inputbox,
-                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
-                    backgroundColor: _MainStyle.lightGrey,
-                    readOnly: true,
-                    value: MTD + " Bag(s)",
-                    fontFamily: _MainStyle.fontRegular,
-                    size: "md",
-                    variant: "unstyled"
-                  })
-                })]
               }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
                 children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                   style: _MainStyle.MainStyle.lable,
                   fontSize: "xs",
-                  children: t("Stock in Hand")
+                  children: t("Stock Available for Allocation")
                 }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
                   style: _MainStyle.MainStyle.inputbox,
                   children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {

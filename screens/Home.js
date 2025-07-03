@@ -349,8 +349,37 @@ const HomeScreen = ({ navigation }) => {
                             </ImageBackground>
                         </View>
                     )}
-
-                    {Number(addressStatus) === 1 && showPopup && (
+                    <VStack space={5} padding={7}>
+                        <View style={{ backgroundColor: lightGrey, height: 1 }}>
+                            <Text style={{ position: 'absolute', width: '40%', marginHorizontal: '5%', top: -13, backgroundColor: lightColor }} color={darkColor} fontSize="md" fontFamily={fontBold}>{t("Quick Links")}</Text>
+                        </View>
+                        <HStack justifyContent="center" alignItems="center" flexWrap="wrap">
+                            {homeMenu.map((item, index) =>
+                                <Pressable
+                                    key={index}
+                                    style={MainStyle.quickbox}
+                                    backgroundColor={item.link == "AddSpouse" ? spouseColor : item.link == "SpouseDetails" ? spouseColor : lightColor}
+                                    onPress={() => {
+                                        if (item.title === "My Orders") {
+                                            navigation.navigate('ViewOrder', {
+                                                rewardId: rewardCatalog,
+                                                schemeId: schemeCatalog,
+                                            });
+                                        } else {
+                                            navigation.navigate(item.link, { pageTitle: item.title });
+                                        }
+                                    }}
+                                >
+                                    <VStack justifyContent="center" alignItems="center" style={MainStyle.quickicon} backgroundColor={item.link == "AddSpouse" ? lightColor : item.link == "SpouseDetails" ? lightColor : lightGrey}>
+                                        <Icon name={item.icon} size={30} color={item.link == "AddSpouse" ? spouseColor : item.link == "SpouseDetails" ? spouseColor : baseColor} />
+                                    </VStack>
+                                    <Text color={item.link == "AddSpouse" ? lightColor : item.link == "SpouseDetails" ? lightColor : darkColor} fontSize="xs" textAlign="center" fontFamily={fontSemiBold} style={{ minHeight: 38, display: 'flex', verticalAlign: 'middle', paddingHorizontal: 1 }}>{item.title}</Text>
+                                </Pressable>
+                            )}
+                        </HStack>
+                    </VStack>
+                </ScrollView>
+                {Number(addressStatus) === 1 && showPopup && (
                         <View style={MainStyle.spincontainer}>
                             <VStack style={MainStyle.popbox} space={5} alignItems="center" position="relative">
                                 <TouchableOpacity
@@ -393,37 +422,6 @@ const HomeScreen = ({ navigation }) => {
                             </VStack>
                         </View>
                     )}
-                    <VStack space={5} padding={7}>
-                        <View style={{ backgroundColor: lightGrey, height: 1 }}>
-                            <Text style={{ position: 'absolute', width: '40%', marginHorizontal: '5%', top: -13, backgroundColor: lightColor }} color={darkColor} fontSize="md" fontFamily={fontBold}>{t("Quick Links")}</Text>
-                        </View>
-                        <HStack justifyContent="center" alignItems="center" flexWrap="wrap">
-                            {homeMenu.map((item, index) =>
-                                <Pressable
-                                    key={index}
-                                    style={MainStyle.quickbox}
-                                    backgroundColor={item.title == "Add Spouse" ? spouseColor : item.title == "Spouse Details" ? spouseColor : lightColor}
-                                    onPress={() => {
-                                        console.log("Page Title:", item.title);
-                                        if (item.title === "My Orders") {
-                                            navigation.navigate('ViewOrder', {
-                                                rewardId: rewardCatalog,
-                                                schemeId: schemeCatalog,
-                                            });
-                                        } else {
-                                            navigation.navigate(item.link, { pageTitle: item.title });
-                                        }
-                                    }}
-                                >
-                                    <VStack justifyContent="center" alignItems="center" style={MainStyle.quickicon} backgroundColor={item.title == "Add Spouse" ? lightColor : item.title == "Spouse Details" ? lightColor : lightGrey}>
-                                        <Icon name={item.icon} size={30} color={item.title == "Add Spouse" ? spouseColor : item.title == "Spouse Details" ? spouseColor : baseColor} />
-                                    </VStack>
-                                    <Text color={item.title == "Add Spouse" ? lightColor : item.title == "Spouse Details" ? lightColor : darkColor} fontSize="xs" textAlign="center" fontFamily={fontSemiBold} style={{ minHeight: 38, display: 'flex', verticalAlign: 'middle', paddingHorizontal: 1 }}>{item.title}</Text>
-                                </Pressable>
-                            )}
-                        </HStack>
-                    </VStack>
-                </ScrollView>
                 <FooterComponents navigation={navigation} component={userType} cartcount={cartcount} />
             </VStack>
             {loading && (

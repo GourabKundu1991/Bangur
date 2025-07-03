@@ -1,716 +1,702 @@
-var _0x1db09b = _0x54a8;
-(function (_0xb2a6c6, _0x3be056) {
-    var _0xf04ec5 = _0x54a8, _0x3441dc = _0xb2a6c6();
+var _0x2fcaac = _0x59c7;
+function _0x59c7(_0x4dce2c, _0x10ccf8) {
+    var _0x5bb31 = _0xc5c0();
+    return _0x59c7 = function (_0x37556f, _0x250cd1) {
+        _0x37556f = _0x37556f - (-0xe77 + -0x3 * 0x701 + 0x72e * 0x5);
+        var _0x2389b8 = _0x5bb31[_0x37556f];
+        return _0x2389b8;
+    }, _0x59c7(_0x4dce2c, _0x10ccf8);
+}
+(function (_0x27e0f5, _0x16aea9) {
+    var _0x2aefc2 = _0x59c7, _0x289d49 = _0x27e0f5();
     while (!![]) {
         try {
-            var _0x4278ed = parseInt(_0xf04ec5(0x1b6)) / (-0x2f1 * -0xd + 0x1e4 + -0x2820) + parseInt(_0xf04ec5(0x1bc)) / (0x3 * -0x48d + 0x2 * 0xca0 + 0x3 * -0x3dd) + -parseInt(_0xf04ec5(0x210)) / (-0x123c + 0x6a * -0x43 + 0x2dfd) * (-parseInt(_0xf04ec5(0x1cf)) / (0xf5f + 0x3ab + 0xa * -0x1e7)) + -parseInt(_0xf04ec5(0x24c)) / (0x1993 * -0x1 + -0x26 * 0xaa + 0x32d4) * (-parseInt(_0xf04ec5(0x23e)) / (0x2117 * -0x1 + -0x29 * 0x16 + -0x71 * -0x53)) + parseInt(_0xf04ec5(0x1e9)) / (-0x1263 * -0x1 + 0x1a6d + -0x8f5 * 0x5) + -parseInt(_0xf04ec5(0x1dc)) / (-0x667 * 0x1 + 0x65 * 0x2 + 0x5a5) * (parseInt(_0xf04ec5(0x1e5)) / (-0x2ae + 0x56 + 0x1 * 0x261)) + -parseInt(_0xf04ec5(0x1be)) / (-0x1aec + -0x11b * -0x1d + -0x519);
-            if (_0x4278ed === _0x3be056)
+            var _0x54ee1b = -parseInt(_0x2aefc2(0x8a)) / (-0x1083 + -0x11b2 + 0x2236) + parseInt(_0x2aefc2(0x106)) / (0xe96 * -0x2 + 0x1 * 0x116d + -0x3 * -0x3eb) + parseInt(_0x2aefc2(0xf6)) / (-0x254a + -0x7 * -0x242 + 0x157f) + parseInt(_0x2aefc2(0xaf)) / (-0x150b * -0x1 + -0x1 * -0x2bd + -0x17c4) + parseInt(_0x2aefc2(0x81)) / (-0x1 * 0x237 + -0x101 * 0xf + 0x114b) * (parseInt(_0x2aefc2(0xf0)) / (0x267e + 0x1 * -0xe64 + 0x4 * -0x605)) + parseInt(_0x2aefc2(0xe0)) / (0x10b0 + -0xa8f + -0x61a) + -parseInt(_0x2aefc2(0xab)) / (0x955 + 0x136c * 0x1 + 0x2b * -0xab);
+            if (_0x54ee1b === _0x16aea9)
                 break;
             else
-                _0x3441dc['push'](_0x3441dc['shift']());
-        } catch (_0x2a0cfb) {
-            _0x3441dc['push'](_0x3441dc['shift']());
+                _0x289d49['push'](_0x289d49['shift']());
+        } catch (_0x43edf9) {
+            _0x289d49['push'](_0x289d49['shift']());
         }
     }
-}(_0x2d27, 0xe8993 + 0x1 * -0x236ce + -0x1ac * 0x18a));
-function _0x54a8(_0x42acff, _0xa02af5) {
-    var _0x57afcd = _0x2d27();
-    return _0x54a8 = function (_0x352241, _0x25c2f3) {
-        _0x352241 = _0x352241 - (-0x26c1 + 0x2471 * 0x1 + 0x3df);
-        var _0x44c1fb = _0x57afcd[_0x352241];
-        return _0x44c1fb;
-    }, _0x54a8(_0x42acff, _0xa02af5);
-}
-var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[-0x1 * 0xf27 + -0x108e + 0x1fb5 * 0x1]);
-Object[_0x1db09b(0x1fb) + _0x1db09b(0x19c)](exports, _0x1db09b(0x23f), { 'value': !![] }), exports[_0x1db09b(0x227)] = undefined;
-function _0x2d27() {
-    var _0x5d31ce = [
-        'canredeem',
+}(_0xc5c0, 0xd6561 + -0x148d1 + -0x5032a));
+var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0x1 * -0x1fdc + 0x1 * -0x175b + 0x3737]);
+Object[_0x2fcaac(0x97) + _0x2fcaac(0xc1)](exports, _0x2fcaac(0x75), { 'value': !![] }), exports[_0x2fcaac(0xf9)] = undefined;
+var _nativeBase = _$$_REQUIRE(_dependencyMap[0x30c * 0xb + -0x1a * -0x82 + 0x1 * -0x2eb7]), _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[-0x917 * 0x1 + 0x283 * -0x7 + -0x556 * -0x5])), _Ionicons = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[0xa * 0xf7 + 0x2 * 0xd07 + -0x1 * 0x23b1])), _reactNative = _$$_REQUIRE(_dependencyMap[0x2492 + 0x12af + -0x373d]), _MainStyle = _$$_REQUIRE(_dependencyMap[-0x48f + 0x18cc + 0x1438 * -0x1]), _reactI18next = _$$_REQUIRE(_dependencyMap[-0x66a * 0x1 + 0x205b + -0x19eb]), _asyncStorage = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[-0x2362 + 0x2 * -0xd15 + 0x3d93 * 0x1])), _jsxRuntime = _$$_REQUIRE(_dependencyMap[-0xe9b + -0x1aa8 + 0x294b]);
+function _0xc5c0() {
+    var _0x666d82 = [
+        'kDdlQ',
+        'bHNgH',
+        'pgNyx',
+        'uDoGU',
+        '3|4',
+        'HAwgD',
+        'AddPurchas',
+        'sDXxp',
+        'cart-outli',
+        'TqDoa',
+        'YItpl',
+        '16px',
+        'dgEYE',
+        'ltsue',
+        'IxVCF',
+        '-4px',
+        'VStack',
+        'Influencer',
+        'ctor',
+        'ViewTransa',
+        '10px',
+        'fting',
+        '0|6|5|2|1|',
+        'action',
         'cartcount',
-        'ember',
+        'Add\x20Contar',
+        'component',
+        'home-outli',
+        'XNMbX',
+        'MeQyh',
+        'FcwPe',
+        'hasOwnProp',
+        'JUFHa',
+        'aTaHE',
+        'yGOkp',
+        'vOvHK',
+        'lHyFr',
+        'mZGXw',
+        'sFWmq',
+        '__esModule',
+        'useTransla',
+        'greyColor',
+        'Trans.\x20App',
+        'MyPoints',
+        'ytIJW',
+        'call',
+        'cgjOz',
+        'line',
+        'Add\x20Contra',
+        'LuRUp',
+        'cTsrN',
+        '810rieRIo',
+        'RegisterMe',
+        'PJlqu',
+        '50%',
+        'IflBH',
+        'Regist.\x20Ap',
+        'function',
         'sparkles-o',
+        'VVfaJ',
+        '21867fuheSy',
+        'cobWT',
+        'people-out',
+        'LBUaQ',
+        'ieCKw',
+        'Ndybi',
+        'LczKR',
+        'nApprovals',
+        'XvaZs',
+        'WFBBx',
+        'vNmZt',
+        'haMhr',
+        'ViewMember',
+        'defineProp',
+        'CrEpS',
+        'ertyDescri',
+        'reader-out',
+        'space-betw',
+        'n\x20Approval',
+        'ors',
+        'Register\x20M',
+        '44%',
+        'absolute',
+        'ember',
+        'tline',
+        'SaCta',
+        'View\x20Membe',
+        'TeKMU',
+        'tion',
+        'roval',
+        'My\x20Contrat',
+        'DdKNt',
+        'Thkxn',
+        '13790360PwkgnG',
+        'repeat-out',
+        'on\x20Approva',
+        'relative',
+        '1289016mSfYUh',
+        'person-add',
+        'Dealer',
+        'IxKhR',
+        'white',
+        'HYOOq',
+        'lightColor',
+        'Stack',
+        'Text',
+        'object',
+        'Transactio',
+        'fontRegula',
+        'Add\x20Purcha',
+        'FUCAU',
+        'View\x20Trans',
+        'GRFyV',
+        'set',
+        'FXltX',
+        'erty',
+        'yGDGh',
+        'jjPbF',
+        'solid',
+        'OzPmu',
+        'eWlZG',
+        'HkFOU',
+        'XjrMD',
+        'Allocate\x20L',
+        'split',
+        'space-even',
+        'dutQM',
+        'LEgdy',
+        'tor',
+        'TSO',
         'Badge',
-        '74166DGaFNe',
-        'Fbyyo',
-        'yyoLO',
+        'UtKIF',
+        'outline',
+        'ction',
+        'Home',
+        'miAQH',
+        'utline',
         'onApproval',
         'bag-check-',
-        'UoGQc',
-        '801508hzuIXP',
-        'hucxj',
-        '18291830QBLdmL',
-        'bold',
-        'ygbNH',
-        'BavvE',
-        '10px',
-        'uJuKD',
-        'View\x20Membe',
-        'DGfcq',
-        'pacity',
-        '50%',
-        'eWgAW',
-        'set',
-        'has',
-        'een',
-        'CceRX',
-        'object',
-        'Uoyzt',
-        '8780MAdjAt',
-        'Szwhf',
-        'center',
-        'absolute',
-        'vuUDO',
-        'XFCUm',
-        'Stack',
-        'Trans.\x20App',
-        'bag-add-ou',
-        'kUPzZ',
-        'IZrwk',
-        'tors',
-        'GvpKg',
-        '632XMqOkr',
-        'My\x20Contrat',
-        'vPaFG',
-        'View\x20Trans',
         'red',
-        'oMcue',
-        'Registrati',
-        'fuyDE',
-        'zcygm',
-        '28989FdzGRz',
-        '-4px',
-        'jlUlr',
-        'repeat-out',
-        '8381093RoVHDX',
-        'tPgNW',
-        'bhbWj',
-        'outline',
-        'VUEix',
-        'RYfPd',
-        'provals',
-        'hasOwnProp',
-        'MyPoints',
-        'mkmvK',
-        'iNAcg',
-        'useTransla',
-        'tion',
-        'qjjMF',
-        'ertyDescri',
-        'Regist.\x20Ap',
-        'My\x20Cart',
-        'ZwpZd',
-        'defineProp',
-        'component',
-        'Allocate\x20L',
-        'shield-che',
-        'Home',
-        'nJlZV',
-        'NCSsE',
-        'rmCob',
-        'RMUjl',
-        'ViewTransa',
-        'PuVjw',
-        'getOwnProp',
-        'AddPurchas',
-        'IdJwM',
-        'split',
-        'relative',
-        'on\x20Approva',
-        'mber',
-        'RmctI',
-        'gWdJO',
-        'Dealer',
-        '471kjHgDu',
-        '4|5|6|3|0|',
-        'space-even',
-        'baseColor',
-        'sFEkl',
-        'oDFWQ',
-        'OGilS',
-        'WVNTY',
-        'lBUPx',
-        'QVmvk',
-        'NEsdS',
-        'zYkwU',
         'HStack',
-        'HtEMY',
-        'UwYBb',
-        'home-outli',
-        'kLRhk',
-        'ndJuV',
-        'roval',
-        'ofYnW',
-        'wlvxs',
-        'cDsVM',
-        'nNemd',
-        'default',
-        'tor',
-        'ZGYGs',
-        'fontRegula',
-        '16px',
-        'navigate',
-        'XsoXM',
-        'cart-outli',
-        'OFSeF',
-        'Text',
-        'reader-out',
-        'Box',
-        'RegisterMe',
-        'QSJwr',
-        'QFfRj',
-        'ckmark-out',
-        'greyColor',
-        'replace',
         'AddContrac',
-        'utline',
-        'piDOa',
-        'nXUhO',
-        'TSO',
-        '6JfACIv',
-        '__esModule',
-        'YNUkp',
-        'white',
-        'bLEot',
-        'sKfwf',
-        'cRmJg',
-        'VStack',
-        'aopsM',
-        'XRfor',
-        'nApprovals',
+        'full',
+        'tors',
+        'ifting',
+        'GKiXk',
+        '2451358EfGQoe',
+        'peRJd',
+        'wiUiz',
+        'vdxGC',
+        'ljSuy',
+        'MyCart',
+        'navigate',
+        'aNgGm',
+        'Box',
+        'eLiOF',
+        'pacity',
+        'TouchableO',
         'navigation',
+        'jsx',
+        'ohHvc',
+        'get',
+        '17652NqIwVu',
+        'een',
+        'TTO',
+        'qwhBe',
+        'WsNXZ',
+        'ptor',
+        '589791FRXLYX',
+        'vsveq',
+        'jsxs',
+        'default',
+        'bold',
+        'getOwnProp',
+        'XoZrE',
+        'center',
+        'vTRqK',
+        'Yzvwz',
+        'CeVgt',
+        'ckmark-out',
+        'baseColor',
+        'Registrati',
+        'has',
+        'jyANE',
+        '1730534rXvbTc',
+        'sjDAb',
+        'ugiVy',
+        'mber',
+        'shield-che',
+        'guQLj',
+        'My\x20Cart',
+        'LOEks',
+        'yoSFb',
+        'TqqPQ',
+        'REVUW',
+        'oAvJf',
+        'canredeem',
+        'HyBWS',
+        'My\x20Points',
         '-outline',
         'STH',
-        '3528985rbGbFw',
-        'Influencer',
-        'OGaGc',
-        'action',
-        'Register\x20M',
-        'ifting',
-        'lightColor',
+        'provals',
         'Pressable',
-        'gUKOC',
-        'TTO',
-        'call',
-        'DuqJF',
-        'Transactio',
-        'rzItP',
-        'Add\x20Purcha',
-        'MyCart',
-        'ptor',
-        'ctor',
-        'yNwSy',
-        'Add\x20Contar',
-        'dkTxL',
-        'space-betw',
-        'jsxs',
-        'ibGTp',
-        'people-out',
-        'lFuAU',
-        'ors',
-        'DiFAn',
-        'ViewMember',
-        'HyLjI',
-        'UpYXQ',
-        '2|1',
-        'n\x20Approval',
-        'tline',
-        'TouchableO',
-        'erty',
-        'udmoz',
-        'jsx',
-        'solid',
-        'person-add',
-        'Glznh',
-        'Add\x20Contra',
-        'My\x20Points',
-        'AJabS',
-        'EHYIV',
-        'rzbIa',
-        'function',
-        'BlSCM',
         'AllocateLi',
-        'fting',
-        'line',
-        'JmBhL',
-        'full',
-        'get',
-        'ction',
-        '44%'
+        'replace',
+        'bag-add-ou'
     ];
-    _0x2d27 = function () {
-        return _0x5d31ce;
+    _0xc5c0 = function () {
+        return _0x666d82;
     };
-    return _0x2d27();
+    return _0xc5c0();
 }
-var _nativeBase = _$$_REQUIRE(_dependencyMap[0x1f90 + -0x3 * 0x302 + 0x9 * -0x281]), _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[-0x77 * 0x35 + -0x1865 + 0x2 * 0x1885])), _Ionicons = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[-0x1f29 + 0x1 * 0x205b + -0x65 * 0x3])), _reactNative = _$$_REQUIRE(_dependencyMap[-0xc93 + 0x1b55 * -0x1 + -0x46 * -0x92]), _MainStyle = _$$_REQUIRE(_dependencyMap[-0x3d9 * 0x8 + -0x24ec + 0x1693 * 0x3]), _reactI18next = _$$_REQUIRE(_dependencyMap[0x13c8 + -0xfb3 + -0x40f]), _asyncStorage = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[0x10fd * -0x1 + 0x207d + 0x1 * -0xf79])), _jsxRuntime = _$$_REQUIRE(_dependencyMap[-0x17ad + -0x173c + 0x2ef1]);
-function _getRequireWildcardCache(_0x15c6a9) {
-    var _0x89a3fd = _0x1db09b, _0x3da8fa = {
-            'tPgNW': function (_0x2c70b0, _0x468bd9) {
-                return _0x2c70b0 != _0x468bd9;
+function _getRequireWildcardCache(_0x4cb7e2) {
+    var _0x29e4ab = _0x2fcaac, _0x59e226 = {
+            'FcwPe': function (_0x1b2c05, _0x285109) {
+                return _0x1b2c05 != _0x285109;
             },
-            'UwYBb': _0x89a3fd(0x1a7)
+            'eLiOF': _0x29e4ab(0x87)
         };
-    if (_0x3da8fa[_0x89a3fd(0x1ea)](_0x3da8fa[_0x89a3fd(0x21e)], typeof WeakMap))
+    if (_0x59e226[_0x29e4ab(0x6c)](_0x59e226[_0x29e4ab(0xe9)], typeof WeakMap))
         return null;
-    var _0xe19c68 = new WeakMap(), _0x4e91f7 = new WeakMap();
-    return (_getRequireWildcardCache = function _0x24c9ff(_0x13b9b9) {
-        return _0x13b9b9 ? _0x4e91f7 : _0xe19c68;
-    })(_0x15c6a9);
+    var _0x4a6621 = new WeakMap(), _0x253cd9 = new WeakMap();
+    return (_getRequireWildcardCache = function _0x527460(_0x3b02c3) {
+        return _0x3b02c3 ? _0x253cd9 : _0x4a6621;
+    })(_0x4cb7e2);
 }
-function _interopRequireWildcard(_0x4d97bd, _0x5b61b4) {
-    var _0x4b3243 = _0x1db09b, _0x14df41 = {
-            'Uoyzt': _0x4b3243(0x211) + _0x4b3243(0x198),
-            'Szwhf': function (_0x24b508, _0x58a5c4) {
-                return _0x24b508 !== _0x58a5c4;
+function _interopRequireWildcard(_0x2edb00, _0x46988a) {
+    var _0x3a8964 = _0x2fcaac, _0x2c2d58 = {
+            'TqDoa': _0x3a8964(0x132) + _0x3a8964(0x120),
+            'ieCKw': function (_0x5c6a0a, _0x23870c) {
+                return _0x5c6a0a && _0x23870c;
             },
-            'UoGQc': _0x4b3243(0x227),
-            'OFSeF': function (_0x5ef258, _0x41d8c7) {
-                return _0x5ef258 && _0x41d8c7;
+            'vTRqK': function (_0x124459, _0x5aa1cf) {
+                return _0x124459 !== _0x5aa1cf;
             },
-            'qjjMF': function (_0x206f33, _0x3a73ba) {
-                return _0x206f33 === _0x3a73ba;
+            'IxVCF': _0x3a8964(0xf9),
+            'YItpl': function (_0x5c1080, _0x46592d) {
+                return _0x5c1080(_0x46592d);
             },
-            'kLRhk': function (_0x42af0b, _0x5a6e8e) {
-                return _0x42af0b != _0x5a6e8e;
+            'DdKNt': function (_0x57c7e5, _0xd522b5) {
+                return _0x57c7e5 === _0xd522b5;
             },
-            'sFEkl': _0x4b3243(0x1cd),
-            'cRmJg': function (_0x511ab2, _0x401936) {
-                return _0x511ab2 != _0x401936;
+            'Thkxn': function (_0x4f965e, _0x5a6f15) {
+                return _0x4f965e != _0x5a6f15;
             },
-            'vPaFG': _0x4b3243(0x1a7),
-            'hucxj': function (_0x534f5f, _0x32228b) {
-                return _0x534f5f(_0x32228b);
-            }
-        }, _0x11460f = _0x14df41[_0x4b3243(0x1ce)][_0x4b3243(0x209)]('|'), _0x292854 = 0x2 * -0xed1 + -0xc * 0xcc + 0x2732;
+            'jjPbF': _0x3a8964(0xb8),
+            'CeVgt': function (_0x202309, _0x234d2f) {
+                return _0x202309 != _0x234d2f;
+            },
+            'TeKMU': _0x3a8964(0x87)
+        }, _0x4efb5a = _0x2c2d58[_0x3a8964(0x125)][_0x3a8964(0xca)]('|'), _0x1b2638 = -0x1 * -0xedd + 0x1ce1 * 0x1 + 0x1fd * -0x16;
     while (!![]) {
-        switch (_0x11460f[_0x292854++]) {
+        switch (_0x4efb5a[_0x1b2638++]) {
         case '0':
-            var _0x9a884a = { '__proto__': null }, _0x147a8b = Object[_0x4b3243(0x1fb) + _0x4b3243(0x19c)] && Object[_0x4b3243(0x206) + _0x4b3243(0x1f7) + _0x4b3243(0x25c)];
+            if (_0x2c2d58[_0x3a8964(0x8e)](!_0x46988a, _0x2edb00) && _0x2edb00[_0x3a8964(0x75)])
+                return _0x2edb00;
             continue;
         case '1':
-            return _0x9a884a[_0x4b3243(0x227)] = _0x4d97bd, _0x2ec008 && _0x2ec008[_0x4b3243(0x1c9)](_0x4d97bd, _0x9a884a), _0x9a884a;
+            var _0x1afdf9 = { '__proto__': null }, _0x37f86e = Object[_0x3a8964(0x97) + _0x3a8964(0xc1)] && Object[_0x3a8964(0xfb) + _0x3a8964(0x99) + _0x3a8964(0xf5)];
+            continue;
         case '2':
-            for (var _0xfcf919 in _0x4d97bd)
-                if (_0x14df41[_0x4b3243(0x1d0)](_0x14df41[_0x4b3243(0x1bb)], _0xfcf919) && {}[_0x4b3243(0x1f0) + _0x4b3243(0x19c)][_0x4b3243(0x256)](_0x4d97bd, _0xfcf919)) {
-                    var _0x483761 = _0x147a8b ? Object[_0x4b3243(0x206) + _0x4b3243(0x1f7) + _0x4b3243(0x25c)](_0x4d97bd, _0xfcf919) : null;
-                    _0x483761 && (_0x483761[_0x4b3243(0x1ae)] || _0x483761[_0x4b3243(0x1c9)]) ? Object[_0x4b3243(0x1fb) + _0x4b3243(0x19c)](_0x9a884a, _0xfcf919, _0x483761) : _0x9a884a[_0xfcf919] = _0x4d97bd[_0xfcf919];
-                }
+            if (_0x50a434 && _0x50a434[_0x3a8964(0x104)](_0x2edb00))
+                return _0x50a434[_0x3a8964(0xef)](_0x2edb00);
             continue;
         case '3':
-            if (_0x2ec008 && _0x2ec008[_0x4b3243(0x1ca)](_0x4d97bd))
-                return _0x2ec008[_0x4b3243(0x1ae)](_0x4d97bd);
+            for (var _0x5c7c51 in _0x2edb00)
+                if (_0x2c2d58[_0x3a8964(0xfe)](_0x2c2d58[_0x3a8964(0x12a)], _0x5c7c51) && {}[_0x3a8964(0x6d) + _0x3a8964(0xc1)][_0x3a8964(0x7b)](_0x2edb00, _0x5c7c51)) {
+                    var _0x27f4f7 = _0x37f86e ? Object[_0x3a8964(0xfb) + _0x3a8964(0x99) + _0x3a8964(0xf5)](_0x2edb00, _0x5c7c51) : null;
+                    _0x27f4f7 && (_0x27f4f7[_0x3a8964(0xef)] || _0x27f4f7[_0x3a8964(0xbf)]) ? Object[_0x3a8964(0x97) + _0x3a8964(0xc1)](_0x1afdf9, _0x5c7c51, _0x27f4f7) : _0x1afdf9[_0x5c7c51] = _0x2edb00[_0x5c7c51];
+                }
             continue;
         case '4':
-            if (_0x14df41[_0x4b3243(0x22f)](!_0x5b61b4, _0x4d97bd) && _0x4d97bd[_0x4b3243(0x23f)])
-                return _0x4d97bd;
-            continue;
+            return _0x1afdf9[_0x3a8964(0xf9)] = _0x2edb00, _0x50a434 && _0x50a434[_0x3a8964(0xbf)](_0x2edb00, _0x1afdf9), _0x1afdf9;
         case '5':
-            if (_0x14df41[_0x4b3243(0x1f6)](null, _0x4d97bd) || _0x14df41[_0x4b3243(0x220)](_0x14df41[_0x4b3243(0x214)], typeof _0x4d97bd) && _0x14df41[_0x4b3243(0x244)](_0x14df41[_0x4b3243(0x1de)], typeof _0x4d97bd))
-                return { 'default': _0x4d97bd };
+            var _0x50a434 = _0x2c2d58[_0x3a8964(0x126)](_getRequireWildcardCache, _0x46988a);
             continue;
         case '6':
-            var _0x2ec008 = _0x14df41[_0x4b3243(0x1bd)](_getRequireWildcardCache, _0x5b61b4);
+            if (_0x2c2d58[_0x3a8964(0xa9)](null, _0x2edb00) || _0x2c2d58[_0x3a8964(0xaa)](_0x2c2d58[_0x3a8964(0xc3)], typeof _0x2edb00) && _0x2c2d58[_0x3a8964(0x100)](_0x2c2d58[_0x3a8964(0xa5)], typeof _0x2edb00))
+                return { 'default': _0x2edb00 };
             continue;
         }
         break;
     }
 }
-var FooterComponents = function FooterComponents(_0x14a5a3) {
-        var _0xa37d02 = _0x1db09b, _0x5873cb = {
-                'sKfwf': _0xa37d02(0x233) + _0xa37d02(0x20c),
-                'jlUlr': _0xa37d02(0x250) + _0xa37d02(0x1b3),
-                'DuqJF': _0xa37d02(0x195),
-                'zcygm': _0xa37d02(0x1c4) + 'r',
-                'vuUDO': _0xa37d02(0x258) + _0xa37d02(0x248),
-                'aopsM': _0xa37d02(0x258) + _0xa37d02(0x199) + 's',
-                'piDOa': _0xa37d02(0x204) + _0xa37d02(0x1af),
-                'wlvxs': _0xa37d02(0x1df) + _0xa37d02(0x24f),
-                'RYfPd': _0xa37d02(0x1ff),
-                'OGilS': _0xa37d02(0x207) + 'e',
-                'CceRX': _0xa37d02(0x25a) + 'se',
-                'PuVjw': _0xa37d02(0x258) + 'n',
-                'ygbNH': _0xa37d02(0x1f1),
-                'dkTxL': _0xa37d02(0x1a3),
-                'VUEix': _0xa37d02(0x25b),
-                'IZrwk': _0xa37d02(0x1f9),
-                'IdJwM': _0xa37d02(0x1dd) + _0xa37d02(0x193),
-                'fuyDE': _0xa37d02(0x239) + _0xa37d02(0x1da),
-                'EHYIV': _0xa37d02(0x1a2) + _0xa37d02(0x228),
-                'oMcue': _0xa37d02(0x1a9) + _0xa37d02(0x1aa),
-                'ZGYGs': _0xa37d02(0x1fd) + _0xa37d02(0x251),
-                'gWdJO': _0xa37d02(0x1e2) + _0xa37d02(0x1b9) + 's',
-                'ofYnW': _0xa37d02(0x1e2) + _0xa37d02(0x20b) + 'ls',
-                'DGfcq': function (_0x11d692, _0x3de2a7) {
-                    return _0x11d692 == _0x3de2a7;
+var FooterComponents = function FooterComponents(_0x20fac2) {
+        var _0x41095c = _0x2fcaac, _0x3f6ecf = {
+                'guQLj': _0x41095c(0x82) + _0x41095c(0x109),
+                'aNgGm': _0x41095c(0x9e) + _0x41095c(0xa1),
+                'vdxGC': _0x41095c(0x96),
+                'LEgdy': _0x41095c(0xa4) + 'r',
+                'PJlqu': _0x41095c(0xb9) + _0x41095c(0x91),
+                'vOvHK': _0x41095c(0xb9) + _0x41095c(0x9c) + 's',
+                'HkFOU': _0x41095c(0x12f) + _0x41095c(0xd3),
+                'cgjOz': _0x41095c(0xbd) + _0x41095c(0x133),
+                'WsNXZ': _0x41095c(0xd4),
+                'OzPmu': _0x41095c(0x122) + 'e',
+                'yGDGh': _0x41095c(0xbb) + 'se',
+                'XoZrE': _0x41095c(0xb9) + 'n',
+                'FXltX': _0x41095c(0x79),
+                'Yzvwz': _0x41095c(0x114),
+                'MeQyh': _0x41095c(0xe5),
+                'REVUW': _0x41095c(0x10c),
+                'dutQM': _0x41095c(0xa8) + _0x41095c(0x9d),
+                'HAwgD': _0x41095c(0xdb) + _0x41095c(0xdd),
+                'Ndybi': _0x41095c(0x7e) + _0x41095c(0xce),
+                'cobWT': _0x41095c(0x119) + _0x41095c(0x131),
+                'ljSuy': _0x41095c(0xc9) + _0x41095c(0xde),
+                'LOEks': _0x41095c(0x103) + _0x41095c(0xd7) + 's',
+                'LczKR': _0x41095c(0x103) + _0x41095c(0xad) + 'ls',
+                'TqqPQ': function (_0x1e5197, _0x31bd1b) {
+                    return _0x1e5197 == _0x31bd1b;
                 },
-                'rzItP': _0xa37d02(0x23d),
-                'JmBhL': _0xa37d02(0x1d1),
-                'ibGTp': _0xa37d02(0x261) + _0xa37d02(0x1cb),
-                'BlSCM': _0xa37d02(0x1c7),
-                'GvpKg': _0xa37d02(0x212) + 'ly',
-                'XsoXM': _0xa37d02(0x1a0) + _0xa37d02(0x24a),
-                'OGaGc': function (_0x239dcc, _0x7fe698) {
-                    return _0x239dcc(_0x7fe698);
+                'vNmZt': _0x41095c(0xcf),
+                'bHNgH': _0x41095c(0xfd),
+                'UtKIF': _0x41095c(0x9b) + _0x41095c(0xf1),
+                'jyANE': _0x41095c(0x84),
+                'VVfaJ': _0x41095c(0xcb) + 'ly',
+                'eWlZG': _0x41095c(0xb0) + _0x41095c(0x115),
+                'FUCAU': function (_0x1c3a2e, _0x1a7996) {
+                    return _0x1c3a2e(_0x1a7996);
                 },
-                'AJabS': _0xa37d02(0x191) + _0xa37d02(0x1ab),
-                'HtEMY': _0xa37d02(0x1ba) + _0xa37d02(0x1ec),
-                'uJuKD': function (_0x4a9ab3, _0x59d339) {
-                    return _0x4a9ab3(_0x59d339);
+                'HYOOq': _0x41095c(0x8c) + _0x41095c(0x7d),
+                'LBUaQ': function (_0x50bf42, _0x469c99) {
+                    return _0x50bf42(_0x469c99);
                 },
-                'lFuAU': _0xa37d02(0x1d6) + _0xa37d02(0x222),
-                'iNAcg': _0xa37d02(0x231) + _0xa37d02(0x1ab),
-                'lBUPx': function (_0x5e962d, _0x3d53b7) {
-                    return _0x5e962d(_0x3d53b7);
+                'LuRUp': _0x41095c(0xd8) + _0x41095c(0xd2),
+                'sjDAb': _0x41095c(0x78) + _0x41095c(0xa7),
+                'ugiVy': _0x41095c(0x9a) + _0x41095c(0x7d),
+                'CrEpS': _0x41095c(0xbd) + '.',
+                'sFWmq': _0x41095c(0xa0),
+                'XjrMD': _0x41095c(0x9f),
+                'ltsue': _0x41095c(0x137) + 'ne',
+                'haMhr': _0x41095c(0x12d),
+                'dgEYE': _0x41095c(0x11b) + _0x41095c(0xa2),
+                'uDoGU': _0x41095c(0xac) + _0x41095c(0x7d),
+                'ytIJW': _0x41095c(0x88) + _0x41095c(0xd6),
+                'peRJd': function (_0x2c796d, _0x60d6c) {
+                    return _0x2c796d(_0x60d6c);
                 },
-                'WVNTY': _0xa37d02(0x1df) + '.',
-                'cDsVM': _0xa37d02(0x1d2),
-                'QVmvk': _0xa37d02(0x1b0),
-                'rzbIa': _0xa37d02(0x21f) + 'ne',
-                'ndJuV': function (_0x37be91, _0x29f8e6) {
-                    return _0x37be91 == _0x29f8e6;
+                'JUFHa': _0x41095c(0xae),
+                'vsveq': _0x41095c(0x124) + 'ne',
+                'qwhBe': function (_0x1f7f55, _0x564d4) {
+                    return _0x1f7f55 > _0x564d4;
                 },
-                'bLEot': _0xa37d02(0x24d),
-                'YNUkp': _0xa37d02(0x1d7) + _0xa37d02(0x19a),
-                'yyoLO': function (_0x4e5197, _0x2ff43d) {
-                    return _0x4e5197(_0x2ff43d);
+                'yoSFb': _0x41095c(0xd9),
+                'HyBWS': _0x41095c(0xdc),
+                'GRFyV': _0x41095c(0xc4),
+                'ohHvc': _0x41095c(0x12b),
+                'XNMbX': _0x41095c(0x127),
+                'sDXxp': _0x41095c(0x130),
+                'lHyFr': _0x41095c(0xb3),
+                'cTsrN': _0x41095c(0xfa),
+                'mZGXw': function (_0x287afe, _0x355487) {
+                    return _0x287afe(_0x355487);
                 },
-                'NEsdS': _0xa37d02(0x1e8) + _0xa37d02(0x1ab),
-                'NCSsE': function (_0x96df8, _0x5d9be9) {
-                    return _0x96df8(_0x5d9be9);
+                'XvaZs': function (_0x32b054, _0x1761b3) {
+                    return _0x32b054 == _0x1761b3;
                 },
-                'nJlZV': _0xa37d02(0x1b4) + _0xa37d02(0x23a),
-                'mkmvK': _0xa37d02(0x20a),
-                'oDFWQ': _0xa37d02(0x22e) + 'ne',
-                'XRfor': function (_0x24c29b, _0x587539) {
-                    return _0x24c29b > _0x587539;
+                'miAQH': _0x41095c(0xb1),
+                'IxKhR': function (_0x75facb, _0x3ae6b6) {
+                    return _0x75facb(_0x3ae6b6);
                 },
-                'HyLjI': _0xa37d02(0x1e0),
-                'udmoz': _0xa37d02(0x1ad),
-                'XFCUm': _0xa37d02(0x19f),
-                'DiFAn': _0xa37d02(0x1e6),
-                'yNwSy': _0xa37d02(0x22b),
-                'Fbyyo': _0xa37d02(0x1c2),
-                'nNemd': _0xa37d02(0x241),
-                'zYkwU': _0xa37d02(0x1bf),
-                'QSJwr': function (_0x7b3b89, _0x1fb2c) {
-                    return _0x7b3b89(_0x1fb2c);
+                'oAvJf': _0x41095c(0x135) + _0x41095c(0x12e),
+                'IflBH': function (_0x5935b2, _0x5e0c4a) {
+                    return _0x5935b2(_0x5e0c4a);
                 },
-                'BavvE': function (_0xd0dae1, _0x309652) {
-                    return _0xd0dae1 == _0x309652;
+                'SaCta': function (_0x3339c5, _0x2f3ee8) {
+                    return _0x3339c5(_0x2f3ee8);
                 },
-                'Glznh': _0xa37d02(0x20f),
-                'bhbWj': function (_0x96a92, _0xa76f7c) {
-                    return _0x96a92(_0xa76f7c);
+                'GKiXk': function (_0x351d11, _0x2dcac8) {
+                    return _0x351d11 == _0x2dcac8;
                 },
-                'gUKOC': _0xa37d02(0x25f) + _0xa37d02(0x25d),
-                'RMUjl': function (_0x2b16c0, _0x4a6837) {
-                    return _0x2b16c0(_0x4a6837);
+                'wiUiz': _0x41095c(0xf2),
+                'aTaHE': _0x41095c(0x116),
+                'kDdlQ': _0x41095c(0x10a) + _0x41095c(0x101) + _0x41095c(0x7d),
+                'WFBBx': _0x41095c(0x86) + _0x41095c(0x117),
+                'yGOkp': function (_0xb62bf, _0x1fd034) {
+                    return _0xb62bf(_0x1fd034);
                 },
-                'rmCob': function (_0x15c8a6, _0xf08a97) {
-                    return _0x15c8a6 == _0xf08a97;
-                },
-                'UpYXQ': _0xa37d02(0x255),
-                'ZwpZd': _0xa37d02(0x24b),
-                'RmctI': _0xa37d02(0x1fe) + _0xa37d02(0x236) + _0xa37d02(0x1ab),
-                'kUPzZ': function (_0x104e7e, _0x232d7f) {
-                    return _0x104e7e(_0x232d7f);
-                },
-                'eWgAW': _0xa37d02(0x1f8) + _0xa37d02(0x1ef),
-                'nXUhO': function (_0x54f75e, _0x176358) {
-                    return _0x54f75e(_0x176358);
-                },
-                'QFfRj': function (_0x346bba, _0x560dbe) {
-                    return _0x346bba(_0x560dbe);
+                'pgNyx': function (_0x580699, _0x269e47) {
+                    return _0x580699(_0x269e47);
                 }
-            }, _0x20194a = _0x14a5a3[_0xa37d02(0x249)], _0x3d302f = _0x14a5a3[_0xa37d02(0x1fc)], _0x3dbf47 = _0x14a5a3[_0xa37d02(0x1b2)], _0x1f675d = _0x14a5a3[_0xa37d02(0x1b1)], _0x5f5b45 = (0x265 * -0xd + 0x39b * 0x4 + 0x10b5 * 0x1, _reactI18next[_0xa37d02(0x1f4) + _0xa37d02(0x1f5)])(), _0x3e1b04 = _0x5f5b45['t'];
-        return (-0x131 * 0x8 + 0x19d8 + -0x15c * 0xc, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x1d5)], {
+            }, _0x54650d = _0x20fac2[_0x41095c(0xec)], _0x3e993d = _0x20fac2[_0x41095c(0x136)], _0x16a437 = _0x20fac2[_0x41095c(0x134)], _0xfdd82b = _0x20fac2[_0x41095c(0x112)], _0x54db95 = (-0x78e * 0x2 + -0x1 * 0x164 + -0x108 * -0x10, _reactI18next[_0x41095c(0x76) + _0x41095c(0xa6)])(), _0x3dad1e = _0x54db95['t'];
+        return (-0x1 * 0x963 + -0x238e + -0xf * -0x2ff, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xb6)], {
             'children': [
-                _0x5873cb[_0xa37d02(0x1c5)](_0x3d302f, _0x5873cb[_0xa37d02(0x259)]) && (0x224c * -0x1 + 0x25eb + 0x67 * -0x9, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                    'backgroundColor': _MainStyle[_0xa37d02(0x252)],
-                    'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                    'justifyContent': _0x5873cb[_0xa37d02(0x190)],
+                _0x3f6ecf[_0x41095c(0x10f)](_0x3e993d, _0x3f6ecf[_0x41095c(0x94)]) && (0xc75 * 0x1 + 0x10dd + -0x1d52, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                    'backgroundColor': _MainStyle[_0x41095c(0xb5)],
+                    'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                    'justifyContent': _0x3f6ecf[_0x41095c(0xd1)],
                     'borderTopLeftRadius': 0xf,
                     'borderTopRightRadius': 0xf,
                     'children': [
-                        (-0x1 * 0x1df + -0x30 + -0x20f * -0x1, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (0x17ca * -0x1 + 0x1237 + 0x593, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0xf,
                             'borderTopRightRadius': 0x2d,
                             'paddingRight': 0x8,
                             'children': [
-                                (-0xe * 0x16e + -0xa83 + 0x209 * 0xf, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x200f58() {
-                                        var _0x29420c = _0xa37d02;
-                                        return _0x20194a[_0x29420c(0x22c)](_0x5873cb[_0x29420c(0x243)], { 'pageTitle': _0x5873cb[_0x29420c(0x1e7)] });
+                                (-0x26e6 + -0x2072 * 0x1 + 0x4 * 0x11d6, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x470340() {
+                                        var _0x6cea73 = _0x41095c;
+                                        return _0x54650d[_0x6cea73(0xe6)](_0x3f6ecf[_0x6cea73(0x10b)], { 'pageTitle': _0x3f6ecf[_0x6cea73(0xe7)] });
                                     },
-                                    'children': (-0x1 * -0xa0b + -0x212 + -0xd * 0x9d, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x127 * 0x13 + -0x25f * -0xa + 0x2d9b * -0x1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0xffa + -0x1086 + 0x2080 * 0x1, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x22d)],
+                                            (-0x20 * -0x101 + 0x21de + -0x2 * 0x20ff, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0xc6)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (-0x12e7 + -0x1857 + 0x2b3e, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x4 * 0x7fc + -0x24af + 0x4bf, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x24e)](_0x3e1b04, _0x5873cb[_0xa37d02(0x1e7)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xbc)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xe7)])
                                             })
                                         ]
                                     })
                                 }),
-                                (-0x7e6 * -0x3 + 0x17 * 0x1af + -0x3e6b, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x53f47d() {
-                                        var _0x339aed = _0xa37d02;
-                                        return _0x20194a[_0x339aed(0x22c)](_0x5873cb[_0x339aed(0x257)], { 'pageTitle': _0x5873cb[_0x339aed(0x1e4)] });
+                                (-0xcaf + -0x2433 + -0x2 * -0x1871, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x132d00() {
+                                        var _0x35051d = _0x41095c;
+                                        return _0x54650d[_0x35051d(0xe6)](_0x3f6ecf[_0x35051d(0xe3)], { 'pageTitle': _0x3f6ecf[_0x35051d(0xcd)] });
                                     },
-                                    'children': (-0x8 * -0x21e + 0x1b26 + 0x129 * -0x26, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0x2076 + -0xb * 0x1d9 + 0x34c9, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x20cd * 0x1 + 0x1df * -0xd + 0x2 * -0x43d, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x1a4)],
+                                            (-0xa * 0x57 + 0x1b8b + 0x1825 * -0x1, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0xb4)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (-0xd17 + 0x16d4 + -0x9bd, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0x9e1 + -0x4 * 0x2eb + 0x158d, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x24e)](_0x3e1b04, _0x5873cb[_0xa37d02(0x1e4)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0x8d)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xcd)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (-0x209d + -0x1923 + 0x39c0, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (0x1 * 0x4c6 + 0x4 * -0xa6 + -0x22e, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0x2d,
                             'borderTopRightRadius': 0xf,
                             'paddingLeft': 0x8,
                             'children': [
-                                (-0x181b + -0x20a6 + -0x1d * -0x1f5, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x40a9ea() {
-                                        var _0x436ba1 = _0xa37d02;
-                                        return _0x20194a[_0x436ba1(0x22c)](_0x5873cb[_0x436ba1(0x1d3)], { 'pageTitle': _0x5873cb[_0x436ba1(0x246)] });
+                                (-0x46a + -0x267b + 0x2ae5, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x30547d() {
+                                        var _0x8abddf = _0x41095c;
+                                        return _0x54650d[_0x8abddf(0xe6)](_0x3f6ecf[_0x8abddf(0x83)], { 'pageTitle': _0x3f6ecf[_0x8abddf(0x71)] });
                                     },
-                                    'children': (0x1f62 + 0x1b * -0x53 + 0x16a1 * -0x1, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x2f * -0x1 + -0x1253 + 0x941 * 0x2, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0x76d * 0x1 + -0x388 + -0xff * -0xb, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x21d)],
+                                            (-0x22c0 + -0x2294 + 0x12 * 0x3da, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x7f)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x201b + -0x4ca + -0x1b51, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0x395 + 0x1e3d * 0x1 + -0x1aa8, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x1c3)](_0x3e1b04, _0x5873cb[_0xa37d02(0x192)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xbc)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x107)])
                                             })
                                         ]
                                     })
                                 }),
-                                (-0x11d9 + -0x1066 + 0x223f, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x2fe61b() {
-                                        var _0x5b29c8 = _0xa37d02;
-                                        return _0x20194a[_0x5b29c8(0x22c)](_0x5873cb[_0x5b29c8(0x23b)], { 'pageTitle': _0x5873cb[_0x5b29c8(0x224)] });
+                                (0x2448 + 0x17b8 + -0x280 * 0x18, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x3b3d53() {
+                                        var _0x55476e = _0x41095c;
+                                        return _0x54650d[_0x55476e(0xe6)](_0x3f6ecf[_0x55476e(0xc7)], { 'pageTitle': _0x3f6ecf[_0x55476e(0x7c)] });
                                     },
-                                    'children': (0x71c * -0x3 + -0x3 * 0x7cf + -0x39 * -0xc9, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x1 * 0xbcb + 0x1039 + 0x1c04 * -0x1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0x1 * 0x214a + -0x26f + -0x725 * -0x5, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x1f3)],
+                                            (-0x2260 + -0x2659 + 0x48b9 * 0x1, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x108)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (-0x1 * -0x815 + 0x1f67 + -0x277c, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x202e * -0x1 + 0x71f * 0x3 + 0xad1, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x218)](_0x3e1b04, _0x5873cb[_0xa37d02(0x217)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xbc)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x98)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (0x11ef * -0x1 + -0xae * -0xd + 0x919, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x253)], {
-                            'onPress': function _0x5d2e60() {
-                                var _0x152b71 = _0xa37d02;
-                                return _0x20194a[_0x152b71(0x238)](_0x5873cb[_0x152b71(0x1ee)]);
+                        (-0x2407 + 0xbeb + 0x181c, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0x118)], {
+                            'onPress': function _0x4e39fe() {
+                                var _0x510b07 = _0x41095c;
+                                return _0x54650d[_0x510b07(0x11a)](_0x3f6ecf[_0x510b07(0xf4)]);
                             },
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
                             'style': {
-                                'position': _0x5873cb[_0xa37d02(0x225)],
-                                'top': -(0x1 * 0x1cd3 + -0x1 * -0x1e95 + 0x1 * -0x3b63),
-                                'left': _0x5873cb[_0xa37d02(0x219)],
+                                'position': _0x3f6ecf[_0x41095c(0x74)],
+                                'top': -(0x13f2 + -0xaec + -0x901),
+                                'left': _0x3f6ecf[_0x41095c(0xc8)],
                                 'padding': 0x8,
                                 'borderRadius': 0x1e,
-                                'borderColor': _MainStyle[_0xa37d02(0x237)],
+                                'borderColor': _MainStyle[_0x41095c(0x77)],
                                 'borderWidth': 0x5
                             },
-                            'children': (0x16df + 0x17d * -0xf + -0x8c, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                'name': _0x5873cb[_0xa37d02(0x1a6)],
+                            'children': (-0x2 * 0x80e + 0x2403 + -0x13e7, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                'name': _0x3f6ecf[_0x41095c(0x129)],
                                 'size': 0x14,
-                                'color': _MainStyle[_0xa37d02(0x252)]
+                                'color': _MainStyle[_0x41095c(0xb5)]
                             })
                         })
                     ]
                 }),
-                _0x5873cb[_0xa37d02(0x221)](_0x3d302f, _0x5873cb[_0xa37d02(0x242)]) && (-0x8 * -0x49d + 0x37 * 0xb1 + -0x4aef * 0x1, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                    'backgroundColor': _MainStyle[_0xa37d02(0x252)],
-                    'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                    'justifyContent': _0x5873cb[_0xa37d02(0x190)],
+                _0x3f6ecf[_0x41095c(0x10f)](_0x3e993d, _0x3f6ecf[_0x41095c(0x95)]) && (0x136c + -0x253a + -0x2b * -0x6a, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                    'backgroundColor': _MainStyle[_0x41095c(0xb5)],
+                    'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                    'justifyContent': _0x3f6ecf[_0x41095c(0xd1)],
                     'borderTopLeftRadius': 0xf,
                     'borderTopRightRadius': 0xf,
                     'children': [
-                        (-0x210c + 0x1e7e + 0x28e, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (-0x2 * 0xd83 + 0x10ed + 0xa19, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0xf,
                             'borderTopRightRadius': 0x2d,
                             'paddingRight': 0x8,
                             'children': [
-                                (-0x189d * 0x1 + 0x1 * 0xe5d + 0x520 * 0x2, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0xc8c7bc() {
-                                        var _0x1be29a = _0xa37d02;
-                                        return _0x20194a[_0x1be29a(0x22c)](_0x5873cb[_0x1be29a(0x216)], { 'pageTitle': _0x5873cb[_0x1be29a(0x1cc)] });
+                                (-0x152e + 0x1dcc + -0x89e, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x160bfd() {
+                                        var _0x557828 = _0x41095c;
+                                        return _0x54650d[_0x557828(0xe6)](_0x3f6ecf[_0x557828(0xc5)], { 'pageTitle': _0x3f6ecf[_0x557828(0xc2)] });
                                     },
-                                    'children': (0x13 * 0x85 + -0x1a * 0x1 + -0x9c5, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x1 * 0x117b + -0x4 * 0x1e4 + -0x9eb, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x10d0 + 0x1c7b + -0xf19 * 0x3, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x240)],
+                                            (0x1 * 0x145e + 0x154e + -0x17d * 0x1c, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x128)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x2418 + -0xa81 + -0x1997, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0x26a1 + 0x1 * 0x19e + 0x5 * 0x767, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x1b8)](_0x3e1b04, _0x5873cb[_0xa37d02(0x1cc)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0x8d)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xc2)])
                                             })
                                         ]
                                     })
                                 }),
-                                (0xef9 * 0x1 + -0x122f + -0x19b * -0x2, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x10d74c() {
-                                        var _0x25ee8d = _0xa37d02;
-                                        return _0x20194a[_0x25ee8d(0x22c)](_0x5873cb[_0x25ee8d(0x205)], { 'pageTitle': _0x5873cb[_0x25ee8d(0x205)] });
+                                (-0x59 * 0x19 + 0x46d + 0x444, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0xa6a2ba() {
+                                        var _0x1be07c = _0x41095c;
+                                        return _0x54650d[_0x1be07c(0xe6)](_0x3f6ecf[_0x1be07c(0xfc)], { 'pageTitle': _0x3f6ecf[_0x1be07c(0xfc)] });
                                     },
-                                    'children': (-0x17c9 + -0xaba * 0x1 + -0x13 * -0x1d1, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0xf12 * 0x2 + 0x1ff7 + 0x4c7 * -0xd, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0x1559 + -0x24e8 + -0x3 * -0x136b, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x21a)],
+                                            (-0x1f39 * 0x1 + 0x25ba + 0x6f * -0xf, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x11f)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (-0x1 * 0xdbb + 0x39 * -0x67 + 0x24aa, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0xa8c + 0x26aa + -0x1c1e, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x201)](_0x3e1b04, _0x5873cb[_0xa37d02(0x205)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0x8d)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xfc)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (-0x76d + -0xf9 + -0xa * -0xd7, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (-0x1773 * -0x1 + -0x24c7 + 0xd54, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0x2d,
                             'borderTopRightRadius': 0xf,
                             'paddingLeft': 0x8,
                             'children': [
-                                (0x4a8 * -0x2 + -0x5 * -0x7bb + -0x1d57, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x4ffac3() {
-                                        var _0x50c624 = _0xa37d02;
-                                        return _0x20194a[_0x50c624(0x22c)](_0x5873cb[_0x50c624(0x1c0)], { 'pageTitle': _0x5873cb[_0x50c624(0x260)] });
+                                (-0x1d28 + 0x739 * -0x1 + -0x1 * -0x2461, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x328ff6() {
+                                        var _0x481cb4 = _0x41095c;
+                                        return _0x54650d[_0x481cb4(0xe6)](_0x3f6ecf[_0x481cb4(0xc0)], { 'pageTitle': _0x3f6ecf[_0x481cb4(0xff)] });
                                     },
-                                    'children': (-0x11fe + -0x1c03 * -0x1 + -0x5f * 0x1b, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0x45a * -0x2 + 0x268 + -0xb1c, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x1af5 + 0x10c3 + -0xaee * 0x4, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x200)],
+                                            (0x173d * 0x1 + -0x227b + 0xb3e, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x7a)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (-0x21d2 * -0x1 + -0x143b + -0xd97, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0x4eb * -0x5 + 0x2566 + -0x3dfd, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x1c3)](_0x3e1b04, _0x5873cb[_0xa37d02(0x260)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xe1)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xff)])
                                             })
                                         ]
                                     })
                                 }),
-                                (0x238d + -0xcd4 + 0x115 * -0x15, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x3accfa() {
-                                        var _0x12e891 = _0xa37d02;
-                                        return _0x20194a[_0x12e891(0x22c)](_0x5873cb[_0x12e891(0x1ed)], { 'pageTitle': _0x5873cb[_0x12e891(0x1d9)] });
+                                (0xa95 + 0x587 * 0x4 + -0x20b1, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x1833f3() {
+                                        var _0x1361cf = _0x41095c;
+                                        return _0x54650d[_0x1361cf(0xe6)](_0x3f6ecf[_0x1361cf(0x139)], { 'pageTitle': _0x3f6ecf[_0x1361cf(0x110)] });
                                     },
-                                    'children': (0x1 * -0x1d28 + 0x11b0 * -0x1 + 0x2ed8, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x1 * -0xc31 + 0x5 * -0x682 + 0x2cbb, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x13b6 + -0x25e7 * 0x1 + 0x1 * 0x1231, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x232)], {
-                                                'position': _0x5873cb[_0xa37d02(0x1f2)],
-                                                'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                            (-0xb7b + -0x7 * -0x332 + -0x3 * 0x3a1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xe8)], {
+                                                'position': _0x3f6ecf[_0x41095c(0x6e)],
+                                                'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                                 'children': [
-                                                    (0x23 * -0x109 + -0x5 * 0x509 + 0x3d68, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                        'name': _0x5873cb[_0xa37d02(0x215)],
+                                                    (-0x2022 + -0x16f6 + 0x3718, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                        'name': _0x3f6ecf[_0x41095c(0xf7)],
                                                         'size': 0x18,
-                                                        'color': _MainStyle[_0xa37d02(0x252)]
+                                                        'color': _MainStyle[_0x41095c(0xb5)]
                                                     }),
-                                                    _0x5873cb[_0xa37d02(0x247)](_0x3dbf47, -0x2a * -0x1b + -0xace + 0x6 * 0x110) && (-0x8cf * 0x1 + 0x1fef + -0x1720, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x1b5)], {
-                                                        'colorScheme': _0x5873cb[_0xa37d02(0x196)],
-                                                        'rounded': _0x5873cb[_0xa37d02(0x19d)],
-                                                        'variant': _0x5873cb[_0xa37d02(0x1d4)],
-                                                        'position': _0x5873cb[_0xa37d02(0x225)],
-                                                        'top': _0x5873cb[_0xa37d02(0x194)],
-                                                        'right': _0x5873cb[_0xa37d02(0x194)],
+                                                    _0x3f6ecf[_0x41095c(0xf3)](_0x16a437, -0x189 * 0x3 + -0x10bf + 0x155a) && (-0x23e9 + 0x20 * 0xe + 0x2229, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xd0)], {
+                                                        'colorScheme': _0x3f6ecf[_0x41095c(0x10e)],
+                                                        'rounded': _0x3f6ecf[_0x41095c(0x113)],
+                                                        'variant': _0x3f6ecf[_0x41095c(0xbe)],
+                                                        'position': _0x3f6ecf[_0x41095c(0x74)],
+                                                        'top': _0x3f6ecf[_0x41095c(0xee)],
+                                                        'right': _0x3f6ecf[_0x41095c(0xee)],
                                                         'zIndex': 0x1,
-                                                        'minWidth': _0x5873cb[_0xa37d02(0x25e)],
-                                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                                                        'justifyContent': _0x5873cb[_0xa37d02(0x1ac)],
+                                                        'minWidth': _0x3f6ecf[_0x41095c(0x138)],
+                                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                                                        'justifyContent': _0x3f6ecf[_0x41095c(0x11d)],
                                                         '_text': {
-                                                            'fontSize': _0x5873cb[_0xa37d02(0x1b7)],
-                                                            'color': _0x5873cb[_0xa37d02(0x226)],
-                                                            'fontWeight': _0x5873cb[_0xa37d02(0x21b)]
+                                                            'fontSize': _0x3f6ecf[_0x41095c(0x123)],
+                                                            'color': _0x3f6ecf[_0x41095c(0x72)],
+                                                            'fontWeight': _0x3f6ecf[_0x41095c(0x80)]
                                                         },
-                                                        'children': _0x3dbf47
+                                                        'children': _0x16a437
                                                     })
                                                 ]
                                             }),
-                                            (0x2288 + -0x214c + -0x13c, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x3c8 + -0x1 * 0x103d + 0xc75, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
                                                 'children': [
-                                                    _0x5873cb[_0xa37d02(0x234)](_0x3e1b04, _0x5873cb[_0xa37d02(0x1d9)]),
+                                                    _0x3f6ecf[_0x41095c(0x73)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x110)]),
                                                     '\x20',
-                                                    _0x1f675d
+                                                    _0xfdd82b
                                                 ]
                                             })
                                         ]
@@ -718,317 +704,317 @@ var FooterComponents = function FooterComponents(_0x14a5a3) {
                                 })
                             ]
                         }),
-                        (0x2345 + 0x1106 + -0x344b * 0x1, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x253)], {
-                            'onPress': function _0x5b669a() {
-                                var _0x16f381 = _0xa37d02;
-                                return _0x20194a[_0x16f381(0x238)](_0x5873cb[_0x16f381(0x1ee)]);
+                        (0x25 * -0x3 + -0x2359 * -0x1 + 0x1 * -0x22ea, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0x118)], {
+                            'onPress': function _0x3ad103() {
+                                var _0x40afca = _0x41095c;
+                                return _0x54650d[_0x40afca(0x11a)](_0x3f6ecf[_0x40afca(0xf4)]);
                             },
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
                             'style': {
-                                'position': _0x5873cb[_0xa37d02(0x225)],
-                                'top': -(0x2 * -0xf31 + -0x24e1 + 0x4348),
-                                'left': _0x5873cb[_0xa37d02(0x219)],
+                                'position': _0x3f6ecf[_0x41095c(0x74)],
+                                'top': -(-0x83c + -0x1 * -0x1732 + -0xef1),
+                                'left': _0x3f6ecf[_0x41095c(0xc8)],
                                 'padding': 0x8,
                                 'borderRadius': 0x1e,
-                                'borderColor': _MainStyle[_0xa37d02(0x237)],
+                                'borderColor': _MainStyle[_0x41095c(0x77)],
                                 'borderWidth': 0x5
                             },
-                            'children': (0xee9 * -0x2 + 0x1157 + 0xc7b, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                'name': _0x5873cb[_0xa37d02(0x1a6)],
+                            'children': (0x13 * -0x172 + 0x3 * -0x163 + -0x653 * -0x5, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                'name': _0x3f6ecf[_0x41095c(0x129)],
                                 'size': 0x14,
-                                'color': _MainStyle[_0xa37d02(0x252)]
+                                'color': _MainStyle[_0x41095c(0xb5)]
                             })
                         })
                     ]
                 }),
-                _0x5873cb[_0xa37d02(0x1c1)](_0x3d302f, _0x5873cb[_0xa37d02(0x1a1)]) && (-0x1721 + 0x3fb + -0x993 * -0x2, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                    'backgroundColor': _MainStyle[_0xa37d02(0x252)],
-                    'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                    'justifyContent': _0x5873cb[_0xa37d02(0x190)],
+                _0x3f6ecf[_0x41095c(0x92)](_0x3e993d, _0x3f6ecf[_0x41095c(0xd5)]) && (-0x20e5 * 0x1 + 0x7 * 0x13f + 0x7 * 0x374, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                    'backgroundColor': _MainStyle[_0x41095c(0xb5)],
+                    'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                    'justifyContent': _0x3f6ecf[_0x41095c(0xd1)],
                     'borderTopLeftRadius': 0xf,
                     'borderTopRightRadius': 0xf,
                     'children': [
-                        (-0x864 + -0x711 + 0xf75, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (-0x1 * -0x44 + -0x1cf + 0x18b * 0x1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0xf,
                             'borderTopRightRadius': 0x2d,
                             'paddingRight': 0x8,
                             'children': [
-                                (0xb8a + -0x9 * -0x1de + -0x1c58, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x2fa34f() {
-                                        var _0x3bcd9c = _0xa37d02;
-                                        return _0x20194a[_0x3bcd9c(0x22c)](_0x5873cb[_0x3bcd9c(0x257)], { 'pageTitle': _0x5873cb[_0x3bcd9c(0x208)] });
+                                (-0x22d + 0x1 * 0x26d6 + 0x1 * -0x24a9, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x3c86e1() {
+                                        var _0x1fff30 = _0x41095c;
+                                        return _0x54650d[_0x1fff30(0xe6)](_0x3f6ecf[_0x1fff30(0xe3)], { 'pageTitle': _0x3f6ecf[_0x1fff30(0xcc)] });
                                     },
-                                    'children': (0x2 * 0x2bd + 0xc5 + -0x1 * 0x63f, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0xacb + -0x2133 + -0x6 * -0x755, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0x4 * 0x5 + -0x25 * 0xa + 0xa * 0x27, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x1a4)],
+                                            (0x2266 + -0x1 * -0x652 + 0xa2e * -0x4, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0xb4)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x11d5 + -0x2392 + 0x11bd, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x2336 + -0x25f5 + 0x2bf, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x234)](_0x3e1b04, _0x5873cb[_0xa37d02(0x208)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xe1)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xcc)])
                                             })
                                         ]
                                     })
                                 }),
-                                (0x78c + -0x1bca + -0xa1f * -0x2, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x3cf547() {
-                                        var _0x5f51ae = _0xa37d02;
-                                        return _0x20194a[_0x5f51ae(0x22c)](_0x5873cb[_0x5f51ae(0x1e3)], { 'pageTitle': _0x5873cb[_0x5f51ae(0x1a5)] });
+                                (0x1e20 + 0x260f + -0x5 * 0xda3, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x2d0bbf() {
+                                        var _0x11da2e = _0x41095c;
+                                        return _0x54650d[_0x11da2e(0xe6)](_0x3f6ecf[_0x11da2e(0x121)], { 'pageTitle': _0x3f6ecf[_0x11da2e(0x8f)] });
                                     },
-                                    'children': (0x1d15 + 0xb9f + -0x28b4 * 0x1, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0xd54 * 0x1 + -0x61 * -0x19 + 0x3db, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0xf1 * -0xa + 0x1208 + -0x89e, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x22d)],
+                                            (-0x1826 + -0x8e9 * 0x1 + -0xd9 * -0x27, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0xc6)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x6 * 0x16b + -0x1 * -0x14dd + 0x1 * -0x1d5f, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x1 * 0x1e6d + 0x1780 + -0x35ed, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x1eb)](_0x3e1b04, _0x5873cb[_0xa37d02(0x254)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xb2)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x111)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (-0x1 * 0xa85 + -0x1 * 0xcdd + -0x29 * -0x92, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (0x2010 + -0x101 * 0x1e + 0x53 * -0x6, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0x2d,
                             'borderTopRightRadius': 0xf,
                             'paddingLeft': 0x8,
                             'children': [
-                                (-0x25fc + -0x2480 + -0x1c6 * -0x2a, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0xe94713() {
-                                        var _0x430ad2 = _0xa37d02;
-                                        return _0x20194a[_0x430ad2(0x22c)](_0x5873cb[_0x430ad2(0x23b)], { 'pageTitle': _0x5873cb[_0x430ad2(0x224)] });
+                                (0xf93 + -0x1c1f + 0x2c * 0x49, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0xe22351() {
+                                        var _0xb099fe = _0x41095c;
+                                        return _0x54650d[_0xb099fe(0xe6)](_0x3f6ecf[_0xb099fe(0xc7)], { 'pageTitle': _0x3f6ecf[_0xb099fe(0x7c)] });
                                     },
-                                    'children': (-0xe7a + -0x2428 + 0x32a2, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0x23 * 0xcd + -0x1656 + -0x325d * -0x1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0x11 * -0x209 + 0x1b * 0x2f + -0x278e * 0x1, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x1f3)],
+                                            (0xb88 + 0x1801 + -0x1 * 0x2389, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x108)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x1 * 0x24dd + 0x1b4b + -0x4028, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0xb * -0x31b + 0x2333 + -0x455c, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x203)](_0x3e1b04, _0x5873cb[_0xa37d02(0x217)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0x85)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x98)])
                                             })
                                         ]
                                     })
                                 }),
-                                (0x24 * 0x39 + 0x8ba * -0x2 + 0x970, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0xad7624() {
-                                        var _0x5d2e9f = _0xa37d02;
-                                        return _0x20194a[_0x5d2e9f(0x22c)](_0x5873cb[_0x5d2e9f(0x1e1)], { 'pageTitle': _0x5873cb[_0x5d2e9f(0x229)] });
+                                (-0x25d * 0x3 + -0x1f77 + 0x582 * 0x7, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x3d19cc() {
+                                        var _0x4208c3 = _0x41095c;
+                                        return _0x54650d[_0x4208c3(0xe6)](_0x3f6ecf[_0x4208c3(0x8b)], { 'pageTitle': _0x3f6ecf[_0x4208c3(0xe4)] });
                                     },
-                                    'children': (0x1fa6 + 0x12c * 0x3 + 0x7 * -0x506, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x5 * 0x676 + -0x25 * 0x77 + -0xf1b, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0xd * -0x56 + 0x1 * 0x1b3b + -0x1f99, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x240)],
+                                            (-0x439 + 0x1a3 * -0xf + 0x1d * 0xfe, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x128)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0xf53 * -0x1 + -0x2ea + 0xcb * 0x17, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x3 * 0x813 + -0x1 * 0x43f + -0x2 * 0x9fd, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x24e)](_0x3e1b04, _0x5873cb[_0xa37d02(0x229)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xa3)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xe4)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (0xb * 0x287 + 0x3 * 0xfe + -0x1 * 0x1ec7, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x253)], {
-                            'onPress': function _0x19fbd1() {
-                                var _0x404282 = _0xa37d02;
-                                return _0x20194a[_0x404282(0x238)](_0x5873cb[_0x404282(0x1ee)]);
+                        (0x621 + -0xc * 0xc9 + -0x3 * -0x119, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0x118)], {
+                            'onPress': function _0x6a5396() {
+                                var _0x1f7f47 = _0x41095c;
+                                return _0x54650d[_0x1f7f47(0x11a)](_0x3f6ecf[_0x1f7f47(0xf4)]);
                             },
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
                             'style': {
-                                'position': _0x5873cb[_0xa37d02(0x225)],
-                                'top': -(-0x1 * 0xd0a + 0x24cd * 0x1 + -0x17be),
-                                'left': _0x5873cb[_0xa37d02(0x219)],
+                                'position': _0x3f6ecf[_0x41095c(0x74)],
+                                'top': -(0x5 * 0x779 + 0x5ae + -0x2b06),
+                                'left': _0x3f6ecf[_0x41095c(0xc8)],
                                 'padding': 0x8,
                                 'borderRadius': 0x1e,
-                                'borderColor': _MainStyle[_0xa37d02(0x237)],
+                                'borderColor': _MainStyle[_0x41095c(0x77)],
                                 'borderWidth': 0x5
                             },
-                            'children': (0x204d + 0x1393 * -0x1 + -0xcba, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                'name': _0x5873cb[_0xa37d02(0x1a6)],
+                            'children': (0x6b * -0x31 + 0xd2a + -0x1 * -0x751, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                'name': _0x3f6ecf[_0x41095c(0x129)],
                                 'size': 0x14,
-                                'color': _MainStyle[_0xa37d02(0x252)]
+                                'color': _MainStyle[_0x41095c(0xb5)]
                             })
                         })
                     ]
                 }),
-                (_0x5873cb[_0xa37d02(0x202)](_0x3d302f, _0x5873cb[_0xa37d02(0x197)]) || _0x5873cb[_0xa37d02(0x1c5)](_0x3d302f, _0x5873cb[_0xa37d02(0x1fa)])) && (0x5 * 0x2dd + 0x472 * -0x2 + -0x56d, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                    'backgroundColor': _MainStyle[_0xa37d02(0x252)],
-                    'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                    'justifyContent': _0x5873cb[_0xa37d02(0x190)],
+                (_0x3f6ecf[_0x41095c(0xdf)](_0x3e993d, _0x3f6ecf[_0x41095c(0xe2)]) || _0x3f6ecf[_0x41095c(0x92)](_0x3e993d, _0x3f6ecf[_0x41095c(0x6f)])) && (-0x1aea + -0x9ad * 0x2 + 0x2e44, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                    'backgroundColor': _MainStyle[_0x41095c(0xb5)],
+                    'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                    'justifyContent': _0x3f6ecf[_0x41095c(0xd1)],
                     'borderTopLeftRadius': 0xf,
                     'borderTopRightRadius': 0xf,
                     'children': [
-                        (0x1 * -0x244b + 0xab5 * -0x2 + -0xb * -0x53f, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (0x1122 + 0x281 * 0x4 + -0x8b * 0x32, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0xf,
                             'borderTopRightRadius': 0x2d,
                             'paddingRight': 0x8,
                             'children': [
-                                (0x207e + 0x3d * 0x6b + -0x39fd, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x5dc9a5() {
-                                        var _0x3c2da3 = _0xa37d02;
-                                        return _0x20194a[_0x3c2da3(0x22c)](_0x5873cb[_0x3c2da3(0x20e)], { 'pageTitle': _0x5873cb[_0x3c2da3(0x223)] });
+                                (-0x1 * -0x20e6 + 0x1 * -0x1597 + -0xb4f, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0xe8990f() {
+                                        var _0x577226 = _0x41095c;
+                                        return _0x54650d[_0x577226(0xe6)](_0x3f6ecf[_0x577226(0x10d)], { 'pageTitle': _0x3f6ecf[_0x577226(0x90)] });
                                     },
-                                    'children': (-0xd8a + -0x1 * -0x74f + 0x63b, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0x235 * 0xd + 0x205 * -0x1 + 0x1eb6 * 0x1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x70b * 0x4 + 0x2383 + -0x3faf, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x20d)],
+                                            (0x1c76 + -0x1 * 0xa45 + -0x1231, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x11c)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x48e * -0x2 + -0x786 + 0x10a2, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0x1 * -0x1b05 + 0x173c + -0x19f * 0x1f, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x1d8)](_0x3e1b04, _0x5873cb[_0xa37d02(0x1c8)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xe1)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x93)])
                                             })
                                         ]
                                     })
                                 }),
-                                (-0x4da + 0x2 * 0xe4e + -0xbe1 * 0x2, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x98d679() {
-                                        var _0x463094 = _0xa37d02;
-                                        return _0x20194a[_0x463094(0x22c)](_0x5873cb[_0x463094(0x257)], { 'pageTitle': _0x5873cb[_0x463094(0x1e4)] });
+                                (-0x14a2 + 0x1054 + 0x44e, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x5993c9() {
+                                        var _0x42bb79 = _0x41095c;
+                                        return _0x54650d[_0x42bb79(0xe6)](_0x3f6ecf[_0x42bb79(0xe3)], { 'pageTitle': _0x3f6ecf[_0x42bb79(0xcd)] });
                                     },
-                                    'children': (0x1e * 0x90 + 0x2 * 0x88f + -0x21fe * 0x1, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x2141 + 0xd4d + 0x76 * -0x65, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (-0x9ab + 0xe67 + -0x3 * 0x194, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x1a4)],
+                                            (-0x12 * 0x117 + -0x2670 + 0x3a0e, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0xb4)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0x2378 + 0x1d96 + -0x410e, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x791 * -0x1 + 0xb18 + -0x387, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x23c)](_0x3e1b04, _0x5873cb[_0xa37d02(0x1e4)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0x70)](_0x3dad1e, _0x3f6ecf[_0x41095c(0xcd)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (-0x150e + 0x2 * -0x878 + 0x12ff * 0x2, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x21c)], {
-                            'width': _0x5873cb[_0xa37d02(0x1a8)],
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
-                            'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
-                            'justifyContent': _0x5873cb[_0xa37d02(0x1db)],
+                        (0xa9d * -0x1 + -0x982 + -0x141f * -0x1, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0xda)], {
+                            'width': _0x3f6ecf[_0x41095c(0x105)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
+                            'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
+                            'justifyContent': _0x3f6ecf[_0x41095c(0x89)],
                             'paddingX': '5',
                             'paddingY': '4',
                             'borderTopLeftRadius': 0x2d,
                             'borderTopRightRadius': 0xf,
                             'paddingLeft': 0x8,
                             'children': [
-                                (0x5f * 0x2b + -0x4 * 0x13f + 0x1 * -0xaf9, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x3de02a() {
-                                        var _0x4dc6c4 = _0xa37d02;
-                                        return _0x20194a[_0x4dc6c4(0x22c)](_0x5873cb[_0x4dc6c4(0x1d3)], { 'pageTitle': _0x5873cb[_0x4dc6c4(0x246)] });
+                                (0x1 * -0x1e58 + 0x12f * 0x8 + -0x4 * -0x538, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0xf4ba4e() {
+                                        var _0x1f8487 = _0x41095c;
+                                        return _0x54650d[_0x1f8487(0xe6)](_0x3f6ecf[_0x1f8487(0x83)], { 'pageTitle': _0x3f6ecf[_0x1f8487(0x71)] });
                                     },
-                                    'children': (0x2 * -0xb5d + -0x19b1 * -0x1 + -0x2f7, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (-0x13d * -0x4 + 0x1 * -0x9c8 + -0x3 * -0x19c, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x4c0 + 0x23bd * 0x1 + 0x5 * -0x819, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x21d)],
+                                            (-0x3 * -0x2f2 + -0xcae * -0x1 + -0x1584, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x7f)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (0xe1b * 0x1 + -0x1bef * 0x1 + 0xdd4, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (-0x1421 + 0x21fa + -0x1 * 0xdd9, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x203)](_0x3e1b04, _0x5873cb[_0xa37d02(0x192)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0x11e)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x107)])
                                             })
                                         ]
                                     })
                                 }),
-                                (0x15cb * 0x1 + -0x1 * 0x214f + 0xb84, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x19b) + _0xa37d02(0x1c6)], {
-                                    'onPress': function _0x2b8ef3() {
-                                        var _0x3f7edf = _0xa37d02;
-                                        return _0x20194a[_0x3f7edf(0x22c)](_0x5873cb[_0x3f7edf(0x23b)], { 'pageTitle': _0x5873cb[_0x3f7edf(0x224)] });
+                                (0x469 * -0x3 + 0x2dd * -0x2 + 0x12f5, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0xeb) + _0x41095c(0xea)], {
+                                    'onPress': function _0x363294() {
+                                        var _0x45af83 = _0x41095c;
+                                        return _0x54650d[_0x45af83(0xe6)](_0x3f6ecf[_0x45af83(0xc7)], { 'pageTitle': _0x3f6ecf[_0x45af83(0x7c)] });
                                     },
-                                    'children': (0x9 * -0x422 + 0xc84 + 0x18ae, _jsxRuntime[_0xa37d02(0x18f)])(_nativeBase[_0xa37d02(0x245)], {
-                                        'alignItems': _0x5873cb[_0xa37d02(0x1ac)],
+                                    'children': (0x15a5 * 0x1 + 0x1 * -0x24af + 0xf0a, _jsxRuntime[_0x41095c(0xf8)])(_nativeBase[_0x41095c(0x12c)], {
+                                        'alignItems': _0x3f6ecf[_0x41095c(0x11d)],
                                         'children': [
-                                            (0x67 * -0x22 + -0x1c3b + 0x29e9, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                                'name': _0x5873cb[_0xa37d02(0x1f3)],
+                                            (0x1d83 + 0x17bd + -0x3540, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                                'name': _0x3f6ecf[_0x41095c(0x108)],
                                                 'size': 0x18,
-                                                'color': _MainStyle[_0xa37d02(0x252)]
+                                                'color': _MainStyle[_0x41095c(0xb5)]
                                             }),
-                                            (-0x1 * -0x93 + -0x8b * 0xe + -0x7 * -0x101, _jsxRuntime[_0xa37d02(0x19e)])(_nativeBase[_0xa37d02(0x230)], {
-                                                'color': _MainStyle[_0xa37d02(0x252)],
+                                            (0x1 * 0x1f9 + -0x7a0 + 0x5a7, _jsxRuntime[_0x41095c(0xed)])(_nativeBase[_0x41095c(0xb7)], {
+                                                'color': _MainStyle[_0x41095c(0xb5)],
                                                 'fontSize': '8',
-                                                'fontFamily': _MainStyle[_0xa37d02(0x22a) + 'r'],
-                                                'children': _0x5873cb[_0xa37d02(0x235)](_0x3e1b04, _0x5873cb[_0xa37d02(0x217)])
+                                                'fontFamily': _MainStyle[_0x41095c(0xba) + 'r'],
+                                                'children': _0x3f6ecf[_0x41095c(0xb2)](_0x3dad1e, _0x3f6ecf[_0x41095c(0x98)])
                                             })
                                         ]
                                     })
                                 })
                             ]
                         }),
-                        (-0x222e + -0x5f7 + 0x2825 * 0x1, _jsxRuntime[_0xa37d02(0x19e)])(_reactNative[_0xa37d02(0x253)], {
-                            'onPress': function _0x199e98() {
-                                var _0x363dee = _0xa37d02;
-                                return _0x20194a[_0x363dee(0x238)](_0x5873cb[_0x363dee(0x1ee)]);
+                        (0x1b3d + -0x10a5 + 0x1c4 * -0x6, _jsxRuntime[_0x41095c(0xed)])(_reactNative[_0x41095c(0x118)], {
+                            'onPress': function _0x519185() {
+                                var _0x3dd273 = _0x41095c;
+                                return _0x54650d[_0x3dd273(0x11a)](_0x3f6ecf[_0x3dd273(0xf4)]);
                             },
-                            'backgroundColor': _MainStyle[_0xa37d02(0x213)],
+                            'backgroundColor': _MainStyle[_0x41095c(0x102)],
                             'style': {
-                                'position': _0x5873cb[_0xa37d02(0x225)],
-                                'top': -(-0x209a + 0x480 + -0x17 * -0x139),
-                                'left': _0x5873cb[_0xa37d02(0x219)],
+                                'position': _0x3f6ecf[_0x41095c(0x74)],
+                                'top': -(0x1c5d + -0x8c0 + 0x26 * -0x84),
+                                'left': _0x3f6ecf[_0x41095c(0xc8)],
                                 'padding': 0x8,
                                 'borderRadius': 0x1e,
-                                'borderColor': _MainStyle[_0xa37d02(0x237)],
+                                'borderColor': _MainStyle[_0x41095c(0x77)],
                                 'borderWidth': 0x5
                             },
-                            'children': (-0x1456 + 0x248a + -0x2 * 0x81a, _jsxRuntime[_0xa37d02(0x19e)])(_Ionicons[_0xa37d02(0x227)], {
-                                'name': _0x5873cb[_0xa37d02(0x1a6)],
+                            'children': (-0x7c6 + -0x1e7a * 0x1 + 0x2640, _jsxRuntime[_0x41095c(0xed)])(_Ionicons[_0x41095c(0xf9)], {
+                                'name': _0x3f6ecf[_0x41095c(0x129)],
                                 'size': 0x14,
-                                'color': _MainStyle[_0xa37d02(0x252)]
+                                'color': _MainStyle[_0x41095c(0xb5)]
                             })
                         })
                     ]
                 })
             ]
         });
-    }, _default = exports[_0x1db09b(0x227)] = FooterComponents;
+    }, _default = exports[_0x2fcaac(0xf9)] = FooterComponents;

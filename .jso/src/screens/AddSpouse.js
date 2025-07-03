@@ -1726,8 +1726,8 @@
             children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
               source: _$$_REQUIRE(_dependencyMap[20]),
               style: {
-                width: 100,
-                height: 50,
+                width: 80,
+                height: 45,
                 resizeMode: 'contain'
               }
             }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Box, {
@@ -1739,8 +1739,8 @@
             }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
               source: _$$_REQUIRE(_dependencyMap[18]),
               style: {
-                width: 100,
-                height: 50,
+                width: 80,
+                height: 45,
                 resizeMode: 'contain'
               }
             })]

@@ -534,16 +534,16 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
                                     </Actionsheet.Content>
                                 </Actionsheet>
 
-                                {MTD != "" && (
+                                {/* {MTD != "" && (
                                     <View>
                                         <Text style={MainStyle.lable} fontSize="xs">{t("Last 30 Days Sale")}</Text>
                                         <View style={MainStyle.inputbox}>
                                             <Input backgroundColor={lightGrey} readOnly value={MTD + " Bag(s)"} fontFamily={fontRegular} size="md" variant="unstyled" />
                                         </View>
                                     </View>
-                                )}
+                                )} */}
                                 <View>
-                                    <Text style={MainStyle.lable} fontSize="xs">{t("Stock in Hand")}</Text>
+                                    <Text style={MainStyle.lable} fontSize="xs">{t("Stock Available for Allocation")}</Text>
                                     <View style={MainStyle.inputbox}>
                                         <Input backgroundColor={lightGrey} readOnly value={stock + " Bag(s)"} fontFamily={fontRegular} size="md" variant="unstyled" />
                                     </View>

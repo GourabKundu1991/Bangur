@@ -979,9 +979,9 @@ const AddSpouseScreen = ({ navigation, route }) => {
                     <VStack style={MainStyle.popbox} space={10}>
                         <Image source={require('../assets/images/check-green.gif')} style={{ width: 100, height: 100, resizeMode: 'contain', position: 'relative', marginTop: 30 }} />
                         <HStack space={5} justifyContent={'center'} alignItems={'center'} flexWrap={'wrap'}>
-                            <Image source={require('../assets/images/logo.jpg')} style={{ width: 100, height: 50, resizeMode: 'contain' }} />
+                            <Image source={require('../assets/images/logo.jpg')} style={{ width: 80, height: 45, resizeMode: 'contain' }} />
                             <Box style={{ backgroundColor: greyColor, height: 50, width: 2 }}></Box>
-                            <Image source={require('../assets/images/SHREEMATI.png')} style={{ width: 100, height: 50, resizeMode: 'contain' }} />
+                            <Image source={require('../assets/images/SHREEMATI.png')} style={{ width: 80, height: 45, resizeMode: 'contain' }} />
                         </HStack>
                         <VStack justifyContent="center" alignItems="center">
                             <Text color={darkGrey} fontSize="sm" fontFamily={fontSemiBold} textAlign="center">{t("Thank you for registering with")}</Text>
