@@ -198,7 +198,7 @@ public class ReactNativeBlobUtil extends NativeBlobUtilsSpec {
 
     @Override
     public void slice(String src, String dest, double start, double end, Promise promise) {
-       delegate.slice(src, dest, (int) start, (int) end, promise);
+       delegate.slice(src, dest, (long) start, (long) end, promise);
     }
 
     @Override

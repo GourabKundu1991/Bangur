@@ -20,7 +20,7 @@
 #import "RCTBridgeModule.h"
 #endif
 
-@interface ReactNativeBlobUtilRequest : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate>
+@interface ReactNativeBlobUtilRequest : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate>
 
 @property (nullable, nonatomic) NSString * taskId;
 @property (nonatomic) long long expectedBytes;
@@ -33,7 +33,7 @@
 @property (nullable, nonatomic) NSError * error;
 @property (nullable, nonatomic) ReactNativeBlobUtilProgress *progressConfig;
 @property (nullable, nonatomic) ReactNativeBlobUtilProgress *uploadProgressConfig;
-@property (nullable, nonatomic, weak) NSURLSessionDataTask *task;
+@property (nullable, nonatomic, weak) NSURLSessionTask *task;
 
 - (void) sendRequest:(NSDictionary  * _Nullable )options
        contentLength:(long)contentLength

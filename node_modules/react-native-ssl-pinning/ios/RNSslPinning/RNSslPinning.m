@@ -4,6 +4,9 @@
 #import "RNSslPinning.h"
 #import "AFNetworking.h"
 
+static void (^_requestObserver)(NSURLRequest *) = nil;
+static void (^_responseObserver)(NSURLRequest *, NSHTTPURLResponse *, NSData *, NSTimeInterval) = nil;
+
 @interface RNSslPinning()
 
 @property (nonatomic, strong) NSURLSessionConfiguration *sessionConfig;
@@ -12,6 +15,18 @@
 
 @implementation RNSslPinning
 RCT_EXPORT_MODULE();
+
++ (void)setRequestObserver:(void (^)(NSURLRequest *))observer {
+#if DEBUG
+  _requestObserver = [observer copy];
+#endif
+}
+
++ (void)setResponseObserver:(void (^)(NSURLRequest *, NSHTTPURLResponse *, NSData *, NSTimeInterval))observer {
+#if DEBUG
+  _responseObserver = [observer copy];
+#endif
+}
 
 - (instancetype)init
 {
@@ -65,14 +80,44 @@ RCT_EXPORT_METHOD(removeCookieByName: (NSString *)cookieName
 
 
 -(void)performRequest:(AFURLSessionManager*)manager  obj:(NSDictionary *)obj  request:(NSMutableURLRequest*) request callback:(RCTResponseSenderBlock) callback  {
-    
+#if DEBUG
+    if (_requestObserver) {
+        _requestObserver(request);
+    }
+#endif
+
+    NSURLRequest *capturedRequest = [request copy]; // 🧠 Save the original request - for interceptors purposes
+    NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970] * 1000.0;
+
+
     [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id _Nullable responseObject, NSError * _Nullable error) {
-        
-        
         NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
         NSString *bodyString = [[NSString alloc] initWithData: responseObject encoding:NSUTF8StringEncoding];
         NSInteger statusCode = httpResp.statusCode;
         
+        // Don't create a synthetic response - pass the real one to observer along with error
+        if (error && (!httpResp || httpResp.statusCode == 0)) {
+            bodyString = error.localizedDescription;
+        }
+
+#if DEBUG
+        if (_responseObserver) {
+            NSData *rawData = nil;
+            if (responseObject) {
+                rawData = [responseObject isKindOfClass:[NSData class]]
+                    ? responseObject
+                    : [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:nil];
+            } else if (error) {
+                // Create error response data if we have an error but no response data
+                NSString *errorMessage = error.localizedDescription ?: @"Unknown error";
+                rawData = [errorMessage dataUsingEncoding:NSUTF8StringEncoding];
+            }
+            
+            // Pass the raw error to our observer with the start time
+            _responseObserver(capturedRequest, httpResp, rawData ?: [NSData new], startTime);
+        }
+#endif
+
         if (!error) {
             // if(obj[@"responseType"]){
             NSString * responseType = obj[@"responseType"];

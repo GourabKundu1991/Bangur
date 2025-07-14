@@ -14,6 +14,7 @@ import Toast from 'react-native-simple-toast';
 import { SelectList } from 'react-native-dropdown-select-list';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import moment from 'moment';
+import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 
 const RegisterMemberScreen = ({ navigation, route }) => {
 
@@ -84,10 +85,23 @@ const RegisterMemberScreen = ({ navigation, route }) => {
     const miniYear = new Date(year - 100, month, day);
 
     const regexNum = /^[6-9]\d{9}$/;
+    const regexAlp = /[^a-zA-Z ]/g;
 
     const [preApproved, setPreApproved] = React.useState("");
     const [loginUserType, setLoginUserType] = React.useState("");
-    
+
+    const [uploadImgBox, setUploadImgBox] = React.useState(false);
+
+    const [aadhaarFrontImage, setAadhaarFrontImage] = React.useState("");
+    const [aadhaarBackImage, setAadhaarBackImage] = React.useState("");
+    const [panImage, setPanImage] = React.useState("");
+
+    const [isPicker, setIsPicker] = React.useState(false);
+    const [imageType, setImageType] = React.useState("");
+
+    const [fullName, setFullName] = React.useState("");
+    const [gender, setGender] = React.useState("");
+
 
     useEffect(() => {
         AsyncStorage.getItem('userToken').then(val => {
@@ -215,6 +229,90 @@ const RegisterMemberScreen = ({ navigation, route }) => {
         setAadhaarVerifed(false);
         setFetchedDetails("");
         setPanDOB("");
+        setFullName("");
+        setGender("");
+        setDOB("");
+    }
+
+    const onUploadDoc = () => {
+        Keyboard.dismiss();
+        if (selectIDProof == 1 && aadhaarFrontImage == "") {
+            Toast.show(t("Please upload Aadhaar Front Image"), Toast.LONG);
+        } else if (selectIDProof == 1 && aadhaarBackImage == "") {
+            Toast.show(t("Please upload Aadhaar Back Image"), Toast.LONG);
+        } else if (selectIDProof == 2 && panImage == "") {
+            Toast.show(t("Please upload PAN Image"), Toast.LONG);
+        } else {
+            setUploadImgBox(false);
+            if (selectIDProof == 1) {
+                setAadhaarVerifed(true);
+            } else if (selectIDProof == 2) {
+                setPanVerifed(true);
+            }
+        }
+    }
+
+    const closeUpload = () => {
+        setUploadImgBox(false);
+        setAadhaarFrontImage("");
+        setAadhaarBackImage("");
+        setPanImage("");
+    }
+
+    const onPickerOpen = (val) => {
+        setIsPicker(true);
+        setImageType(val);
+        console.log(val);
+    }
+    const onPickerClose = () => {
+        setIsPicker(false);
+    }
+
+    const openProfilePicker = (type) => {
+        onPickerClose();
+        if (type == "library") {
+            launchImageLibrary(
+                {
+                    mediaType: 'photo',
+                    includeBase64: true,
+                    maxHeight: 1500,
+                    maxWidth: 1500,
+                },
+                (response) => {
+                    //console.log(response);
+                    if (response.assets != undefined) {
+                        if (imageType == "AadhaarFrontImage") {
+                            setAadhaarFrontImage(response.assets[0].base64);
+                        } else if (imageType == "AadhaarBackImage") {
+                            setAadhaarBackImage(response.assets[0].base64);
+                        } else if (imageType == "PanImage") {
+                            setPanImage(response.assets[0].base64);
+                        }
+                    }
+                },
+            )
+        } else if (type == "camera") {
+            launchCamera(
+                {
+                    mediaType: 'photo',
+                    includeBase64: true,
+                    maxHeight: 1500,
+                    maxWidth: 1500,
+                },
+                (response) => {
+                    //console.log(response.assets);
+                    if (response.assets != undefined) {
+                        if (imageType == "AadhaarFrontImage") {
+                            setAadhaarFrontImage(response.assets[0].base64);
+                        } else if (imageType == "AadhaarBackImage") {
+                            setAadhaarBackImage(response.assets[0].base64);
+                        } else if (imageType == "PanImage") {
+                            setPanImage(response.assets[0].base64);
+                        }
+                    }
+                },
+            )
+        }
     }
 
     const getOTP = () => {
@@ -238,12 +336,25 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 .then((responseJson) => {
                     setLoading(false);
                     //console.log("Get OTP:", responseJson);
-                    if (responseJson.bstatus === 1) {
-                        setForOTP(true);
-                        setTranId(responseJson.tran_id);
-                        Toast.show(responseJson.message, Toast.LONG);
+                    if (responseJson.aadhaar_pan_api_disabled == 1) {
+                        setUploadImgBox(true);
+                        setFetchedDetails(responseJson.details);
+                        setPincode(responseJson.details.pinCode);
+                        setState(responseJson.details.stateName);
+                        setStateID(responseJson.details.stateId);
+                        setDistrict(responseJson.details.districtName);
+                        setDistrictID(responseJson.details.districtId);
+                        setPanNumber(responseJson.details.pan);
+                        setFullName(responseJson.details.name);
+                        setGender(responseJson.details.gender);
                     } else {
-                        Toast.show(responseJson.message, Toast.LONG);
+                        if (responseJson.bstatus === 1) {
+                            setForOTP(true);
+                            setTranId(responseJson.tran_id);
+                            Toast.show(responseJson.message, Toast.LONG);
+                        } else {
+                            Toast.show(responseJson.message, Toast.LONG);
+                        }
                     }
                 })
                 .catch((error) => {
@@ -318,7 +429,7 @@ const RegisterMemberScreen = ({ navigation, route }) => {
             setLoading(true);
             let formdata = new FormData();
             formdata.append("panNumber", panNumber);
-            formdata.append("dob", moment(panDOB).format('YYYY-MM-DD'));
+            formdata.append("dob", moment(panDOB).format('DD-MM-YYYY'));
             formdata.append("lang_code", currentLanguage);
             fetch(`${BASE_URL}/pan/verify`, {
                 method: 'POST',
@@ -332,17 +443,27 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 .then((responseJson) => {
                     setLoading(false);
                     //console.log("Verify PAN:", responseJson);
-                    if (responseJson.bstatus == 1) {
-                        setPanVerifed(true);
+                    if (responseJson.aadhaar_pan_api_disabled == 1) {
+                        setUploadImgBox(true);
                         setFetchedDetails(responseJson.details);
                         setPincode(responseJson.details.pinCode);
                         setState(responseJson.details.stateName);
                         setStateID(responseJson.details.stateId);
                         setDistrict(responseJson.details.districtName);
                         setDistrictID(responseJson.details.districtId);
-                        Toast.show(responseJson.message, Toast.LONG);
                     } else {
-                        Toast.show(responseJson.message, Toast.LONG);
+                        if (responseJson.bstatus == 1) {
+                            setPanVerifed(true);
+                            setFetchedDetails(responseJson.details);
+                            setPincode(responseJson.details.pinCode);
+                            setState(responseJson.details.stateName);
+                            setStateID(responseJson.details.stateId);
+                            setDistrict(responseJson.details.districtName);
+                            setDistrictID(responseJson.details.districtId);
+                            Toast.show(responseJson.message, Toast.LONG);
+                        } else {
+                            Toast.show(responseJson.message, Toast.LONG);
+                        }
                     }
                 })
                 .catch((error) => {
@@ -449,8 +570,14 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 Toast.show(t("Please Verify your Aadahar No."), Toast.LONG);
             } else if (selectIDProof == 2 && !panVerifed) {
                 Toast.show(t("Please Verify your PAN No."), Toast.LONG);
+            } else if (fetchedDetails.name == "" && fullName == "") {
+                Toast.show(t("Please enter your Name as per ID proof"), Toast.LONG);
+            } else if (fullName != "" && regexAlp.test(fullName)) {
+                Toast.show(t("Name field accept only alphabets"), Toast.LONG);
+            } else if (fetchedDetails.gender == "" && gender == "") {
+                Toast.show(t("Please select your Gender as per ID proof"), Toast.LONG);
             } else if (fetchedDetails.dob == "" && dob == "") {
-                Toast.show(t("Please select your Date of Birth"), Toast.LONG);
+                Toast.show(t("Please select your Date of Birth as per ID proof"), Toast.LONG);
             } else {
                 var crntstp = currentStep + 1;
                 setCurrentStep(crntstp);
@@ -586,9 +713,9 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 formdata.append("mobile", mobileNumber);
                 formdata.append("aadhaar", aadhaarNumber);
                 formdata.append("pan", panNumber);
-                formdata.append("name", (fetchedDetails.name == undefined ? "" : fetchedDetails.name));
-                formdata.append("gender", (fetchedDetails.gender == "Male" ? "M" : "F"));
-                formdata.append("dob", (fetchedDetails.dob == undefined ? dob : fetchedDetails.dob));
+                formdata.append("name", (fetchedDetails.name == "" ? fullName : fetchedDetails.name));
+                formdata.append("gender", (gender == "Male" ? "M" : "F"));
+                formdata.append("dob", (fetchedDetails.dob == "" ? moment(dob).format('DD-MM-YYYY') : fetchedDetails.dob));
                 formdata.append("address", (fetchedDetails.address == "" ? address : fetchedDetails.address));
                 formdata.append("pincode", pincode);
                 formdata.append("stateId", stateID);
@@ -603,6 +730,9 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 formdata.append("parentId", dealer);
                 formdata.append("refmobile", "");
                 formdata.append("refConId", "");
+                formdata.append("aadhaarFront", aadhaarFrontImage);
+                formdata.append("aadhaarBack", aadhaarBackImage);
+                formdata.append("panImage", panImage);
                 fetch(`${BASE_URL}/registration/submit`, {
                     method: 'POST',
                     headers: {
@@ -829,14 +959,36 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                                         <View>
                                             <Text style={MainStyle.lable} fontSize="xs">{t("Name as per ID Proof")} <Text color={dangerColor}>*</Text></Text>
                                             <View style={MainStyle.inputbox}>
-                                                <Input value={fetchedDetails.name} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
+                                                {fetchedDetails.name != "" ?
+                                                    <Input value={fullName} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
+                                                    :
+                                                    <Input value={fullName} onChangeText={(text) => setFullName(text)} fontFamily={fontRegular} size="md" variant="unstyled" />
+                                                }
                                             </View>
                                         </View>
                                         <View>
                                             <Text style={MainStyle.lable} fontSize="xs">{t("Gender")} <Text color={dangerColor}>*</Text></Text>
-                                            <View style={MainStyle.inputbox}>
-                                                <Input value={fetchedDetails.gender} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
-                                            </View>
+                                            {fetchedDetails.gender != "" ?
+                                                <Input value={gender} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
+                                                :
+                                                <View style={MainStyle.inputbox}>
+                                                    <Select variant="unstyled" size="md" height={43}
+                                                        onValueChange={value => setGender(value)}
+                                                        selectedValue={gender}
+                                                        style={{ paddingLeft: 15 }}
+                                                        fontFamily={fontRegular}
+                                                        placeholder={t("Please Select")}
+                                                        dropdownCloseIcon={<Icon name="chevron-down-outline" style={{ marginRight: 10 }} size={20} />}
+                                                        dropdownOpenIcon={<Icon name="chevron-up-outline" style={{ marginRight: 10 }} size={20} />}
+                                                        _selectedItem={{
+                                                            backgroundColor: greyColor,
+                                                            endIcon: <Icon name="checkmark-circle" size={20} color={successColor} style={{ right: 0, position: 'absolute' }} />
+                                                        }}>
+                                                        <Select.Item label="Male" value="Male" />
+                                                        <Select.Item label="Female" value="Female" />
+                                                    </Select>
+                                                </View>
+                                            }
                                         </View>
                                         <View>
                                             <Text style={MainStyle.lable} fontSize="xs">{t("Date of Birth")} <Text color={dangerColor}>*</Text></Text>
@@ -844,7 +996,7 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                                                 {fetchedDetails.dob != "" ?
                                                     <Input value={fetchedDetails.dob} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
                                                     :
-                                                    <Pressable style={styles.inputbox} onPress={() => showDatePicker()}>
+                                                    <Pressable style={styles.inputbox} onPress={() => showDatePicker("DOB")}>
                                                         <HStack style={{ paddingHorizontal: 10, height: 43 }} alignItems="center" paddingY={Platform.OS == 'ios' ? '1.5' : '2.5'} justifyContent="space-between">
                                                             <Text color={dob != '' ? '#111111' : '#999999'} fontSize="sm"> {dob != '' ? moment(dob).format('DD-MM-YYYY') : ""}</Text>
                                                             <Icon name="calendar-outline" size={18} color={warningColor} />
@@ -1076,6 +1228,73 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                     </VStack>
                 </View>
             )}
+
+            {uploadImgBox && (
+                <View style={MainStyle.spincontainer}>
+                    <VStack space={3} style={{ backgroundColor: lightColor, paddingVertical: 30, paddingHorizontal: 25, borderRadius: 12, width: '85%' }}>
+                        <Text color={darkColor} fontFamily={fontBold} fontSize="lg" textAlign="center" marginBottom={3}>{t("Upload Doccuments")}</Text>
+                        {selectIDProof == 1 && (
+                            <VStack flexWrap={"wrap"} space={2} justifyContent="space-between" alignItems="center">
+                                <Stack width={"100%"} space={2}>
+                                    <HStack alignItems="center" mt="3" space={0}>
+                                        <Icon name="attach-outline" size={20} color={darkColor} />
+                                        <Text color={darkColor} fontSize="sm">{t("Aadhaar Front Image")} *</Text>
+                                    </HStack>
+                                    <Pressable onPress={() => onPickerOpen("AadhaarFrontImage")} style={MainStyle.inputbox}>
+                                        <Image source={aadhaarFrontImage != "" ? { uri: 'data:image/jpeg;base64,' + aadhaarFrontImage } : require('../assets/images/uploadimage.png')} alt="image" resizeMode='contain' style={{ width: '100%', height: 120 }} />
+                                        <Box bg={dangerColor} borderRadius={6} position="absolute" bottom="2" right="2" width="45" height="45" justifyContent="center" alignItems="center" overflow="hidden">
+                                            <Icon name="camera" size={26} color="#ffffff" />
+                                        </Box>
+                                    </Pressable>
+                                </Stack>
+                                <Stack width={"100%"} space={2}>
+                                    <HStack alignItems="center" mt="3" space={0}>
+                                        <Icon name="attach-outline" size={20} color={darkColor} />
+                                        <Text color={darkColor} fontSize="sm">{t("Aadhaar Back Image")} *</Text>
+                                    </HStack>
+                                    <Pressable onPress={() => onPickerOpen("AadhaarBackImage")} style={MainStyle.inputbox}>
+                                        <Image source={aadhaarBackImage != "" ? { uri: 'data:image/jpeg;base64,' + aadhaarBackImage } : require('../assets/images/uploadimage.png')} alt="image" resizeMode='contain' style={{ width: '100%', height: 120 }} />
+                                        <Box bg={dangerColor} borderRadius={6} position="absolute" bottom="2" right="2" width="45" height="45" justifyContent="center" alignItems="center" overflow="hidden">
+                                            <Icon name="camera" size={26} color="#ffffff" />
+                                        </Box>
+                                    </Pressable>
+                                </Stack>
+                            </VStack>
+                        )}
+                        {selectIDProof == 2 && (
+                            <VStack flexWrap={"wrap"} space={2} justifyContent="space-between" alignItems="center">
+                                <Stack width={"100%"} space={2}>
+                                    <HStack alignItems="center" mt="3" space={0}>
+                                        <Icon name="attach-outline" size={20} color={darkColor} />
+                                        <Text color={darkColor} fontSize="sm">{t("PAN Card Image")} *</Text>
+                                    </HStack>
+                                    <Pressable onPress={() => onPickerOpen("PanImage")} style={MainStyle.inputbox}>
+                                        <Image source={panImage != "" ? { uri: 'data:image/jpeg;base64,' + panImage } : require('../assets/images/uploadimage.png')} alt="image" resizeMode='contain' style={{ width: '100%', height: 120 }} />
+                                        <Box bg={dangerColor} borderRadius={6} position="absolute" bottom="2" right="2" width="45" height="45" justifyContent="center" alignItems="center" overflow="hidden">
+                                            <Icon name="camera" size={26} color="#ffffff" />
+                                        </Box>
+                                    </Pressable>
+                                </Stack>
+                            </VStack>
+                        )}
+                        <Button marginTop={6} style={MainStyle.solidbtn} onPress={() => onUploadDoc()}>
+                            <Text color={lightColor} fontFamily={fontSemiBold} fontSize="sm">{t("Upload")}</Text>
+                        </Button>
+                        {/* <Button variant="unstyled" backgroundColor={greyColor} borderRadius={8} onPress={() => closeUpload()}>
+                            <Text color={darkColor} fontFamily={fontSemiBold} fontSize="xs">{t("Close")}</Text>
+                        </Button> */}
+                    </VStack>
+                </View>
+            )}
+            <Actionsheet isOpen={isPicker} onClose={onPickerClose}>
+                <Actionsheet.Content>
+                    <Text color="#666666" fontSize="md" textAlign="center">{t("Select Image Source")}</Text>
+                    <Actionsheet.Item onPress={() => openProfilePicker("library")}>{t("Load from Library")}</Actionsheet.Item>
+                    <Actionsheet.Item onPress={() => openProfilePicker("camera")}>{t("Use Camera")}</Actionsheet.Item>
+                    <Actionsheet.Item onPress={() => openProfilePicker("cancel")}>{t("Cancel")}</Actionsheet.Item>
+                </Actionsheet.Content>
+            </Actionsheet>
+
             {successPop && (
                 <View style={MainStyle.spincontainer}>
                     <VStack style={MainStyle.popbox} space={10}>

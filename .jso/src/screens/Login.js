@@ -22,8 +22,7 @@
   var _reactNativeSslPinning = _$$_REQUIRE(_dependencyMap[17]);
   var _apiClient = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[18]));
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[19]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   //import { getHash, getOtp, startOtpListener } from 'react-native-otp-verify';
 
   //import CountDown from 'react-native-countdown-component';
@@ -50,49 +49,49 @@
       mobileNumber = _React$useState8[0],
       setMobileNumber = _React$useState8[1];
     var _React$useState9 = _react.default.useState(''),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      otpValue = _React$useState10[0],
-      setOtpValue = _React$useState10[1];
-    var _React$useState11 = _react.default.useState([]),
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      otpValue = _React$useState0[0],
+      setOtpValue = _React$useState0[1];
+    var _React$useState1 = _react.default.useState([]),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      otpArrya = _React$useState10[0],
+      setOtpArrya = _React$useState10[1];
+    var _React$useState11 = _react.default.useState(false),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      otpArrya = _React$useState12[0],
-      setOtpArrya = _React$useState12[1];
-    var _React$useState13 = _react.default.useState(false),
+      isResend = _React$useState12[0],
+      setIsResend = _React$useState12[1];
+    var _React$useState13 = _react.default.useState(3),
       _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      isResend = _React$useState14[0],
-      setIsResend = _React$useState14[1];
-    var _React$useState15 = _react.default.useState(3),
+      timer = _React$useState14[0],
+      setTimer = _React$useState14[1];
+    var _React$useState15 = _react.default.useState(false),
       _React$useState16 = (0, _slicedToArray2.default)(_React$useState15, 2),
-      timer = _React$useState16[0],
-      setTimer = _React$useState16[1];
+      pendingPop = _React$useState16[0],
+      setPendingPop = _React$useState16[1];
     var _React$useState17 = _react.default.useState(false),
       _React$useState18 = (0, _slicedToArray2.default)(_React$useState17, 2),
-      pendingPop = _React$useState18[0],
-      setPendingPop = _React$useState18[1];
-    var _React$useState19 = _react.default.useState(false),
+      isAccept = _React$useState18[0],
+      setIsAccept = _React$useState18[1];
+    var _React$useState19 = _react.default.useState(''),
       _React$useState20 = (0, _slicedToArray2.default)(_React$useState19, 2),
-      isAccept = _React$useState20[0],
-      setIsAccept = _React$useState20[1];
+      officerName = _React$useState20[0],
+      setOfficerName = _React$useState20[1];
     var _React$useState21 = _react.default.useState(''),
       _React$useState22 = (0, _slicedToArray2.default)(_React$useState21, 2),
-      officerName = _React$useState22[0],
-      setOfficerName = _React$useState22[1];
+      officerPhone = _React$useState22[0],
+      setOfficerPhone = _React$useState22[1];
     var _React$useState23 = _react.default.useState(''),
       _React$useState24 = (0, _slicedToArray2.default)(_React$useState23, 2),
-      officerPhone = _React$useState24[0],
-      setOfficerPhone = _React$useState24[1];
-    var _React$useState25 = _react.default.useState(''),
+      officerType = _React$useState24[0],
+      setOfficerType = _React$useState24[1];
+    var _React$useState25 = _react.default.useState(false),
       _React$useState26 = (0, _slicedToArray2.default)(_React$useState25, 2),
-      officerType = _React$useState26[0],
-      setOfficerType = _React$useState26[1];
-    var _React$useState27 = _react.default.useState(false),
+      alertColor = _React$useState26[0],
+      setAlertColor = _React$useState26[1];
+    var _React$useState27 = _react.default.useState(''),
       _React$useState28 = (0, _slicedToArray2.default)(_React$useState27, 2),
-      alertColor = _React$useState28[0],
-      setAlertColor = _React$useState28[1];
-    var _React$useState29 = _react.default.useState(''),
-      _React$useState30 = (0, _slicedToArray2.default)(_React$useState29, 2),
-      deviceToken = _React$useState30[0],
-      setDeviceToken = _React$useState30[1];
+      deviceToken = _React$useState28[0],
+      setDeviceToken = _React$useState28[1];
     var regexNum = /^[6-9]\d{9}$/;
     (0, _react.useEffect)(function () {
       var unsubscribe = navigation.addListener('focus', function () {

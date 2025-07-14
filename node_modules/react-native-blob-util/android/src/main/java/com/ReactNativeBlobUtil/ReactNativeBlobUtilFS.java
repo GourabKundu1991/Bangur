@@ -678,7 +678,7 @@ class ReactNativeBlobUtilFS {
      * @param end    End byte offset
      * @param encode NOT IMPLEMENTED
      */
-    static void slice(String path, String dest, int start, int end, String encode, Promise promise) {
+    static void slice(String path, String dest, long start, long end, String encode, Promise promise) {
         try {
             dest = ReactNativeBlobUtilUtils.normalizePath(dest);
 
@@ -696,13 +696,13 @@ class ReactNativeBlobUtilFS {
                 return;
             }
             FileOutputStream out = new FileOutputStream(new File(dest));
-            int skipped = (int) in.skip(start);
+            long skipped = in.skip(start);
             if (skipped != start) {
                 promise.reject("EUNSPECIFIED", "Skipped " + skipped + " instead of the specified " + start + " bytes");
                 return;
             }
             byte[] buffer = new byte[10240];
-            int remain = end - start;
+            int remain = (int) (end - start);
             while (remain > 0) {
                 int read = in.read(buffer, 0, 10240);
                 if (read <= 0) {

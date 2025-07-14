@@ -174,8 +174,8 @@ public class ReactNativeBlobUtil extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void slice(String src, String dest, int start, int end, Promise promise) {
-        delegate.slice(src, dest, start, end, promise);
+    public void slice(String src, String dest, double start, double end, Promise promise) {
+        delegate.slice(src, dest, (long) start, (long) end, promise);
     }
 
     @ReactMethod

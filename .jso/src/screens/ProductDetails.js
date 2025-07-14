@@ -18,8 +18,7 @@
   var _native = _$$_REQUIRE(_dependencyMap[13]);
   var _Footer = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14]));
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[15]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   var ProductDetailsScreen = function ProductDetailsScreen(_ref) {
     var navigation = _ref.navigation,
       route = _ref.route;
@@ -44,25 +43,25 @@
       cartcount = _React$useState8[0],
       setCartCount = _React$useState8[1];
     var _React$useState9 = _react.default.useState(""),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      relodecounter = _React$useState10[0],
-      setRelodecounter = _React$useState10[1];
-    var _React$useState11 = _react.default.useState(""),
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      relodecounter = _React$useState0[0],
+      setRelodecounter = _React$useState0[1];
+    var _React$useState1 = _react.default.useState(""),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      pdetails = _React$useState10[0],
+      setPdetails = _React$useState10[1];
+    var _React$useState11 = _react.default.useState(true),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      pdetails = _React$useState12[0],
-      setPdetails = _React$useState12[1];
-    var _React$useState13 = _react.default.useState(true),
+      step1 = _React$useState12[0],
+      setStep1 = _React$useState12[1];
+    var _React$useState13 = _react.default.useState(false),
       _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      step1 = _React$useState14[0],
-      setStep1 = _React$useState14[1];
-    var _React$useState15 = _react.default.useState(false),
+      step2 = _React$useState14[0],
+      setStep2 = _React$useState14[1];
+    var _React$useState15 = _react.default.useState(route.params),
       _React$useState16 = (0, _slicedToArray2.default)(_React$useState15, 2),
-      step2 = _React$useState16[0],
-      setStep2 = _React$useState16[1];
-    var _React$useState17 = _react.default.useState(route.params),
-      _React$useState18 = (0, _slicedToArray2.default)(_React$useState17, 2),
-      mypropsdata = _React$useState18[0],
-      setMypropsData = _React$useState18[1];
+      mypropsdata = _React$useState16[0],
+      setMypropsData = _React$useState16[1];
     var productID = route.params.productID;
     var productSpacification = mypropsdata.productParams;
     // setPdetails(productSpacification)

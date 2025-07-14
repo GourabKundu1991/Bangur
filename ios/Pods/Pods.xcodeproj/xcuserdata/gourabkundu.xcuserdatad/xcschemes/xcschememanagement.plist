@@ -514,6 +514,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>react-native-blob-util-ReactNativeBlobUtilPrivacyInfo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-blob-util.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>react-native-detect-frida.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -525,6 +535,11 @@
 			<false/>
 		</dict>
 		<key>react-native-image-picker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-pdf.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -545,6 +560,11 @@
 			<false/>
 		</dict>
 		<key>react-native-ssl-public-key-pinning.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-webview.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

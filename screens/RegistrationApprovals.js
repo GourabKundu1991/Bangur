@@ -38,10 +38,13 @@ const RegistrationApprovalsScreen = ({ navigation, route }) => {
 
     const [pageNumber, setPageNumber] = React.useState(1);
     const [totalPage, setTotalPage] = React.useState("");
-     const [userType, setUserType] = React.useState("");
+    const [userType, setUserType] = React.useState("");
 
     const [customerName, setCustomerName] = React.useState('');
     const [customerId, setCustomerId] = React.useState('');
+
+    const [zoomImage, setZoomImage] = React.useState(false);
+    const [imagePath, setImagePath] = React.useState("");
 
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
@@ -72,6 +75,14 @@ const RegistrationApprovalsScreen = ({ navigation, route }) => {
         setIsReset(false);
     }
 
+    const openImage = (path) => {
+        console.log(path);
+        setImagePath(path);
+        setTimeout(function () {
+            setZoomImage(true);
+        }, 500);
+    }
+
     const getAllData = (dateValue) => {
         AsyncStorage.getItem('userToken').then(val => {
             if (val != null) {
@@ -97,7 +108,7 @@ const RegistrationApprovalsScreen = ({ navigation, route }) => {
                 })
                     .then((response) => response.json())
                     .then((responseJson) => {
-                        //console.log("Approval:", responseJson);
+                        console.log("Approval:", responseJson);
                         if (responseJson.bstatus == 1) {
                             setLoading(false);
                             setApprovalList(responseJson.influncers);
@@ -377,6 +388,24 @@ const RegistrationApprovalsScreen = ({ navigation, route }) => {
                                                     <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontBold}>Self</Text>
                                                 }
                                             </HStack>
+                                            {item.aadhaar_front_image != "" && (
+                                            <HStack alignItems="center">
+                                                <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{("Aadhaar Front")}:</Text>
+                                                <Pressable onPress={() => openImage(item.aadhaar_front_image)}><Image source={{ uri: item.aadhaar_front_image }} style={{ width: 80, height: 80, borderWidth: 1, borderColor: '#111111' }} resizeMode='contain' /></Pressable>
+                                            </HStack>
+                                            )}
+                                            {item.aadhaar_back_image != "" && (
+                                            <HStack alignItems="center">
+                                                <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{("Aadhaar Back")}:</Text>
+                                                <Pressable onPress={() => openImage(item.aadhaar_back_image)}><Image source={{ uri: item.aadhaar_back_image }} style={{ width: 80, height: 80, borderWidth: 1, borderColor: '#111111' }} resizeMode='contain' /></Pressable>
+                                            </HStack>
+                                            )}
+                                            {item.pan_image != "" && (
+                                                <HStack alignItems="center">
+                                                    <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{("PAN Image")}:</Text>
+                                                    <Pressable onPress={() => openImage(item.pan_image)}><Image source={{ uri: item.pan_image }} style={{ width: 80, height: 80, borderWidth: 1, borderColor: '#111111' }} resizeMode='contain' /></Pressable>
+                                                </HStack>
+                                            )}
                                             <VStack space={1} marginTop={4} paddingY={3} borderColor={lightColor} borderTopWidth={4}>
                                                 <Text marginBottom={1} color="#111111" fontSize="sm" fontFamily={fontBold}>{t("Dealer Details")}</Text>
                                                 <HStack alignItems="center">
@@ -528,11 +557,19 @@ const RegistrationApprovalsScreen = ({ navigation, route }) => {
                     </VStack>
                 </View>
             )}
-            <FooterComponents navigation={navigation} component={userType}/>
+            <FooterComponents navigation={navigation} component={userType} />
             {loading && (
                 <View style={MainStyle.spincontainer}>
                     <ActivityIndicator animating={loading} size="large" color={warningColor} />
                 </View>
+            )}
+            {zoomImage && (
+                <VStack flex={1} style={{ backgroundColor: "rgba(0,0,0,0.85)", zIndex: 99, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                    <Image source={{ uri: imagePath }} style={{ width: '90%', height: 400, marginBottom: 20, resizeMode: 'contain' }} />
+                    <TouchableOpacity onPress={() => setZoomImage(false)}>
+                        <Icon name="close-circle-outline" size={32} color="#ffffff" />
+                    </TouchableOpacity>
+                </VStack>
             )}
         </NativeBaseProvider>
     );

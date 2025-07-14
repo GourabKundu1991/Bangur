@@ -680,8 +680,7 @@ RCT_EXPORT_METHOD(readFile:(NSString *)path
         }
         if([encoding isEqualToString:@"ascii"]) {
             resolve((NSMutableArray *)content);
-        }
-        if([encoding isEqualToString:@"base64"]) {
+        } else if([encoding isEqualToString:@"base64"]) {
             resolve([content base64EncodedStringWithOptions:0]);
         } else {
             resolve([[NSString alloc] initWithData:content encoding:NSUTF8StringEncoding]);

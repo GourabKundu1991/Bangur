@@ -190,6 +190,81 @@ getCookies('domain')
 })
 
 ```
+
+## Debug Interceptors & Request/Response Observers
+
+This library now supports custom debug interceptors and request/response observers to help with debugging network requests in development builds. These features are only active in DEBUG builds for security reasons.
+
+### Summary of Recent Enhancements
+
+**Latest Updates (June 2025):**
+1. **Android Custom Debug Interceptor Support** - Added ability to inject custom OkHttp interceptors for debugging network traffic
+2. **Android Debug Interceptor Refactoring** - Improved code organization by extracting interceptor logic into a dedicated method
+3. **iOS Request/Response Observers** - Added observer methods to monitor network requests and responses on iOS for debugging purposes
+
+### Android Debug Interceptor
+
+Add custom debug interceptors to monitor and modify HTTP requests/responses in Android:
+
+```java
+// In your Android application code (Java/Kotlin)
+import com.toyberman.Utils.OkHttpUtils;
+import okhttp3.Interceptor;
+import okhttp3.logging.HttpLoggingInterceptor;
+
+// Example: Add a custom logging interceptor
+Interceptor customInterceptor = new HttpLoggingInterceptor()
+    .setLevel(HttpLoggingInterceptor.Level.BODY);
+
+// Add the interceptor (only works in DEBUG builds)
+OkHttpUtils.addInterceptorForDebug(customInterceptor);
+```
+
+**Features:**
+- Only active in DEBUG builds for security
+- Supports any OkHttp interceptor
+- Useful for detailed request/response logging
+- Can be used for request modification during development
+
+### iOS Request/Response Observers
+
+Monitor network requests and responses on iOS using observer methods:
+
+```objc
+// In your iOS application code (Objective-C)
+#import "RNSslPinning.h"
+
+// Set request observer to monitor outgoing requests
+[RNSslPinning setRequestObserver:^(NSURLRequest *request) {
+    NSLog(@"Request: %@ %@", request.HTTPMethod, request.URL);
+    // Add your custom request monitoring logic here
+}];
+
+// Set response observer to monitor responses with timing
+[RNSslPinning setResponseObserver:^(NSURLRequest *request, NSHTTPURLResponse *response, NSData *data, NSTimeInterval startTime) {
+    NSTimeInterval duration = ([[NSDate date] timeIntervalSince1970] * 1000.0) - startTime;
+    NSLog(@"Response: %ld for %@ (%.2fms)", (long)response.statusCode, request.URL, duration);
+    // Add your custom response monitoring logic here
+}];
+```
+
+**Features:**
+- Only active in DEBUG builds for security  
+- Monitor all outgoing requests
+- Track response data, status codes, and timing
+- Handle both successful responses and error cases
+- Captures original request details for correlation
+
+### Use Cases
+
+- **Network Debugging**: Monitor request/response flow during development
+- **Performance Analysis**: Track request timing and response sizes
+- **SSL/TLS Troubleshooting**: Debug certificate pinning issues
+- **API Development**: Verify request formats and response handling
+- **Integration Testing**: Monitor network calls during automated tests
+
+**Note**: These debugging features are automatically disabled in production builds for security and performance reasons.
+
   ## Multipart request (FormData)
 
 ```javascript

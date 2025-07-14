@@ -951,6 +951,30 @@ public class MainApplication extends Application implements ReactApplication {
     }
 ````
 
+#### Kotlin
+````kotlin
+....
+import com.ReactNativeBlobUtil.ReactNativeBlobUtilUtils;
+import javax.net.ssl.X509TrustManager
+...
+
+public class MainApplication extends Application implements ReactApplication {
+    ...
+    public void onCreate() {
+       ...
+        ReactNativeBlobUtilUtils.sharedTrustManager = object : X509TrustManager {
+          override fun checkClientTrusted(chain: Array<java.security.cert.X509Certificate>, authType: String) {}
+
+          override fun checkServerTrusted(chain: Array<java.security.cert.X509Certificate>, authType: String) {}
+
+          override fun getAcceptedIssuers(): Array<java.security.cert.X509Certificate> {
+            return arrayOf()
+          }
+        };
+        ...
+    }
+````
+
 ```js
 ReactNativeBlobUtil.config({
     trusty: true

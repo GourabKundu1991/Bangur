@@ -20,8 +20,7 @@
   var _reactNativeCountdownComponent = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15]));
   var _cryptoJs = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[16]));
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[17]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   // import { OtpInput } from "react-native-otp-entry";
 
   var RedeemsonOTP = function RedeemsonOTP(_ref) {
@@ -52,9 +51,9 @@
       otpValue = _React$useState8[0],
       setOtpValue = _React$useState8[1];
     var _React$useState9 = _react.default.useState(''),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      originalOTP = _React$useState10[0],
-      setOriginalOTP = _React$useState10[1];
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      originalOTP = _React$useState0[0],
+      setOriginalOTP = _React$useState0[1];
     var _ref2 = route.params || {},
       _ref2$orderid = _ref2.orderid,
       orderid = _ref2$orderid === undefined ? 'No card ID provided' : _ref2$orderid;
@@ -68,35 +67,35 @@
       _ref5$address = _ref5.address,
       address = _ref5$address === undefined ? '' : _ref5$address;
     console.log("orderid================", orderid.orderid);
-    var _React$useState11 = _react.default.useState(""),
+    var _React$useState1 = _react.default.useState(""),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      Phoneno = _React$useState10[0],
+      setPhoneno = _React$useState10[1];
+    var _React$useState11 = _react.default.useState(180),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      Phoneno = _React$useState12[0],
-      setPhoneno = _React$useState12[1];
-    var _React$useState13 = _react.default.useState(180),
+      timeLeft = _React$useState12[0],
+      setTimeLeft = _React$useState12[1];
+    var _React$useState13 = _react.default.useState(false),
       _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      timeLeft = _React$useState14[0],
-      setTimeLeft = _React$useState14[1];
+      timeup = _React$useState14[0],
+      setTimeUp = _React$useState14[1];
     var _React$useState15 = _react.default.useState(false),
       _React$useState16 = (0, _slicedToArray2.default)(_React$useState15, 2),
-      timeup = _React$useState16[0],
-      setTimeUp = _React$useState16[1];
-    var _React$useState17 = _react.default.useState(false),
-      _React$useState18 = (0, _slicedToArray2.default)(_React$useState17, 2),
-      showresendotpbuttom = _React$useState18[0],
-      setShowresendOtp = _React$useState18[1];
+      showresendotpbuttom = _React$useState16[0],
+      setShowresendOtp = _React$useState16[1];
     var _useState3 = (0, _react.useState)(3),
       _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
       timer = _useState4[0],
       setTimer = _useState4[1]; // Initialize timer state, e.g., 1 minute
 
+    var _React$useState17 = _react.default.useState(""),
+      _React$useState18 = (0, _slicedToArray2.default)(_React$useState17, 2),
+      userType = _React$useState18[0],
+      setUserType = _React$useState18[1];
     var _React$useState19 = _react.default.useState(""),
       _React$useState20 = (0, _slicedToArray2.default)(_React$useState19, 2),
-      userType = _React$useState20[0],
-      setUserType = _React$useState20[1];
-    var _React$useState21 = _react.default.useState(""),
-      _React$useState22 = (0, _slicedToArray2.default)(_React$useState21, 2),
-      cartcount = _React$useState22[0],
-      setCartCount = _React$useState22[1];
+      cartcount = _React$useState20[0],
+      setCartCount = _React$useState20[1];
     var cartCount = function cartCount() {
       _asyncStorage.default.getItem('userToken').then(function (val) {
         if (val != null) {

@@ -18,8 +18,7 @@
   var _reactNativeModalDatetimePicker = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13]));
   var _Footer = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14]));
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[15]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   var RegistrationApprovalsScreen = function RegistrationApprovalsScreen(_ref) {
     var navigation = _ref.navigation,
       route = _ref.route;
@@ -42,61 +41,69 @@
       searchDate = _React$useState8[0],
       setSearchDate = _React$useState8[1];
     var _React$useState9 = _react.default.useState(false),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      actionPOP = _React$useState10[0],
-      setActionPOP = _React$useState10[1];
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      actionPOP = _React$useState0[0],
+      setActionPOP = _React$useState0[1];
+    var _React$useState1 = _react.default.useState(""),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      status = _React$useState10[0],
+      setStatus = _React$useState10[1];
     var _React$useState11 = _react.default.useState(""),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      status = _React$useState12[0],
-      setStatus = _React$useState12[1];
-    var _React$useState13 = _react.default.useState(""),
-      _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      reason = _React$useState14[0],
-      setReason = _React$useState14[1];
+      reason = _React$useState12[0],
+      setReason = _React$useState12[1];
     var _useDisclose = (0, _nativeBase.useDisclose)(),
       isOpen = _useDisclose.isOpen,
       onOpen = _useDisclose.onOpen,
       onClose = _useDisclose.onClose;
+    var _React$useState13 = _react.default.useState(""),
+      _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
+      influId = _React$useState14[0],
+      setInfluId = _React$useState14[1];
     var _React$useState15 = _react.default.useState(""),
       _React$useState16 = (0, _slicedToArray2.default)(_React$useState15, 2),
-      influId = _React$useState16[0],
-      setInfluId = _React$useState16[1];
-    var _React$useState17 = _react.default.useState(""),
+      moreValue = _React$useState16[0],
+      setMoreValue = _React$useState16[1];
+    var _React$useState17 = _react.default.useState(false),
       _React$useState18 = (0, _slicedToArray2.default)(_React$useState17, 2),
-      moreValue = _React$useState18[0],
-      setMoreValue = _React$useState18[1];
+      isReset = _React$useState18[0],
+      setIsReset = _React$useState18[1];
     var _React$useState19 = _react.default.useState(false),
       _React$useState20 = (0, _slicedToArray2.default)(_React$useState19, 2),
-      isReset = _React$useState20[0],
-      setIsReset = _React$useState20[1];
+      isDatePickerVisible = _React$useState20[0],
+      setDatePickerVisibility = _React$useState20[1];
     var _React$useState21 = _react.default.useState(false),
       _React$useState22 = (0, _slicedToArray2.default)(_React$useState21, 2),
-      isDatePickerVisible = _React$useState22[0],
-      setDatePickerVisibility = _React$useState22[1];
-    var _React$useState23 = _react.default.useState(false),
+      successPop = _React$useState22[0],
+      setSuccessPop = _React$useState22[1];
+    var _React$useState23 = _react.default.useState(1),
       _React$useState24 = (0, _slicedToArray2.default)(_React$useState23, 2),
-      successPop = _React$useState24[0],
-      setSuccessPop = _React$useState24[1];
-    var _React$useState25 = _react.default.useState(1),
+      pageNumber = _React$useState24[0],
+      setPageNumber = _React$useState24[1];
+    var _React$useState25 = _react.default.useState(""),
       _React$useState26 = (0, _slicedToArray2.default)(_React$useState25, 2),
-      pageNumber = _React$useState26[0],
-      setPageNumber = _React$useState26[1];
+      totalPage = _React$useState26[0],
+      setTotalPage = _React$useState26[1];
     var _React$useState27 = _react.default.useState(""),
       _React$useState28 = (0, _slicedToArray2.default)(_React$useState27, 2),
-      totalPage = _React$useState28[0],
-      setTotalPage = _React$useState28[1];
-    var _React$useState29 = _react.default.useState(""),
+      userType = _React$useState28[0],
+      setUserType = _React$useState28[1];
+    var _React$useState29 = _react.default.useState(''),
       _React$useState30 = (0, _slicedToArray2.default)(_React$useState29, 2),
-      userType = _React$useState30[0],
-      setUserType = _React$useState30[1];
+      customerName = _React$useState30[0],
+      setCustomerName = _React$useState30[1];
     var _React$useState31 = _react.default.useState(''),
       _React$useState32 = (0, _slicedToArray2.default)(_React$useState31, 2),
-      customerName = _React$useState32[0],
-      setCustomerName = _React$useState32[1];
-    var _React$useState33 = _react.default.useState(''),
+      customerId = _React$useState32[0],
+      setCustomerId = _React$useState32[1];
+    var _React$useState33 = _react.default.useState(false),
       _React$useState34 = (0, _slicedToArray2.default)(_React$useState33, 2),
-      customerId = _React$useState34[0],
-      setCustomerId = _React$useState34[1];
+      zoomImage = _React$useState34[0],
+      setZoomImage = _React$useState34[1];
+    var _React$useState35 = _react.default.useState(""),
+      _React$useState36 = (0, _slicedToArray2.default)(_React$useState35, 2),
+      imagePath = _React$useState36[0],
+      setImagePath = _React$useState36[1];
     (0, _react.useEffect)(function () {
       var unsubscribe = navigation.addListener('focus', function () {
         setLoading(true);
@@ -120,6 +127,13 @@
       setLoading(true);
       getAllData("");
       setIsReset(false);
+    };
+    var openImage = function openImage(path) {
+      console.log(path);
+      setImagePath(path);
+      setTimeout(function () {
+        setZoomImage(true);
+      }, 500);
     };
     var getAllData = function getAllData(dateValue) {
       _asyncStorage.default.getItem('userToken').then(function (val) {
@@ -146,7 +160,7 @@
           }).then(function (response) {
             return response.json();
           }).then(function (responseJson) {
-            //console.log("Approval:", responseJson);
+            console.log("Approval:", responseJson);
             if (responseJson.bstatus == 1) {
               setLoading(false);
               setApprovalList(responseJson.influncers);
@@ -664,6 +678,81 @@
                         fontFamily: _MainStyle.fontBold,
                         children: "Self"
                       })]
+                    }), item.aadhaar_front_image != "" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                      alignItems: "center",
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                        width: '40%',
+                        color: _MainStyle.darkGrey,
+                        fontSize: "xs",
+                        fontFamily: _MainStyle.fontRegular,
+                        children: ["Aadhaar Front", ":"]
+                      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Pressable, {
+                        onPress: function onPress() {
+                          return openImage(item.aadhaar_front_image);
+                        },
+                        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
+                          source: {
+                            uri: item.aadhaar_front_image
+                          },
+                          style: {
+                            width: 80,
+                            height: 80,
+                            borderWidth: 1,
+                            borderColor: '#111111'
+                          },
+                          resizeMode: "contain"
+                        })
+                      })]
+                    }), item.aadhaar_back_image != "" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                      alignItems: "center",
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                        width: '40%',
+                        color: _MainStyle.darkGrey,
+                        fontSize: "xs",
+                        fontFamily: _MainStyle.fontRegular,
+                        children: ["Aadhaar Back", ":"]
+                      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Pressable, {
+                        onPress: function onPress() {
+                          return openImage(item.aadhaar_back_image);
+                        },
+                        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
+                          source: {
+                            uri: item.aadhaar_back_image
+                          },
+                          style: {
+                            width: 80,
+                            height: 80,
+                            borderWidth: 1,
+                            borderColor: '#111111'
+                          },
+                          resizeMode: "contain"
+                        })
+                      })]
+                    }), item.pan_image != "" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                      alignItems: "center",
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                        width: '40%',
+                        color: _MainStyle.darkGrey,
+                        fontSize: "xs",
+                        fontFamily: _MainStyle.fontRegular,
+                        children: ["PAN Image", ":"]
+                      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Pressable, {
+                        onPress: function onPress() {
+                          return openImage(item.pan_image);
+                        },
+                        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
+                          source: {
+                            uri: item.pan_image
+                          },
+                          style: {
+                            width: 80,
+                            height: 80,
+                            borderWidth: 1,
+                            borderColor: '#111111'
+                          },
+                          resizeMode: "contain"
+                        })
+                      })]
                     }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
                       space: 1,
                       marginTop: 4,
@@ -1042,6 +1131,39 @@
           size: "large",
           color: _MainStyle.warningColor
         })
+      }), zoomImage && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
+        flex: 1,
+        style: {
+          backgroundColor: "rgba(0,0,0,0.85)",
+          zIndex: 99,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center'
+        },
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
+          source: {
+            uri: imagePath
+          },
+          style: {
+            width: '90%',
+            height: 400,
+            marginBottom: 20,
+            resizeMode: 'contain'
+          }
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.TouchableOpacity, {
+          onPress: function onPress() {
+            return setZoomImage(false);
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+            name: "close-circle-outline",
+            size: 32,
+            color: "#ffffff"
+          })
+        })]
       })]
     });
   };

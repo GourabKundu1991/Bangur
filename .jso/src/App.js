@@ -57,9 +57,9 @@
   var _SpouseDetails = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[52]));
   var _AddressVerification = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[53]));
   var _GalleryDetails = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[54]));
-  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[55]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  var _security = _$$_REQUIRE(_dependencyMap[55]);
+  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[56]);
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   /**
    * Sample React Native App
    * https://github.com/facebook/react-native
@@ -75,6 +75,12 @@
   var Drawer = (0, _drawer.createDrawerNavigator)();
   var SecurityServiceManager = _reactNative.NativeModules.SecurityServiceManager;
   var App = function App() {
+    (0, _react.useEffect)(function () {
+      var monitor = (0, _security.startFridaMonitoring)(5000);
+      return function () {
+        return clearInterval(monitor);
+      };
+    }, []);
     var checkRootAndEmulator = /*#__PURE__*/function () {
       var _ref = (0, _asyncToGenerator2.default)(function* () {
         try {

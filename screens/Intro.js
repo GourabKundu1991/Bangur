@@ -85,7 +85,6 @@ const IntroScreen = ({ navigation }) => {
         },
       })
       .then(response => {
-        console.log('RESSS:: ', response);
         return response;
       })
       .then(responseJson => {

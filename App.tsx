@@ -69,6 +69,7 @@ import AddSpouseScreen from './screens/AddSpouse';
 import MySpouseScreen from './screens/SpouseDetails';
 import AddressVerificationScreen from './screens/AddressVerification';
 import GalleryDetailsScreen from './screens/GalleryDetails';
+import { startFridaMonitoring } from './src/security';
 
 
 const Stack = createStackNavigator();
@@ -79,6 +80,11 @@ const Drawer = createDrawerNavigator();
 const { SecurityServiceManager } = NativeModules;
 
 const App = () => {
+
+  useEffect(() => {
+    const monitor = startFridaMonitoring(5000); 
+    return () => clearInterval(monitor); 
+  }, []);
 
   const checkRootAndEmulator = async () => {
     try {

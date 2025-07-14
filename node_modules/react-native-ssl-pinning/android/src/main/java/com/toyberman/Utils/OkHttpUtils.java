@@ -31,6 +31,7 @@ import javax.net.ssl.X509TrustManager;
 
 import okhttp3.CertificatePinner;
 import okhttp3.CookieJar;
+import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
@@ -54,6 +55,14 @@ public class OkHttpUtils {
     private static SSLContext sslContext;
     private static String content_type = "application/json; charset=utf-8";
     public static MediaType mediaType = MediaType.parse(content_type);
+    private static Interceptor customDebugInterceptor = null;
+
+    // This method is used to add a custom debug interceptor if it exists and the build is in debug mode.
+    private static void addCustomDebugInterceptor(OkHttpClient.Builder clientBuilder) {
+        if (BuildConfig.DEBUG && customDebugInterceptor != null) {
+            clientBuilder.addInterceptor(customDebugInterceptor);
+        }
+    }
 
     public static OkHttpClient buildOkHttpClient(CookieJar cookieJar, String domainName, ReadableArray certs, ReadableMap options) {
 
@@ -82,6 +91,7 @@ public class OkHttpUtils {
             if (BuildConfig.DEBUG) {
                 clientBuilder.addInterceptor(logging);
             }
+            addCustomDebugInterceptor(clientBuilder);
 
             client = clientBuilder
                     .build();
@@ -123,6 +133,7 @@ public class OkHttpUtils {
             if (BuildConfig.DEBUG) {
                 clientBuilder.addInterceptor(logging);
             }
+             addCustomDebugInterceptor(clientBuilder);
 
             defaultClient = clientBuilder.build();
         }
@@ -314,6 +325,12 @@ public class OkHttpUtils {
         if (map.hasKey("content-type")) {
             content_type = map.getString("content-type");
             mediaType = MediaType.parse(content_type);
+        }
+    }
+
+    public static void addInterceptorForDebug(Interceptor interceptor) {
+        if (BuildConfig.DEBUG) {
+            customDebugInterceptor = interceptor;
         }
     }
 }

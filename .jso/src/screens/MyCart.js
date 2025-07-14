@@ -19,8 +19,7 @@
   var _Footer = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14]));
   var _native = _$$_REQUIRE(_dependencyMap[15]);
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[16]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   var MyCartScreen = function MyCartScreen(_ref) {
     var navigation = _ref.navigation,
       route = _ref.route;
@@ -45,17 +44,17 @@
       quantities = _React$useState8[0],
       setQuantities = _React$useState8[1];
     var _React$useState9 = _react.default.useState(""),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      forrelode = _React$useState10[0],
-      setForRelode = _React$useState10[1];
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      forrelode = _React$useState0[0],
+      setForRelode = _React$useState0[1];
+    var _React$useState1 = _react.default.useState(""),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      cartcount = _React$useState10[0],
+      setCartCount = _React$useState10[1];
     var _React$useState11 = _react.default.useState(""),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      cartcount = _React$useState12[0],
-      setCartCount = _React$useState12[1];
-    var _React$useState13 = _react.default.useState(""),
-      _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      userType = _React$useState14[0],
-      setUserType = _React$useState14[1];
+      userType = _React$useState12[0],
+      setUserType = _React$useState12[1];
     var cartCount = function cartCount() {
       _asyncStorage.default.getItem('userToken').then(function (val) {
         if (val != null) {

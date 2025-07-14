@@ -6,12 +6,11 @@
 export const ReactNativeBlobUtil: ReactNativeBlobUtilStatic;
 export type ReactNativeBlobUtil = ReactNativeBlobUtilStatic;
 export default ReactNativeBlobUtil;
-import {filedescriptor} from './types';
-import CanceledFetchError from './class/ReactNativeBlobUtilCanceledFetchError'
+import { filedescriptor } from "./types";
+import CanceledFetchError from "./class/ReactNativeBlobUtilCanceledFetchError";
 
 interface ReactNativeBlobUtilStatic {
-    fetch(method: Methods, url: string, headers?: { [key: string]: string }, body?: any
-        | null): StatefulPromise<FetchBlobResponse>;
+    fetch(method: Methods, url: string, headers?: { [key: string]: string }, body?: any | null): StatefulPromise<FetchBlobResponse>;
 
     base64: { encode(input: string): string; decode(input: string): string };
     android: AndroidApi;
@@ -30,7 +29,7 @@ interface ReactNativeBlobUtilStatic {
     polyfill: Polyfill;
     // this require external module https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/oboe
     JSONStream: any;
-    CanceledFetchError: CanceledFetchError
+    CanceledFetchError: CanceledFetchError;
 }
 
 export interface Polyfill {
@@ -173,8 +172,7 @@ export declare namespace PolyfillFileReader {
     const DONE: number;
 }
 
-export declare class PolyfillEvent {
-}
+export declare class PolyfillEvent {}
 
 export interface PolyfillProgressEvent extends EventTarget {
     lengthComputable: boolean;
@@ -240,8 +238,7 @@ export declare namespace PolyfillBlob {
     function setLog(level: number): void;
 }
 
-export declare class PolyfillFile extends PolyfillBlob {
-}
+export declare class PolyfillFile extends PolyfillBlob {}
 
 export interface PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
     upload: PolyfillXMLHttpRequestEventTarget;
@@ -407,7 +404,7 @@ export interface FS {
      * @param  data Data to write to the file.
      * @param  encoding Encoding of data (Optional).
      */
-     writeFileWithTransform(path: string, data: string | number[], encoding?: Encoding): Promise<void>;
+    writeFileWithTransform(path: string, data: string | number[], encoding?: Encoding): Promise<void>;
 
     appendFile(path: string, data: string | number[], encoding?: Encoding | "uri"): Promise<number>;
 
@@ -423,7 +420,7 @@ export interface FS {
      * @param  path Path of the file.
      * @param  encoding Encoding of read stream.
      */
-     readFileWithTransform(path: string, encoding: Encoding, bufferSize?: number): Promise<any>;
+    readFileWithTransform(path: string, encoding: Encoding, bufferSize?: number): Promise<any>;
 
     /**
      * Check if file exists and if it is a folder.
@@ -456,6 +453,12 @@ export interface FS {
     asset(path: string): string;
 
     df(): Promise<RNFetchBlobDf>;
+
+    /**
+     * Returns the path for the app group.
+     * @param  {string} groupName Name of app group
+     */
+    pathForAppGroup(groupName: string): Promise<string>;
 }
 
 export interface RNFetchBlobDfIOS {
@@ -569,27 +572,27 @@ export interface AndroidDownloadOption {
     /**
      * Title string to be displayed when the file added to Downloads app.
      */
-    title: string
+    title: string;
 
     /**
      * File description to be displayed when the file added to Downloads app.
      */
-    description: string
+    description: string;
 
     /**
      * MIME string of the file.
      */
-    mime: string
+    mime: string;
 
     /**
      * URI string of the file.
      */
-    path: string
+    path: string;
 
     /**
      * Boolean value that determines if notification will be displayed.
      */
-    showNotification: boolean
+    showNotification: boolean;
 }
 
 export interface AndroidApi {
@@ -642,7 +645,7 @@ export interface StatefulPromise<T> extends Promise<T> {
     /**
      * Add an event listener with custom configuration
      */
-    progress(config: { count?: number, interval?: number }, callback: (received: number, total: number) => void): StatefulPromise<FetchBlobResponse>;
+    progress(config: { count?: number; interval?: number }, callback: (received: number, total: number) => void): StatefulPromise<FetchBlobResponse>;
 
     /**
      * Add an event listener with custom configuration.
@@ -652,7 +655,7 @@ export interface StatefulPromise<T> extends Promise<T> {
     /**
      * Add an event listener with custom configuration
      */
-    uploadProgress(config: { count?: number, interval?: number }, callback: (sent: number, total: number) => void): StatefulPromise<FetchBlobResponse>;
+    uploadProgress(config: { count?: number; interval?: number }, callback: (sent: number, total: number) => void): StatefulPromise<FetchBlobResponse>;
 
     /**
      * An IOS only API, when IOS app turns into background network tasks will be terminated after ~180 seconds,
@@ -686,10 +689,8 @@ export declare class ReactNativeBlobUtilSession {
  * A set of configurations that will be injected into a fetch method, with the following properties.
  */
 export interface ReactNativeBlobUtilConfig {
-
-    Progress?: { count?: number, interval?: number };
-    UploadProgress?: { count?: number, interval?: number };
-
+    Progress?: { count?: number; interval?: number };
+    UploadProgress?: { count?: number; interval?: number };
 
     /**
      * When this property is true, the downloaded data will overwrite the existing file. (true by default)
@@ -811,8 +812,7 @@ export interface ReactNativeBlobUtilStream {
     onEnd(): void;
 }
 
-export declare class ReactNativeBlobUtilFile {
-}
+export declare class ReactNativeBlobUtilFile {}
 
 export declare class ReactNativeBlobUtilStat {
     lastModified: number;
@@ -834,7 +834,6 @@ export interface MediaCollection {
      */
     copyToMediaStore(filedata: filedescriptor, mediatype: Mediatype, path: string): Promise<string>;
 
-
     /**
      * Creates a new File in the collection.
      * @param filedata
@@ -847,26 +846,26 @@ export interface MediaCollection {
      * @param uri URI of the destination mediastore file
      * @param path Path to the existing file which should be copied
      */
-    writeToMediafile(uri: string, path: string): Promise<string>
+    writeToMediafile(uri: string, path: string): Promise<string>;
 
     /**
      * Copies and transforms an existing file to a mediastore file. Make sure FileTransformer is set
      * @param uri URI of the destination mediastore file
      * @param path Path to the existing file which should be copied
      */
-    writeToMediafileWithTransform(uri: string, path: string): Promise<string>
+    writeToMediafileWithTransform(uri: string, path: string): Promise<string>;
 
     /**
      * Copies a file from the mediastore to the apps internal storage
      * @param contenturi URI of the mediastore file
      * @param destpath Path for the file in the internal storage
      */
-    copyToInternal(contenturi: string, destpath: string): Promise<string>
+    copyToInternal(contenturi: string, destpath: string): Promise<string>;
 
     /**
      * Gets the blob data for a given URI in the mediastore
      * @param contenturi
      * @param encoding
      */
-    getBlob(contenturi: string, encoding: string): Promise<string>
+    getBlob(contenturi: string, encoding: string): Promise<string>;
 }

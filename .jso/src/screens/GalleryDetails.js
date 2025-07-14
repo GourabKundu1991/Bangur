@@ -19,8 +19,7 @@
   var _reactNativePdf = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14]));
   var _apiClient = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15]));
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[16]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   var GalleryDetailsScreen = function GalleryDetailsScreen(_ref) {
     var navigation = _ref.navigation,
       route = _ref.route;
@@ -46,34 +45,34 @@
       allImages = _React$useState8[0],
       setAllImages = _React$useState8[1];
     var _React$useState9 = _react.default.useState(""),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      albumName = _React$useState10[0],
-      setAlbumName = _React$useState10[1];
-    var _React$useState11 = _react.default.useState(false),
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      albumName = _React$useState0[0],
+      setAlbumName = _React$useState0[1];
+    var _React$useState1 = _react.default.useState(false),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      imagePop = _React$useState10[0],
+      setImagePop = _React$useState10[1];
+    var _React$useState11 = _react.default.useState(""),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      imagePop = _React$useState12[0],
-      setImagePop = _React$useState12[1];
-    var _React$useState13 = _react.default.useState(""),
-      _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      imageIndex = _React$useState14[0],
-      setImageIndex = _React$useState14[1];
+      imageIndex = _React$useState12[0],
+      setImageIndex = _React$useState12[1];
     var images = [];
+    var _React$useState13 = _react.default.useState(false),
+      _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
+      isPDF = _React$useState14[0],
+      setIsPDF = _React$useState14[1];
     var _React$useState15 = _react.default.useState(false),
       _React$useState16 = (0, _slicedToArray2.default)(_React$useState15, 2),
-      isPDF = _React$useState16[0],
-      setIsPDF = _React$useState16[1];
-    var _React$useState17 = _react.default.useState(false),
+      isVideo = _React$useState16[0],
+      setIsVideo = _React$useState16[1];
+    var _React$useState17 = _react.default.useState(""),
       _React$useState18 = (0, _slicedToArray2.default)(_React$useState17, 2),
-      isVideo = _React$useState18[0],
-      setIsVideo = _React$useState18[1];
+      sourcePDF = _React$useState18[0],
+      setSourcePDF = _React$useState18[1];
     var _React$useState19 = _react.default.useState(""),
       _React$useState20 = (0, _slicedToArray2.default)(_React$useState19, 2),
-      sourcePDF = _React$useState20[0],
-      setSourcePDF = _React$useState20[1];
-    var _React$useState21 = _react.default.useState(""),
-      _React$useState22 = (0, _slicedToArray2.default)(_React$useState21, 2),
-      sourceVideo = _React$useState22[0],
-      setSourceVideo = _React$useState22[1];
+      sourceVideo = _React$useState20[0],
+      setSourceVideo = _React$useState20[1];
     (0, _react.useEffect)(function () {
       var unsubscribe = navigation.addListener('focus', function () {
         setLoading(true);

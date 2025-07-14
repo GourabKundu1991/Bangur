@@ -17,8 +17,7 @@
   var _Footer = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12]));
   var _reactNativeRenderHtml = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13]));
   var _jsxRuntime = _$$_REQUIRE(_dependencyMap[14]);
-  function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-  function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+  function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   var NotificationScreen = function NotificationScreen(_ref) {
     var navigation = _ref.navigation,
       route = _ref.route;
@@ -43,21 +42,21 @@
       message = _React$useState8[0],
       setMessage = _React$useState8[1];
     var _React$useState9 = _react.default.useState(""),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState9, 2),
-      time = _React$useState10[0],
-      setTime = _React$useState10[1];
-    var _React$useState11 = _react.default.useState(0),
+      _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
+      time = _React$useState0[0],
+      setTime = _React$useState0[1];
+    var _React$useState1 = _react.default.useState(0),
+      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
+      unreadCount = _React$useState10[0],
+      setUnreadCount = _React$useState10[1]; // Added state
+    var _React$useState11 = _react.default.useState(1),
       _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      unreadCount = _React$useState12[0],
-      setUnreadCount = _React$useState12[1]; // Added state
+      pageNumber = _React$useState12[0],
+      setPageNumber = _React$useState12[1];
     var _React$useState13 = _react.default.useState(1),
       _React$useState14 = (0, _slicedToArray2.default)(_React$useState13, 2),
-      pageNumber = _React$useState14[0],
-      setPageNumber = _React$useState14[1];
-    var _React$useState15 = _react.default.useState(1),
-      _React$useState16 = (0, _slicedToArray2.default)(_React$useState15, 2),
-      totalPage = _React$useState16[0],
-      setTotalPage = _React$useState16[1];
+      totalPage = _React$useState14[0],
+      setTotalPage = _React$useState14[1];
     (0, _react.useEffect)(function () {
       var unsubscribe = navigation.addListener('focus', function () {
         setLoading(true);
