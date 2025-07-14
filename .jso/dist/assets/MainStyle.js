@@ -1,115 +1,116 @@
-function _0x3c62(_0x3835a7, _0x1bffa5) {
-    var _0x1b399f = _0x1e60();
-    return _0x3c62 = function (_0x2ce96a, _0x5b61a5) {
-        _0x2ce96a = _0x2ce96a - (0x189d + 0xcc9 * -0x1 + 0xca * -0xe);
-        var _0x565e18 = _0x1b399f[_0x2ce96a];
-        return _0x565e18;
-    }, _0x3c62(_0x3835a7, _0x1bffa5);
+function _0x1fed(_0x1acdef, _0x4ec907) {
+    var _0x5dea37 = _0x2eca();
+    return _0x1fed = function (_0x132506, _0x436cf1) {
+        _0x132506 = _0x132506 - (-0xbd7 + 0xda4 + 0x6);
+        var _0x546e48 = _0x5dea37[_0x132506];
+        return _0x546e48;
+    }, _0x1fed(_0x1acdef, _0x4ec907);
 }
-var _0x12cf21 = _0x3c62;
-(function (_0x1389db, _0x39e847) {
-    var _0x3a5766 = _0x3c62, _0x505867 = _0x1389db();
+var _0x408498 = _0x1fed;
+function _0x2eca() {
+    var _0x286669 = [
+        'iBold',
+        'StyleSheet',
+        'olor',
+        '#fbf9fe',
+        'Mulish-Reg',
+        '__esModule',
+        '#fcfcfc',
+        '80%',
+        '32UvtdFY',
+        '851016hXrfdR',
+        '100%',
+        '#DA4C51',
+        'erty',
+        'hidden',
+        'darkColor',
+        'lightColor',
+        'Mulish-Bol',
+        '20TuAAJw',
+        '#707274',
+        '29.33%',
+        '12HZBilU',
+        'Mulish-Sem',
+        '\x2027,\x200.9)',
+        '#2A358B',
+        '151291YvDxPT',
+        'warningCol',
+        'lightGrey',
+        '9PQjgqW',
+        'lor',
+        'baseColor',
+        'darkGrey',
+        'fontSemiBo',
+        '#ebedff',
+        'absolute',
+        'fontBold',
+        '#ffffff',
+        'greyColor',
+        'ular',
+        'MainStyle',
+        'spouseColo',
+        'relative',
+        '#eeeeee',
+        '#CF1562',
+        'create',
+        '#4BA54D',
+        '397385KKkhjq',
+        'dangerColo',
+        'contain',
+        '50%',
+        '82hUPKOQ',
+        'baseLightC',
+        '504333cGOsMN',
+        '2431627EOjtAh',
+        '2258JRZxIP',
+        'flex',
+        '24%',
+        '#F4F4F4',
+        'rgba(1,\x203,',
+        '6212DfauDW',
+        'defineProp',
+        'successCol',
+        '#ff7300',
+        'fontRegula',
+        '#DFDFDF',
+        'baseSemiCo',
+        'center',
+        '#000000'
+    ];
+    _0x2eca = function () {
+        return _0x286669;
+    };
+    return _0x2eca();
+}
+(function (_0xcd766b, _0x1281d5) {
+    var _0x42af1f = _0x1fed, _0x5bcfd6 = _0xcd766b();
     while (!![]) {
         try {
-            var _0xc13ffc = parseInt(_0x3a5766(0xec)) / (-0x14f + -0x137 * 0x5 + -0x763 * -0x1) * (-parseInt(_0x3a5766(0xe5)) / (0x168 + -0x2415 + 0x1 * 0x22af)) + parseInt(_0x3a5766(0xf0)) / (-0xbf * -0x30 + -0x13f * 0x3 + 0x156 * -0x18) * (parseInt(_0x3a5766(0xde)) / (0x10d3 + 0x163a + -0x2709)) + parseInt(_0x3a5766(0xd3)) / (0xe * -0x11a + 0xd * 0x2f4 + -0xeb * 0x19) + -parseInt(_0x3a5766(0xf9)) / (-0x3 * -0xa3e + 0xdd * -0x7 + -0x18a9) + -parseInt(_0x3a5766(0xf1)) / (0x10e2 + 0x21c0 + 0x1 * -0x329b) * (parseInt(_0x3a5766(0x106)) / (-0x8 * -0x277 + -0x1 * -0x1b9b + -0x2f4b)) + -parseInt(_0x3a5766(0x102)) / (-0x1cc * -0x14 + 0x61f * 0x1 + 0x6 * -0x701) * (-parseInt(_0x3a5766(0xf6)) / (0x3 * 0x2d7 + 0x1889 + -0x2104)) + parseInt(_0x3a5766(0xcd)) / (0x984 + 0x1c * -0x6b + 0x23b);
-            if (_0xc13ffc === _0x39e847)
+            var _0x4fcf3f = -parseInt(_0x42af1f(0x1ed)) / (-0x1 * -0xd7c + 0x5ad + -0x1328) * (-parseInt(_0x42af1f(0x1e9)) / (-0x1 * 0x6bb + 0x171 * 0x4 + -0x3 * -0x53)) + parseInt(_0x42af1f(0x1d3)) / (0x17dd + -0x1e1 + 0x271 * -0x9) * (-parseInt(_0x42af1f(0x1f2)) / (-0xaf + -0x1a * 0x46 + -0x7cf * -0x1)) + parseInt(_0x42af1f(0x1e5)) / (-0x1caa + -0x1802 + -0x787 * -0x7) + parseInt(_0x42af1f(0x204)) / (0x1 * -0x15e2 + -0xbe7 + 0x21cf) + parseInt(_0x42af1f(0x213)) / (-0x1 * 0x2708 + -0x1c63 + 0x59 * 0xc2) * (-parseInt(_0x42af1f(0x203)) / (0x2461 + 0x119d * 0x1 + -0x35f6 * 0x1)) + -parseInt(_0x42af1f(0x1eb)) / (-0x1d74 + -0x107 * -0x9 + -0x1 * -0x143e) * (-parseInt(_0x42af1f(0x20c)) / (-0x224f * -0x1 + 0x1 * 0x17a5 + -0x15 * 0x2c2)) + -parseInt(_0x42af1f(0x1ec)) / (0x389 * 0x9 + -0x43d + -0x1b89) * (parseInt(_0x42af1f(0x20f)) / (0xae9 + 0x1b70 + 0x25 * -0x109));
+            if (_0x4fcf3f === _0x1281d5)
                 break;
             else
-                _0x505867['push'](_0x505867['shift']());
-        } catch (_0x541f30) {
-            _0x505867['push'](_0x505867['shift']());
+                _0x5bcfd6['push'](_0x5bcfd6['shift']());
+        } catch (_0x4a37ef) {
+            _0x5bcfd6['push'](_0x5bcfd6['shift']());
         }
     }
-}(_0x1e60, -0x153 * 0x886 + 0x13e82a + 0x26ee0), Object[_0x12cf21(0xe6) + _0x12cf21(0xe1)](exports, _0x12cf21(0x100), { 'value': !![] }), exports[_0x12cf21(0xfd) + 'or'] = exports[_0x12cf21(0xd7) + 'or'] = exports[_0x12cf21(0xcb) + 'r'] = exports[_0x12cf21(0xf2)] = exports[_0x12cf21(0xdf)] = exports[_0x12cf21(0xdd)] = exports[_0x12cf21(0xf3) + 'ld'] = exports[_0x12cf21(0xef) + 'r'] = exports[_0x12cf21(0xe0)] = exports[_0x12cf21(0xdc)] = exports[_0x12cf21(0xdb)] = exports[_0x12cf21(0xf7) + 'r'] = exports[_0x12cf21(0xfb) + _0x12cf21(0xe8)] = exports[_0x12cf21(0x105) + _0x12cf21(0x104)] = exports[_0x12cf21(0xce)] = exports[_0x12cf21(0xfc)] = undefined);
-function _0x1e60() {
-    var _0x385ef5 = [
-        '100%',
-        'spouseColo',
-        '#fbf9fe',
-        '8488469KMusQE',
-        'baseColor',
-        '#ebedff',
-        'Mulish-Bol',
-        '29.33%',
-        'iBold',
-        '2645210zpfMGK',
-        '#707274',
-        'center',
-        '#CF1562',
-        'successCol',
-        '#F4F4F4',
-        '#DA4C51',
-        '24%',
-        'darkColor',
-        'darkGrey',
-        'greyColor',
-        '4vshUfr',
-        'lightColor',
-        'fontBold',
-        'erty',
-        '#000000',
-        'rgba(1,\x203,',
-        '#2A358B',
-        '70tkPlJy',
-        'defineProp',
-        'Mulish-Sem',
-        'lor',
-        '50%',
-        '#fcfcfc',
-        'flex',
-        '40934hoTzRn',
-        'contain',
-        'StyleSheet',
-        'fontRegula',
-        '3829443dvGwUO',
-        '169463dpjerD',
-        'lightGrey',
-        'fontSemiBo',
-        '80%',
-        '#ff7300',
-        '30iWeTmi',
-        'dangerColo',
-        'ular',
-        '3542232feqaqZ',
-        'hidden',
-        'baseSemiCo',
-        'MainStyle',
-        'warningCol',
-        'absolute',
-        '#eeeeee',
-        '__esModule',
-        '#4BA54D',
-        '4069431YSQQLU',
-        '\x2027,\x200.9)',
-        'olor',
-        'baseLightC',
-        '392GgFfwb',
-        '#ffffff',
-        'create',
-        'Mulish-Reg',
-        '#DFDFDF',
-        'relative'
-    ];
-    _0x1e60 = function () {
-        return _0x385ef5;
-    };
-    return _0x1e60();
-}
-var _reactNative = _$$_REQUIRE(_dependencyMap[0x2 * -0x123 + 0x23cc + -0x2186]), baseColor = exports[_0x12cf21(0xce)] = _0x12cf21(0xe4), baseLightColor = exports[_0x12cf21(0x105) + _0x12cf21(0x104)] = _0x12cf21(0xcc), baseSemiColor = exports[_0x12cf21(0xfb) + _0x12cf21(0xe8)] = _0x12cf21(0xcf), dangerColor = exports[_0x12cf21(0xf7) + 'r'] = _0x12cf21(0xd9), successColor = exports[_0x12cf21(0xd7) + 'or'] = _0x12cf21(0x101), warningColor = exports[_0x12cf21(0xfd) + 'or'] = _0x12cf21(0xf5), lightColor = exports[_0x12cf21(0xdf)] = _0x12cf21(0x107), darkColor = exports[_0x12cf21(0xdb)] = _0x12cf21(0xe2), greyColor = exports[_0x12cf21(0xdd)] = _0x12cf21(0xc8), lightGrey = exports[_0x12cf21(0xf2)] = _0x12cf21(0xd8), darkGrey = exports[_0x12cf21(0xdc)] = _0x12cf21(0xd4), fontRegular = exports[_0x12cf21(0xef) + 'r'] = _0x12cf21(0x109) + _0x12cf21(0xf8), fontBold = exports[_0x12cf21(0xe0)] = _0x12cf21(0xd0) + 'd', fontSemiBold = exports[_0x12cf21(0xf3) + 'ld'] = _0x12cf21(0xe7) + _0x12cf21(0xd2), spouseColor = exports[_0x12cf21(0xcb) + 'r'] = _0x12cf21(0xd6), MainStyle = exports[_0x12cf21(0xfc)] = _reactNative[_0x12cf21(0xee)][_0x12cf21(0x108)]({
+}(_0x2eca, -0x22627 + 0x3315 * 0xc + 0x17db0), Object[_0x408498(0x1f3) + _0x408498(0x207)](exports, _0x408498(0x200), { 'value': !![] }), exports[_0x408498(0x214) + 'or'] = exports[_0x408498(0x1f4) + 'or'] = exports[_0x408498(0x1df) + 'r'] = exports[_0x408498(0x215)] = exports[_0x408498(0x20a)] = exports[_0x408498(0x1dc)] = exports[_0x408498(0x1d7) + 'ld'] = exports[_0x408498(0x1f6) + 'r'] = exports[_0x408498(0x1da)] = exports[_0x408498(0x1d6)] = exports[_0x408498(0x209)] = exports[_0x408498(0x1e6) + 'r'] = exports[_0x408498(0x1f8) + _0x408498(0x1d4)] = exports[_0x408498(0x1ea) + _0x408498(0x1fd)] = exports[_0x408498(0x1d5)] = exports[_0x408498(0x1de)] = undefined);
+var _reactNative = _$$_REQUIRE(_dependencyMap[0x1e1b + 0x2534 + -0x434f]), baseColor = exports[_0x408498(0x1d5)] = _0x408498(0x212), baseLightColor = exports[_0x408498(0x1ea) + _0x408498(0x1fd)] = _0x408498(0x1fe), baseSemiColor = exports[_0x408498(0x1f8) + _0x408498(0x1d4)] = _0x408498(0x1d8), dangerColor = exports[_0x408498(0x1e6) + 'r'] = _0x408498(0x206), successColor = exports[_0x408498(0x1f4) + 'or'] = _0x408498(0x1e4), warningColor = exports[_0x408498(0x214) + 'or'] = _0x408498(0x1f5), lightColor = exports[_0x408498(0x20a)] = _0x408498(0x1db), darkColor = exports[_0x408498(0x209)] = _0x408498(0x1fa), greyColor = exports[_0x408498(0x1dc)] = _0x408498(0x1f7), lightGrey = exports[_0x408498(0x215)] = _0x408498(0x1f0), darkGrey = exports[_0x408498(0x1d6)] = _0x408498(0x20d), fontRegular = exports[_0x408498(0x1f6) + 'r'] = _0x408498(0x1ff) + _0x408498(0x1dd), fontBold = exports[_0x408498(0x1da)] = _0x408498(0x20b) + 'd', fontSemiBold = exports[_0x408498(0x1d7) + 'ld'] = _0x408498(0x210) + _0x408498(0x1fb), spouseColor = exports[_0x408498(0x1df) + 'r'] = _0x408498(0x1e2), MainStyle = exports[_0x408498(0x1de)] = _reactNative[_0x408498(0x1fc)][_0x408498(0x1e3)]({
         'spincontainer': {
-            'position': _0x12cf21(0xfe),
+            'position': _0x408498(0x1d9),
             'zIndex': 0x63,
             'left': 0x0,
             'right': 0x0,
             'top': 0x0,
             'bottom': 0x0,
-            'alignItems': _0x12cf21(0xd5),
-            'justifyContent': _0x12cf21(0xd5),
-            'backgroundColor': _0x12cf21(0xe3) + _0x12cf21(0x103)
+            'alignItems': _0x408498(0x1f9),
+            'justifyContent': _0x408498(0x1f9),
+            'backgroundColor': _0x408498(0x1f1) + _0x408498(0x211)
         },
         'logo': {
             'height': 0x32,
-            'resizeMode': _0x12cf21(0xed)
+            'resizeMode': _0x408498(0x1e7)
         },
         'lable': {
             'fontFamily': fontSemiBold,
@@ -121,86 +122,86 @@ var _reactNative = _$$_REQUIRE(_dependencyMap[0x2 * -0x123 + 0x23cc + -0x2186]),
             'borderColor': greyColor,
             'borderWidth': 0x1,
             'borderRadius': 0x8,
-            'width': _0x12cf21(0xca),
-            'position': _0x12cf21(0xc9),
-            'overflow': _0x12cf21(0xfa)
+            'width': _0x408498(0x205),
+            'position': _0x408498(0x1e0),
+            'overflow': _0x408498(0x208)
         },
         'solidbtn': {
             'height': 0x2d,
             'backgroundColor': baseColor,
             'borderRadius': 0x8,
-            'overflow': _0x12cf21(0xfa)
+            'overflow': _0x408498(0x208)
         },
         'outlinebtn': {
             'height': 0x2b,
             'borderColor': baseColor,
             'borderWidth': 0x1,
             'borderRadius': 0x8,
-            'overflow': _0x12cf21(0xfa)
+            'overflow': _0x408498(0x208)
         },
         'pagibox': {
             'width': 0x23,
             'height': 0x23,
             'borderRadius': 0x1e,
-            'overflow': _0x12cf21(0xfa)
+            'overflow': _0x408498(0x208)
         },
         'popbox': {
-            'width': _0x12cf21(0xf4),
-            'backgroundColor': _0x12cf21(0xea),
+            'width': _0x408498(0x202),
+            'backgroundColor': _0x408498(0x201),
             'borderRadius': 0xf,
-            'overflow': _0x12cf21(0xfa),
+            'overflow': _0x408498(0x208),
             'minHeight': 0x12c,
-            'justifyContent': _0x12cf21(0xd5),
-            'alignItems': _0x12cf21(0xd5),
+            'justifyContent': _0x408498(0x1f9),
+            'alignItems': _0x408498(0x1f9),
             'padding': 0x1e
         },
         'quickbox': {
-            'width': _0x12cf21(0xd1),
+            'width': _0x408498(0x20e),
             'padding': 0x2,
             'height': 0x7d,
             'borderColor': greyColor,
             'borderWidth': 0x1,
             'borderRadius': 0xc,
             'margin': '2%',
-            'display': _0x12cf21(0xeb),
-            'justifyContent': _0x12cf21(0xd5),
-            'alignItems': _0x12cf21(0xd5)
+            'display': _0x408498(0x1ee),
+            'justifyContent': _0x408498(0x1f9),
+            'alignItems': _0x408498(0x1f9)
         },
         'quickicon': {
             'width': 0x3c,
             'height': 0x3c,
             'borderRadius': 0x1e,
-            'backgroundColor': _0x12cf21(0xff),
+            'backgroundColor': _0x408498(0x1e1),
             'marginBottom': 0x5
         },
         'tabbtn': {
             'borderTopLeftRadius': 0x8,
             'borderTopRightRadius': 0x8,
-            'overflow': _0x12cf21(0xfa),
+            'overflow': _0x408498(0x208),
             'borderRadius': 0x0,
-            'width': _0x12cf21(0xda)
+            'width': _0x408498(0x1ef)
         },
         'productbox': {
-            'width': _0x12cf21(0xe9),
+            'width': _0x408498(0x1e8),
             'padding': 0x8
         },
         'productimage': {
             'backgroundColor': lightGrey,
             'marginBottom': 0x5,
             'borderRadius': 0x8,
-            'width': _0x12cf21(0xca),
+            'width': _0x408498(0x205),
             'height': 0xa0,
-            'justifyContent': _0x12cf21(0xd5),
-            'alignItems': _0x12cf21(0xd5),
-            'overflow': _0x12cf21(0xfa)
+            'justifyContent': _0x408498(0x1f9),
+            'alignItems': _0x408498(0x1f9),
+            'overflow': _0x408498(0x208)
         },
         'productimagebig': {
             'backgroundColor': lightGrey,
             'marginBottom': 0x5,
             'borderRadius': 0x8,
-            'width': _0x12cf21(0xca),
-            'justifyContent': _0x12cf21(0xd5),
-            'alignItems': _0x12cf21(0xd5),
-            'overflow': _0x12cf21(0xfa)
+            'width': _0x408498(0x205),
+            'justifyContent': _0x408498(0x1f9),
+            'alignItems': _0x408498(0x1f9),
+            'overflow': _0x408498(0x208)
         }
     });

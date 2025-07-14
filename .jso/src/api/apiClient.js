@@ -15,31 +15,33 @@
   });
 
   // Add request interceptor
-  apiClient.interceptors.request.use(/*#__PURE__*/function () {
-    var _ref = (0, _asyncToGenerator2.default)(function* (config) {
-      try {
-        // Call SSL validation before sending the request
-        console.log('CALLING...', SSLPinning.validateCertificate);
-        yield SSLPinning.validateCertificate(config.baseURL,
-        // API URL
-        //'mjunction_combined.cer' // UAT certificate in assets
-        'api_shreenirmanmitra_com.cer' // Live certificate in assets
-        );
-        console.log('validation success');
-        // Proceed with the request if SSL validation is successful
-        return config;
-      } catch (error) {
-        console.error('SSL Certificate Validation Failed:', error.message);
+  if (_reactNative.Platform.OS == 'android') {
+    apiClient.interceptors.request.use(/*#__PURE__*/function () {
+      var _ref = (0, _asyncToGenerator2.default)(function* (config) {
+        try {
+          // Call SSL validation before sending the request
+          console.log('CALLING...', SSLPinning.validateCertificate);
+          yield SSLPinning.validateCertificate(config.baseURL,
+          // API URL
+          //'mjunction_combined.cer' // UAT certificate in assets
+          'api_shreenirmanmitra_com.cer' // Live certificate in assets
+          );
+          console.log('validation success');
+          // Proceed with the request if SSL validation is successful
+          return config;
+        } catch (error) {
+          console.error('SSL Certificate Validation Failed:', error.message);
 
-        // Cancel the request and throw an error
-        throw new _axios.default.Cancel(`Network request failed ${error.message}`);
-      }
+          // Cancel the request and throw an error
+          throw new _axios.default.Cancel(`Network request failed ${error.message}`);
+        }
+      });
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }(), function (error) {
+      // Handle request errors
+      return Promise.reject(error);
     });
-    return function (_x) {
-      return _ref.apply(this, arguments);
-    };
-  }(), function (error) {
-    // Handle request errors
-    return Promise.reject(error);
-  });
+  }
   var _default = exports.default = apiClient;
