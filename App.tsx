@@ -48,13 +48,7 @@ import NewsLetterScreen from './screens/NewsLetter';
 import ContactUsScreen from './screens/ContactUs';
 import TransactionScreen from './screens/Transaction';
 import { hashKey, URL } from './auth_provider/Config';
-// import {fetch} from 'react-native-ssl-pinning';
 
-import {
-  initializeSslPinning,
-  addSslPinningErrorListener,
-} from 'react-native-ssl-public-key-pinning';
-import { useFreeRasp } from 'freerasp-react-native';
 import DeleteAccountScreen from './screens/DeleteAccount';
 import ProductDetailsScreen from './screens/ProductDetails';
 import RedeemptionConfirmationScreen from './screens/RedeemptionConfirmation';

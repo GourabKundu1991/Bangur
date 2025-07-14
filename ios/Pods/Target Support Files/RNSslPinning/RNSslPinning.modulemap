@@ -1,6 +1,0 @@
-framework module RNSslPinning {
-  umbrella header "RNSslPinning-umbrella.h"
-
-  export *
-  module * { export * }
-}

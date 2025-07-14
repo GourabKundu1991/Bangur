@@ -1,6 +1,0 @@
-framework module react_native_ssl_public_key_pinning {
-  umbrella header "react-native-ssl-public-key-pinning-umbrella.h"
-
-  export *
-  module * { export * }
-}

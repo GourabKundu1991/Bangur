@@ -1,6 +1,0 @@
-framework module freerasp_react_native {
-  umbrella header "freerasp-react-native-umbrella.h"
-
-  export *
-  module * { export * }
-}

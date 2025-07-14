@@ -19,9 +19,8 @@
   var _Events = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14]));
   var _messaging = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15]));
   var _crc = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[16]));
-  var _reactNativeSslPinning = _$$_REQUIRE(_dependencyMap[17]);
-  var _apiClient = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[18]));
-  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[19]);
+  var _apiClient = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[17]));
+  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[18]);
   function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   //import { getHash, getOtp, startOtpListener } from 'react-native-otp-verify';
 
@@ -260,7 +259,7 @@
         console.log('responseJson:: ', responseJson);
         setLoading(false);
         if (responseJson.data.bstatus === 1) {
-          var CryptoJS = _$$_REQUIRE(_dependencyMap[20]);
+          var CryptoJS = _$$_REQUIRE(_dependencyMap[19]);
           var encryptedData = CryptoJS.AES.encrypt(JSON.stringify(responseJson.data), _Config.secretKey).toString();
           _asyncStorage.default.setItem('userToken', encryptedData);
           navigation.replace('Home');
@@ -289,7 +288,7 @@
             space: 5,
             alignItems: "center",
             children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[21]),
+              source: _$$_REQUIRE(_dependencyMap[20]),
               style: {
                 width: '100%',
                 height: 400,
@@ -297,7 +296,7 @@
                 position: 'relative'
               }
             }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[22]),
+              source: _$$_REQUIRE(_dependencyMap[21]),
               style: _MainStyle.MainStyle.logo
             })]
           }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
@@ -521,7 +520,7 @@
           style: _MainStyle.MainStyle.popbox,
           space: 10,
           children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-            source: _$$_REQUIRE(_dependencyMap[23]),
+            source: _$$_REQUIRE(_dependencyMap[22]),
             style: {
               width: 100,
               height: 100,
@@ -530,7 +529,7 @@
               marginTop: 30
             }
           }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-            source: _$$_REQUIRE(_dependencyMap[22]),
+            source: _$$_REQUIRE(_dependencyMap[21]),
             style: _MainStyle.MainStyle.logo
           }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
             justifyContent: "center",

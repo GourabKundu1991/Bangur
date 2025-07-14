@@ -45,10 +45,6 @@ import {
   warningColor,
 } from '../assets/MainStyle';
 
-import DeviceInfo, { useIsEmulator } from 'react-native-device-info';
-import JailMonkey from 'jail-monkey';
-//import {useFreeRasp} from 'freerasp-react-native';
-import { fetch } from 'react-native-ssl-pinning';
 import apiClient from '../api/apiClient';
 
 const IntroScreen = ({ navigation }) => {
@@ -58,9 +54,6 @@ const IntroScreen = ({ navigation }) => {
   const [storeUrl, setStoreUrl] = React.useState('');
   const [currentLanguage, setLanguage] = React.useState('Eng');
   const [userType, setUserType] = React.useState('');
-  const [foundEmulator, setFoundEmulator] = React.useState(false);
-  const [deviceRooted, setDeviceRooted] = React.useState(false);
-  const { isEmresult } = useIsEmulator();
 
   useEffect(() => {
     setLoading(true);
@@ -357,112 +350,6 @@ const IntroScreen = ({ navigation }) => {
             size="large"
             color={warningColor}
           />
-        </View>
-      )}
-      {foundEmulator && (
-        <View style={MainStyle.spincontainer}>
-          <Stack
-            backgroundColor="#ffffff"
-            style={{ width: '70%', borderRadius: 10, overflow: 'hidden' }}>
-            <VStack
-              space={1}
-              w="100%"
-              paddingY="10"
-              paddingX="5"
-              alignItems="center"
-              justifyContent="center">
-              <Image
-                source={require('../assets/images/logo.jpg')}
-                style={MainStyle.logo}
-              />
-              <Text
-                mt={5}
-                mb={3}
-                fontSize="xl"
-                fontWeight="bold"
-                color={dangerColor}>
-                {t('Alert')}!
-              </Text>
-              <Text
-                textAlign="center"
-                fontSize="sm"
-                fontWeight="medium"
-                color="#111111"
-                mb={3}>
-                {t(
-                  'This App run on Emulator. Please run in Real Device to use this App',
-                )}
-                ...
-              </Text>
-              <Button
-                size="sm"
-                style={{
-                  backgroundColor: '#111111',
-                  width: 150,
-                  borderRadius: 8,
-                  overflow: 'hidden',
-                }}
-                onPress={() => closeApp()}
-                marginY={4}>
-                <Text color="#ffffff" fontSize="sm" fontWeight="medium">
-                  {t('Close')}
-                </Text>
-              </Button>
-            </VStack>
-          </Stack>
-        </View>
-      )}
-      {deviceRooted && (
-        <View style={MainStyle.spincontainer}>
-          <Stack
-            backgroundColor="#ffffff"
-            style={{ width: '70%', borderRadius: 10, overflow: 'hidden' }}>
-            <VStack
-              space={1}
-              w="100%"
-              paddingY="10"
-              paddingX="5"
-              alignItems="center"
-              justifyContent="center">
-              <Image
-                source={require('../assets/images/logo.jpg')}
-                style={MainStyle.logo}
-              />
-              <Text
-                mt={5}
-                mb={3}
-                fontSize="xl"
-                fontWeight="bold"
-                color={dangerColor}>
-                {t('Alert')}!
-              </Text>
-              <Text
-                textAlign="center"
-                fontSize="sm"
-                fontWeight="medium"
-                color="#111111"
-                mb={3}>
-                {t(
-                  'This is an Rooted Device. Please run in Unrooted Device to use this App',
-                )}
-                ...
-              </Text>
-              <Button
-                size="sm"
-                style={{
-                  backgroundColor: '#111111',
-                  width: 150,
-                  borderRadius: 8,
-                  overflow: 'hidden',
-                }}
-                onPress={() => closeApp()}
-                marginY={4}>
-                <Text color="#ffffff" fontSize="sm" fontWeight="medium">
-                  {t('Close')}
-                </Text>
-              </Button>
-            </VStack>
-          </Stack>
         </View>
       )}
     </NativeBaseProvider>

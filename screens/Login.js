@@ -62,8 +62,8 @@ import messaging from '@react-native-firebase/messaging';
 //import CountDown from 'react-native-countdown-component';
 
 import CRC32 from 'crc-32';
-import { fetch } from 'react-native-ssl-pinning';
 import apiClient from '../api/apiClient';
+
 const LoginScreen = ({ navigation, route }) => {
   const { t } = useTranslation();
   const [loading, setLoading] = React.useState(false);

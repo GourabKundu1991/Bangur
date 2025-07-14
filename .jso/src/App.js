@@ -69,8 +69,6 @@
 
   // import NotificationHandler from './screens/NotificationHandler';
 
-  // import {fetch} from 'react-native-ssl-pinning';
-
   var Stack = (0, _stack.createStackNavigator)();
   var Drawer = (0, _drawer.createDrawerNavigator)();
   var SecurityServiceManager = _reactNative.NativeModules.SecurityServiceManager;

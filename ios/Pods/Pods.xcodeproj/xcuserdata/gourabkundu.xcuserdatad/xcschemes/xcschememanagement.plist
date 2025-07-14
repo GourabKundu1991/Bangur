@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>BEMCheckBox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -179,16 +174,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RNDeviceInfo-RNDeviceInfoPrivacyInfo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RNDeviceInfo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>RNFBApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -230,11 +215,6 @@
 			<false/>
 		</dict>
 		<key>RNScreens.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RNSslPinning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -454,16 +434,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TrustKit-TrustKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TrustKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Yoga.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -479,22 +449,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>freerasp-react-native.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>glog.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>hermes-engine.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>jail-monkey.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -555,11 +515,6 @@
 			<false/>
 		</dict>
 		<key>react-native-simple-toast.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>react-native-ssl-public-key-pinning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

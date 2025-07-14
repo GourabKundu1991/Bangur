@@ -14,14 +14,9 @@
   var _i18n = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[9]));
   var _reactNativeSimpleToast = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[10]));
   var _MainStyle = _$$_REQUIRE(_dependencyMap[11]);
-  var _reactNativeDeviceInfo = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[12]));
-  var _jailMonkey = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13]));
-  var _reactNativeSslPinning = _$$_REQUIRE(_dependencyMap[14]);
-  var _apiClient = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15]));
-  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[16]);
+  var _apiClient = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12]));
+  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[13]);
   function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
-  //import {useFreeRasp} from 'freerasp-react-native';
-
   var IntroScreen = function IntroScreen(_ref) {
     var navigation = _ref.navigation;
     var _useTranslation = (0, _reactI18next.useTranslation)(),
@@ -46,16 +41,6 @@
       _React$useState0 = (0, _slicedToArray2.default)(_React$useState9, 2),
       userType = _React$useState0[0],
       setUserType = _React$useState0[1];
-    var _React$useState1 = _react.default.useState(false),
-      _React$useState10 = (0, _slicedToArray2.default)(_React$useState1, 2),
-      foundEmulator = _React$useState10[0],
-      setFoundEmulator = _React$useState10[1];
-    var _React$useState11 = _react.default.useState(false),
-      _React$useState12 = (0, _slicedToArray2.default)(_React$useState11, 2),
-      deviceRooted = _React$useState12[0],
-      setDeviceRooted = _React$useState12[1];
-    var _useIsEmulator = (0, _reactNativeDeviceInfo.useIsEmulator)(),
-      isEmresult = _useIsEmulator.isEmresult;
     (0, _react.useEffect)(function () {
       setLoading(true);
       _asyncStorage.default.getItem('language').then(function (val) {
@@ -108,10 +93,6 @@
         }
       });
     }, []);
-    var closeApp = function closeApp() {
-      /* navigation.replace('Splash');
-      BackHandler.exitApp(); */
-    };
     var onSaveLang = function onSaveLang(val) {
       setLanguage(val);
       _asyncStorage.default.setItem('language', val);
@@ -149,7 +130,7 @@
             space: 5,
             alignItems: "center",
             children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[17]),
+              source: _$$_REQUIRE(_dependencyMap[14]),
               style: {
                 width: '100%',
                 height: 400,
@@ -157,7 +138,7 @@
                 position: 'relative'
               }
             }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[18]),
+              source: _$$_REQUIRE(_dependencyMap[15]),
               style: _MainStyle.MainStyle.logo
             })]
           }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
@@ -357,7 +338,7 @@
             alignItems: "center",
             justifyContent: "center",
             children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[18]),
+              source: _$$_REQUIRE(_dependencyMap[15]),
               style: _MainStyle.MainStyle.logo
             }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
               mt: 5,
@@ -400,114 +381,6 @@
           animating: loading,
           size: "large",
           color: _MainStyle.warningColor
-        })
-      }), foundEmulator && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-        style: _MainStyle.MainStyle.spincontainer,
-        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Stack, {
-          backgroundColor: "#ffffff",
-          style: {
-            width: '70%',
-            borderRadius: 10,
-            overflow: 'hidden'
-          },
-          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
-            space: 1,
-            w: "100%",
-            paddingY: "10",
-            paddingX: "5",
-            alignItems: "center",
-            justifyContent: "center",
-            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[18]),
-              style: _MainStyle.MainStyle.logo
-            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
-              mt: 5,
-              mb: 3,
-              fontSize: "xl",
-              fontWeight: "bold",
-              color: _MainStyle.dangerColor,
-              children: [t('Alert'), "!"]
-            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
-              textAlign: "center",
-              fontSize: "sm",
-              fontWeight: "medium",
-              color: "#111111",
-              mb: 3,
-              children: [t('This App run on Emulator. Please run in Real Device to use this App'), "..."]
-            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
-              size: "sm",
-              style: {
-                backgroundColor: '#111111',
-                width: 150,
-                borderRadius: 8,
-                overflow: 'hidden'
-              },
-              onPress: function onPress() {
-                return closeApp();
-              },
-              marginY: 4,
-              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                color: "#ffffff",
-                fontSize: "sm",
-                fontWeight: "medium",
-                children: t('Close')
-              })
-            })]
-          })
-        })
-      }), deviceRooted && /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-        style: _MainStyle.MainStyle.spincontainer,
-        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Stack, {
-          backgroundColor: "#ffffff",
-          style: {
-            width: '70%',
-            borderRadius: 10,
-            overflow: 'hidden'
-          },
-          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
-            space: 1,
-            w: "100%",
-            paddingY: "10",
-            paddingX: "5",
-            alignItems: "center",
-            justifyContent: "center",
-            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-              source: _$$_REQUIRE(_dependencyMap[18]),
-              style: _MainStyle.MainStyle.logo
-            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
-              mt: 5,
-              mb: 3,
-              fontSize: "xl",
-              fontWeight: "bold",
-              color: _MainStyle.dangerColor,
-              children: [t('Alert'), "!"]
-            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
-              textAlign: "center",
-              fontSize: "sm",
-              fontWeight: "medium",
-              color: "#111111",
-              mb: 3,
-              children: [t('This is an Rooted Device. Please run in Unrooted Device to use this App'), "..."]
-            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
-              size: "sm",
-              style: {
-                backgroundColor: '#111111',
-                width: 150,
-                borderRadius: 8,
-                overflow: 'hidden'
-              },
-              onPress: function onPress() {
-                return closeApp();
-              },
-              marginY: 4,
-              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                color: "#ffffff",
-                fontSize: "sm",
-                fontWeight: "medium",
-                children: t('Close')
-              })
-            })]
-          })
         })
       })]
     });

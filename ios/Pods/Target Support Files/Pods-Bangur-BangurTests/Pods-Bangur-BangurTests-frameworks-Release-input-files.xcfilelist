@@ -1,3 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-Bangur-BangurTests/Pods-Bangur-BangurTests-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/freerasp-react-native/TalsecRuntime.framework/TalsecRuntime
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes
