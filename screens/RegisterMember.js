@@ -570,7 +570,7 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 Toast.show(t("Please Verify your Aadahar No."), Toast.LONG);
             } else if (selectIDProof == 2 && !panVerifed) {
                 Toast.show(t("Please Verify your PAN No."), Toast.LONG);
-            } else if (fetchedDetails.name == "" && fullName == "") {
+            } else if (fullName == "") {
                 Toast.show(t("Please enter your Name as per ID proof"), Toast.LONG);
             } else if (fullName != "" && regexAlp.test(fullName)) {
                 Toast.show(t("Name field accept only alphabets"), Toast.LONG);
@@ -713,7 +713,7 @@ const RegisterMemberScreen = ({ navigation, route }) => {
                 formdata.append("mobile", mobileNumber);
                 formdata.append("aadhaar", aadhaarNumber);
                 formdata.append("pan", panNumber);
-                formdata.append("name", (fetchedDetails.name == "" ? fullName : fetchedDetails.name));
+                formdata.append("name", fullName);
                 formdata.append("gender", (gender == "Male" ? "M" : "F"));
                 formdata.append("dob", (fetchedDetails.dob == "" ? moment(dob).format('DD-MM-YYYY') : fetchedDetails.dob));
                 formdata.append("address", (fetchedDetails.address == "" ? address : fetchedDetails.address));

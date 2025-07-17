@@ -318,7 +318,7 @@ const HomeScreen = ({ navigation }) => {
                                 source={require('../assets/images/lucky2.png')}
                                 resizeMode="contain"
                                 style={{
-                                    width: 330, 
+                                    width: 330,
                                     height: 130,
                                     justifyContent: 'center',
                                     alignItems: 'center',
@@ -344,7 +344,7 @@ const HomeScreen = ({ navigation }) => {
                                     Congratulations You Have Won
                                 </Text>
                                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: 'white', marginTop: 2 }}>
-                                {contestPrize}
+                                    {contestPrize}
                                 </Text>
                             </ImageBackground>
                         </View>
@@ -380,48 +380,48 @@ const HomeScreen = ({ navigation }) => {
                     </VStack>
                 </ScrollView>
                 {Number(addressStatus) === 1 && showPopup && (
-                        <View style={MainStyle.spincontainer}>
-                            <VStack style={MainStyle.popbox} space={5} alignItems="center" position="relative">
-                                <TouchableOpacity
-                                    style={{ position: 'absolute', top: 10, right: 10, zIndex: 1, padding: 5, }}
-                                    onPress={() => setShowPopup(false)}
-                                >
-                                    <Ionicons name="close" size={28} color="#333" />
-                                </TouchableOpacity>
+                    <View style={MainStyle.spincontainer}>
+                        <VStack style={MainStyle.popbox} space={5} alignItems="center" position="relative">
+                            <TouchableOpacity
+                                style={{ position: 'absolute', top: 10, right: 10, zIndex: 1, padding: 5, }}
+                                onPress={() => setShowPopup(false)}
+                            >
+                                <Ionicons name="close" size={28} color="#333" />
+                            </TouchableOpacity>
 
-                                <Text color={darkColor} fontSize="18" fontFamily={fontBold} textAlign="center">
-                                    {addressMsg}
-                                </Text>
+                            <Text color={darkColor} fontSize="18" fontFamily={fontBold} textAlign="center">
+                                {addressMsg}
+                            </Text>
 
-                                <TouchableOpacity onPress={() => openDialer(customerCareNumber)}>
-                                    <HStack alignItems="center" space={2}>
-                                        <Icon name="call" size={22} color={baseColor} />
-                                        <Text fontSize="20" fontFamily={fontBold} color={baseColor}>
-                                            {customerCareNumber}
-                                        </Text>
-                                    </HStack>
-                                </TouchableOpacity>
+                            <TouchableOpacity onPress={() => openDialer(customerCareNumber)}>
+                                <HStack alignItems="center" space={2}>
+                                    <Icon name="call" size={22} color={baseColor} />
+                                    <Text fontSize="20" fontFamily={fontBold} color={baseColor}>
+                                        {customerCareNumber}
+                                    </Text>
+                                </HStack>
+                            </TouchableOpacity>
+                        </VStack>
+                    </View>
+                )}
+
+                {Number(addressStatus) === 2 && (
+                    <View style={MainStyle.spincontainer}>
+                        <VStack style={MainStyle.popbox} space={10}>
+                            <VStack justifyContent="center" alignItems="center">
+                                <Text color={darkColor} fontSize="22" fontFamily={fontBold} textAlign="center" style={{ bottom: 10 }}>{t("Address Verification Pending")}</Text>
                             </VStack>
-                        </View>
-                    )}
-
-                    {Number(addressStatus) === 2 && (
-                        <View style={MainStyle.spincontainer}>
-                            <VStack style={MainStyle.popbox} space={10}>
-                                <VStack justifyContent="center" alignItems="center">
-                                    <Text color={darkColor} fontSize="22" fontFamily={fontBold} textAlign="center" style={{ bottom: 10 }}>{t("Address Verification Pending")}</Text>
-                                </VStack>
-                                <Stack width={'100%'} space={3}>
-                                    <Button style={MainStyle.solidbtn} onPress={() => navigation.navigate('AddressVerificationPending', {
-                                        pageTitle: t('Address Verification Pending'),
-                                        addressData: addressData
-                                    })}>
-                                        <Text color={lightColor} fontFamily={fontSemiBold} fontSize="20" style={{ bottom: 7 }}>{t("Verify Address")}</Text>
-                                    </Button>
-                                </Stack>
-                            </VStack>
-                        </View>
-                    )}
+                            <Stack width={'100%'} space={3}>
+                                <Button style={MainStyle.solidbtn} onPress={() => navigation.navigate('AddressVerificationPending', {
+                                    pageTitle: t('Address Verification Pending'),
+                                    addressData: addressData
+                                })}>
+                                    <Text color={lightColor} fontFamily={fontSemiBold} fontSize="20" style={{ bottom: 7 }}>{t("Verify Address")}</Text>
+                                </Button>
+                            </Stack>
+                        </VStack>
+                    </View>
+                )}
                 <FooterComponents navigation={navigation} component={userType} cartcount={cartcount} />
             </VStack>
             {loading && (

@@ -582,7 +582,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '1.5',
+                        paddingY: '2.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: purchaseDate != '' ? '#111111' : '#999999',

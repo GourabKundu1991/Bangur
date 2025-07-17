@@ -663,7 +663,7 @@
           _reactNativeSimpleToast.default.show(t("Please Verify your Aadahar No."), _reactNativeSimpleToast.default.LONG);
         } else if (selectIDProof == 2 && !panVerifed) {
           _reactNativeSimpleToast.default.show(t("Please Verify your PAN No."), _reactNativeSimpleToast.default.LONG);
-        } else if (fetchedDetails.name == "" && fullName == "") {
+        } else if (fullName == "") {
           _reactNativeSimpleToast.default.show(t("Please enter your Name as per ID proof"), _reactNativeSimpleToast.default.LONG);
         } else if (fullName != "" && regexAlp.test(fullName)) {
           _reactNativeSimpleToast.default.show(t("Name field accept only alphabets"), _reactNativeSimpleToast.default.LONG);
@@ -736,7 +736,7 @@
           formdata.append("mobile", mobileNumber);
           formdata.append("aadhaar", aadhaarNumber);
           formdata.append("pan", panNumber);
-          formdata.append("name", fetchedDetails.name == "" ? fullName : fetchedDetails.name);
+          formdata.append("name", fullName);
           formdata.append("gender", gender == "Male" ? "M" : "F");
           formdata.append("dob", fetchedDetails.dob == "" ? (0, _moment.default)(dob).format('DD-MM-YYYY') : fetchedDetails.dob);
           formdata.append("address", fetchedDetails.address && fetchedDetails.address.trim() !== "" ? fetchedDetails.address : permanentAdress);
@@ -1230,7 +1230,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '1.5',
+                        paddingY: '2.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: panDOB != '' ? '#111111' : '#999999',
@@ -1441,7 +1441,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '1.5',
+                        paddingY: '2.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: dob != '' ? '#111111' : '#999999',
