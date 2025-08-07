@@ -23,8 +23,8 @@
           console.log('CALLING...', SSLPinning.validateCertificate);
           yield SSLPinning.validateCertificate(config.baseURL,
           // API URL
-          //'mjunction_combined.cer' // UAT certificate in assets
-          'api_shreenirmanmitra_com.cer' // Live certificate in assets
+          'mjunction_combined.cer' // UAT certificate in assets
+          //'api_shreenirmanmitra_com.cer', // Live certificate in assets
           );
           console.log('validation success');
           // Proceed with the request if SSL validation is successful

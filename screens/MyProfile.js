@@ -230,7 +230,7 @@ const MyProfileScreen = ({ navigation }) => {
                                     <Text color={baseColor} fontSize="xs" fontFamily={fontBold}>{moment(profileData.anniversary).format('DD MMM, YYYY')}</Text>
                                 }
                             </HStack>
-                            <DateTimePickerModal maximumDate={today} isVisible={isDatePickerVisible} mode="date" onConfirm={handleConfirm} onCancel={hideDatePicker} /> */}
+                            <DateTimePickerModal maximumDate={today} minimumDate={miniYear} isVisible={isDatePickerVisible} mode="date" onConfirm={handleConfirm} onCancel={hideDatePicker} /> */}
                         </VStack>
                         <VStack style={MainStyle.inputbox} padding={3} space={2}>
                             <Text style={[MainStyle.lable, { color: darkColor, fontFamily: fontBold }]} fontSize="xs">{t("Permanent Address")}</Text>

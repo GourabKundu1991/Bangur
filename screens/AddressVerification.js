@@ -149,7 +149,7 @@ const AddressVerificationScreen = ({ navigation, route }) => {
             <StatusBar barStyle="dark-content" backgroundColor={lightColor} />
             <VStack flex={1} backgroundColor={"#000000"}>
                 <HeaderComponents component={route.params.pageTitle} navigation={navigation} />
-                <ScrollView backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
+                <ScrollView automaticallyAdjustKeyboardInsets={true} backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
                     <VStack space={5} padding={2} width="100%" alignSelf="center">
                         {addressData.length > 0 ? (
                             addressData.map((item, index) => (

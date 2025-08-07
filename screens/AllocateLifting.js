@@ -68,7 +68,7 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
                     var CryptoJS = require("crypto-js");
                     const decryptData = CryptoJS.AES.decrypt(val, secretKey).toString(CryptoJS.enc.Utf8);
                     setUserType(JSON.parse(decryptData).user_type);
-                    if (JSON.parse(decryptData).user_type == "Dealer") {
+                    if (JSON.parse(decryptData).user_type == "Dealer" || JSON.parse(decryptData).user_type == "Retailer") {
                         getProduct(JSON.parse(decryptData).contactId);
                         setDealer(JSON.parse(decryptData).contactId);
                     } else {
@@ -313,9 +313,9 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
     }
 
     const onSubmit = () => {
-        if (userType != "Dealer" && !dealerFound) {
+        if (userType != "Dealer" && userType != "Retailer" && !dealerFound) {
             Toast.show(t("Please search and select Dealer"), Toast.LONG);
-        } else if (userType != "Dealer" && dealerFound && dealer == "") {
+        } else if (dealerFound && dealer == "") {
             Toast.show(t("Please select Dealer"), Toast.LONG);
         } else if (contratorPhone.trim() == "") {
             Toast.show(t("Please enter Contractor Mobile Number & Search"), Toast.LONG);
@@ -382,6 +382,7 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
                 formdata.append("productId", productId);
                 formdata.append("quantity", totalBag);
                 formdata.append("saleToken", saleToken);
+                console.log(formdata);
                 fetch(`${BASE_URL}/allocate-lifting`, {
                     method: 'POST',
                     headers: {
@@ -394,7 +395,7 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
                     .then((response) => response.json())
                     .then((responseJson) => {
                         setLoading(false);
-                        //console.log("Allocate Lifting:", responseJson);
+                        console.log("Allocate Lifting:", responseJson);
                         if (responseJson.bstatus == 1) {
                             Toast.show(responseJson.message, Toast.LONG);
                             setSuccessPop(true);
@@ -426,6 +427,7 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
                     <VStack space={4} padding={8}>
                         {userType != "Dealer" && (
                             <Stack space={2}>
+                                {userType != "Retailer" && (
                                 <View>
                                     <Text style={MainStyle.lable} fontSize="xs">{t("Dealer Phone Number")} <Text color={dangerColor}>*</Text></Text>
                                     <View style={MainStyle.inputbox}>
@@ -443,6 +445,7 @@ const AllocateLiftingScreen = ({ navigation, route }) => {
                                         />
                                     </View>
                                 </View>
+                                )}
                                 {dealerList.length != 0 && (
                                     <View>
                                         <Text style={MainStyle.lable} fontSize="xs">{t("Dealer")} <Text color={dangerColor}>*</Text></Text>

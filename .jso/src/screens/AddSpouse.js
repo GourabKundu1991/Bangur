@@ -1292,7 +1292,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '2.5',
+                        paddingY: '1.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: panDOB != '' ? '#111111' : '#999999',
@@ -1503,7 +1503,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '2.5',
+                        paddingY: '1.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: dob != '' ? '#111111' : '#999999',

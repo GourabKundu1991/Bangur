@@ -322,14 +322,10 @@ const MyCartScreen = ({ navigation, route }) => {
             }
 
             const responseJson = await response.json();
-
+            Toast.show(responseJson.message);
             if (responseJson.bstatus == 1) {
                 setForRelode(forrelode + 1)
 
-            }
-            else {
-                setMycardData("")
-                // Toast.show(responseJson.message);
             }
         }
         catch (error) {

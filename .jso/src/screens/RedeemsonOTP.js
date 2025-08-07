@@ -172,6 +172,7 @@
       });
     };
     var OTPcall = function OTPcall() {
+      _reactNative.Keyboard.dismiss();
       // console.log("otpppppppp calllllllllllllllll");
       _asyncStorage.default.getItem('userToken').then(function (val) {
         if (val != null) {
@@ -189,8 +190,8 @@
           .then(function (response) {
             response.json().then(function (finalres) {
               if (finalres.bstatus == 1) {
-                setOtpValue(finalres.OTP);
-                setOriginalOTP(finalres.OTP);
+                /* setOtpValue(finalres.OTP)
+                setOriginalOTP(finalres.OTP) */
                 _reactNativeSimpleToast.default.show(finalres.message);
               } else {
                 _reactNativeSimpleToast.default.show(finalres.message);
@@ -204,6 +205,7 @@
     };
     var ForSubmit = /*#__PURE__*/function () {
       var _ref6 = (0, _asyncToGenerator2.default)(function* () {
+        _reactNative.Keyboard.dismiss();
         try {
           var val = yield _asyncStorage.default.getItem('userToken');
           if (!val) {
@@ -303,160 +305,163 @@
         children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_HeaderForOrderDeclearation.default, {
           component: "OTP",
           navigation: navigation
-        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-          style: {
-            backgroundColor: _MainStyle.lightColor,
-            borderTopLeftRadius: 12,
-            borderTopRightRadius: 12,
-            width: '94%',
-            alignSelf: 'center',
-            flex: 1
-          },
-          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.ScrollView, {
+          automaticallyAdjustKeyboardInsets: true,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
             style: {
-              flex: 1,
-              paddingHorizontal: 5
+              backgroundColor: _MainStyle.lightColor,
+              borderTopLeftRadius: 12,
+              borderTopRightRadius: 12,
+              width: '94%',
+              alignSelf: 'center',
+              flex: 1
             },
-            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-              style: {
-                alignItems: 'center',
-                marginTop: 25
-              },
-              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                style: {
-                  fontSize: 16,
-                  alignSelf: "flex-start",
-                  paddingLeft: 15,
-                  fontWeight: 'bold'
-                },
-                children: t("Redemption Confirmation")
-              })
-            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-              style: {
-                alignItems: 'center',
-                marginTop: 2
-              },
-              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                style: {
-                  fontSize: 18,
-                  alignSelf: "flex-start",
-                  paddingLeft: 15
-                },
-                children: t("Please confirm the redemption by entering the OTP sent to your registered mobile number")
-              })
-            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
               style: {
                 flex: 1,
-                alignItems: 'center',
-                paddingHorizontal: 10
+                paddingHorizontal: 5
               },
               children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-                style: [_MainStyle.MainStyle.inputbox, {
-                  marginBottom: 18,
-                  marginTop: 18
-                }],
-                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
-                  readOnly: true,
-                  size: "lg"
-                  // onChangeText={(text) => setPhoneno(text.replace(/[^0-9]/g, ''))} // Restrict input to numbers
-                  ,
-                  variant: "unstyled",
-                  keyboardType: "phone-pad" // Ensure a numeric keyboard
-                  ,
-                  InputLeftElement: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
-                    name: "call-outline" // Changed to phone icon
-                    ,
-                    size: 20,
-                    color: "#666666",
-                    style: {
-                      width: 25,
-                      marginLeft: 10,
-                      textAlign: 'center'
-                    }
-                  })
-                  // value={Phoneno != "" ? Phoneno : "" + " *"}
-                  ,
-                  value: Phoneno
+                style: {
+                  alignItems: 'center',
+                  marginTop: 25
+                },
+                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                  style: {
+                    fontSize: 16,
+                    alignSelf: "flex-start",
+                    paddingLeft: 15,
+                    fontWeight: 'bold'
+                  },
+                  children: t("Redemption Confirmation")
+                })
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                style: {
+                  alignItems: 'center',
+                  marginTop: 2
+                },
+                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                  style: {
+                    fontSize: 18,
+                    alignSelf: "flex-start",
+                    paddingLeft: 15
+                  },
+                  children: t("Please confirm the redemption by entering the OTP sent to your registered mobile number")
                 })
               }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
-                children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
-                  style: _MainStyle.MainStyle.lable,
-                  fontSize: "xs",
-                  children: [t('OTP'), ' ', /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
-                    color: _MainStyle.darkGrey,
-                    fontSize: "10",
-                    children: ["(", t('To Verify Mobile No.'), ")"]
-                  }), ' ', /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                    color: _MainStyle.dangerColor,
-                    children: "*"
-                  })]
-                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
-                    style: _MainStyle.MainStyle.inputbox,
-                    width: 150,
-                    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
-                      height: 43,
-                      value: otpValue,
-                      fontFamily: _MainStyle.fontBold,
-                      size: "xl",
-                      letterSpacing: 5,
-                      variant: "unstyled",
-                      keyboardType: "number-pad",
-                      secureTextEntry: true,
-                      maxLength: 6,
-                      onChangeText: function onChangeText(text) {
-                        return setOtpValue(text);
+                style: {
+                  flex: 1,
+                  alignItems: 'center',
+                  paddingHorizontal: 10
+                },
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                  style: [_MainStyle.MainStyle.inputbox, {
+                    marginBottom: 18,
+                    marginTop: 18
+                  }],
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
+                    readOnly: true,
+                    size: "lg"
+                    // onChangeText={(text) => setPhoneno(text.replace(/[^0-9]/g, ''))} // Restrict input to numbers
+                    ,
+                    variant: "unstyled",
+                    keyboardType: "phone-pad" // Ensure a numeric keyboard
+                    ,
+                    InputLeftElement: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                      name: "call-outline" // Changed to phone icon
+                      ,
+                      size: 20,
+                      color: "#666666",
+                      style: {
+                        width: 25,
+                        marginLeft: 10,
+                        textAlign: 'center'
                       }
                     })
-                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNativeGestureHandler.TouchableOpacity, {
-                    style: {
-                      alignSelf: 'flex-start',
-                      marginRight: "33%"
-                    },
-                    onPress: function onPress() {
-                      // OTPcall()
-                      OTPcall();
-                      setTimeLeft(180);
-                      setTimeUp(false);
-                    },
-                    children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                      fontFamily: _MainStyle.fontSemiBold,
-                      fontSize: "sm",
+                    // value={Phoneno != "" ? Phoneno : "" + " *"}
+                    ,
+                    value: Phoneno
+                  })
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                    style: _MainStyle.MainStyle.lable,
+                    fontSize: "xs",
+                    children: [t('OTP'), ' ', /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                      color: _MainStyle.darkGrey,
+                      fontSize: "10",
+                      children: ["(", t('To Verify Mobile No.'), ")"]
+                    }), ' ', /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                      color: _MainStyle.dangerColor,
+                      children: "*"
+                    })]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                      style: _MainStyle.MainStyle.inputbox,
+                      width: 150,
+                      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
+                        height: 43,
+                        value: otpValue,
+                        fontFamily: _MainStyle.fontBold,
+                        size: "xl",
+                        letterSpacing: 5,
+                        variant: "unstyled",
+                        keyboardType: "number-pad",
+                        secureTextEntry: true,
+                        maxLength: 6,
+                        onChangeText: function onChangeText(text) {
+                          return setOtpValue(text);
+                        }
+                      })
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNativeGestureHandler.TouchableOpacity, {
                       style: {
-                        color: 'blue',
-                        alignSelf: 'flex-start'
+                        alignSelf: 'flex-start',
+                        marginRight: "33%"
                       },
-                      children: t("Resend")
-                    })
+                      onPress: function onPress() {
+                        // OTPcall()
+                        OTPcall();
+                        setTimeLeft(180);
+                        setTimeUp(false);
+                      },
+                      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                        fontFamily: _MainStyle.fontSemiBold,
+                        fontSize: "sm",
+                        style: {
+                          color: 'blue',
+                          alignSelf: 'flex-start'
+                        },
+                        children: t("Resend")
+                      })
+                    })]
                   })]
                 })]
-              })]
-            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
-              style: {
-                height: 45,
-                backgroundColor: _MainStyle.baseColor,
-                borderRadius: 8,
-                overflow: 'hidden',
-                width: "90%",
-                marginTop: 5,
-                alignSelf: "center",
-                marginBottom: 8
-              },
-              onPress: function onPress() {
-                // navigation.navigate('ViewOrder',{"pageTitle":"View Orders "}
-                // )
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
+                style: {
+                  height: 45,
+                  backgroundColor: _MainStyle.baseColor,
+                  borderRadius: 8,
+                  overflow: 'hidden',
+                  width: "90%",
+                  marginTop: 5,
+                  alignSelf: "center",
+                  marginBottom: 8
+                },
+                onPress: function onPress() {
+                  // navigation.navigate('ViewOrder',{"pageTitle":"View Orders "}
+                  // )
 
-                ConfarmOtpFunction();
-              },
-              children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
-                color: _MainStyle.lightColor,
-                fontFamily: _MainStyle.fontSemiBold,
-                fontSize: "sm",
-                children: t("Submit")
-              })
-            })]
+                  ConfarmOtpFunction();
+                },
+                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                  color: _MainStyle.lightColor,
+                  fontFamily: _MainStyle.fontSemiBold,
+                  fontSize: "sm",
+                  children: t("Submit")
+                })
+              })]
+            })
           })
         }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Footer.default, {
           navigation: navigation,

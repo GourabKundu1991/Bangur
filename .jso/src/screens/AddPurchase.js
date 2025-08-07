@@ -474,6 +474,7 @@
           component: route.params.pageTitle,
           navigation: navigation
         }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.ScrollView, {
+          automaticallyAdjustKeyboardInsets: true,
           backgroundColor: _MainStyle.lightColor,
           borderTopLeftRadius: 12,
           borderTopRightRadius: 12,
@@ -582,7 +583,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '2.5',
+                        paddingY: '1.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: purchaseDate != '' ? '#111111' : '#999999',
@@ -610,7 +611,7 @@
                     children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                       style: _MainStyle.MainStyle.lable,
                       fontSize: "xs",
-                      children: [t("Dealer Phone Number"), " ", /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                      children: [t("Dealer / Retailer Phone Number"), " ", /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                         color: _MainStyle.dangerColor,
                         children: "*"
                       })]

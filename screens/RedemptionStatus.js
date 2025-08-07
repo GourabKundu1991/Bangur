@@ -9,7 +9,6 @@ import { MainStyle, baseColor, baseLightColor, baseSemiColor, dangerColor, darkC
 import Toast from 'react-native-simple-toast';
 import HeaderComponents from '../components/Header';
 import moment from 'moment';
-import DateTimePickerModal from "react-native-modal-datetime-picker";
 import FooterComponents from '../components/Footer';
 import { useFocusEffect } from '@react-navigation/native';
 

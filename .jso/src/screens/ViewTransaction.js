@@ -695,7 +695,7 @@
                         textAlign: "right",
                         children: item.sale_id
                       })]
-                    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                    }), item.site_name != null && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
                       alignItems: "center",
                       justifyContent: "space-between",
                       marginTop: 3,
@@ -713,7 +713,7 @@
                         textAlign: "right",
                         children: item.site_name
                       })]
-                    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                    }), item.site_mobile != null && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
                       alignItems: "center",
                       justifyContent: "space-between",
                       children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
@@ -739,7 +739,7 @@
                         color: _MainStyle.darkGrey,
                         fontSize: "xs",
                         fontFamily: _MainStyle.fontRegular,
-                        children: t("Dealer Name")
+                        children: item.puchased_from_hierarchy + " " + t("Name")
                       }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                         width: '57%',
                         color: _MainStyle.darkColor,
@@ -756,7 +756,7 @@
                         color: _MainStyle.darkGrey,
                         fontSize: "xs",
                         fontFamily: _MainStyle.fontRegular,
-                        children: t("Dealer ID")
+                        children: item.puchased_from_hierarchy + " " + t("ID")
                       }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                         width: '57%',
                         color: _MainStyle.darkColor,
@@ -773,7 +773,7 @@
                         color: _MainStyle.darkGrey,
                         fontSize: "xs",
                         fontFamily: _MainStyle.fontRegular,
-                        children: t("Dealer Phone")
+                        children: item.puchased_from_hierarchy + " " + t("Phone")
                       }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                         width: '57%',
                         color: _MainStyle.darkColor,
@@ -790,7 +790,7 @@
                         color: _MainStyle.darkGrey,
                         fontSize: "xs",
                         fontFamily: _MainStyle.fontRegular,
-                        children: t("Dealer's District")
+                        children: item.puchased_from_hierarchy + " " + t("District")
                       }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                         width: '57%',
                         color: _MainStyle.darkColor,

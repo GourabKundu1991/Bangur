@@ -1,6 +1,6 @@
 import { Box, HStack, NativeBaseProvider, Text, VStack, Stack, Button, Avatar, Input, Select, Actionsheet, useDisclose } from 'native-base';
 import React, { useEffect, useState } from 'react';
-import { ActivityIndicator, BackHandler, Image, Pressable, ScrollView, StatusBar, StyleSheet, View, useWindowDimensions } from 'react-native';
+import { ActivityIndicator, BackHandler, Image, Keyboard, Pressable, ScrollView, StatusBar, StyleSheet, View, useWindowDimensions } from 'react-native';
 import { AccessToken, BASE_URL, secretKey, OS_TYPE, APP_VERSION } from '../auth_provider/Config';
 import { useTranslation } from 'react-i18next';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -135,6 +135,7 @@ const RedeemsonOTP = ({ navigation, route }) => {
 
 
     const OTPcall = () => {
+        Keyboard.dismiss();
         // console.log("otpppppppp calllllllllllllllll");
         AsyncStorage.getItem('userToken').then(val => {
 
@@ -155,8 +156,8 @@ const RedeemsonOTP = ({ navigation, route }) => {
                     .then((response) => {
                         response.json().then(finalres => {
                             if (finalres.bstatus == 1) {
-                                setOtpValue(finalres.OTP)
-                                setOriginalOTP(finalres.OTP)
+                                /* setOtpValue(finalres.OTP)
+                                setOriginalOTP(finalres.OTP) */
                                 Toast.show(finalres.message);
                             }
                             else {
@@ -179,6 +180,7 @@ const RedeemsonOTP = ({ navigation, route }) => {
 
 
     const ForSubmit = async () => {
+        Keyboard.dismiss();
         try {
             const val = await AsyncStorage.getItem('userToken');
             if (!val) {
@@ -209,7 +211,7 @@ const RedeemsonOTP = ({ navigation, route }) => {
             if (responseJson.bstatus == 1) {
                 // /order/placeigation.navigate("OrderPlacessSuccessfully",{"orderis":responseJson.orderid});
                 //    navigation.navigate("OrderPlacessSuccessfully", { orderis: responseJson.orderid });
-                navigation.navigate("OrderPlacessSuccessfully", { orderId: responseJson.orderId, influencerName: responseJson.name});
+                navigation.navigate("OrderPlacessSuccessfully", { orderId: responseJson.orderId, influencerName: responseJson.name });
 
                 Toast.show(responseJson.message || "Action completed successfully!");
             } else {
@@ -290,124 +292,121 @@ const RedeemsonOTP = ({ navigation, route }) => {
             <StatusBar barStyle="dark-content" backgroundColor={lightColor} />
             <VStack flex={1} backgroundColor={"#000000"}>
                 <HeaderForOrderDeclearation component={"OTP"} navigation={navigation} />
-                <View
-                    style={{
-                        backgroundColor: lightColor,
-                        borderTopLeftRadius: 12,
-                        borderTopRightRadius: 12,
-                        width: '94%',
-                        alignSelf: 'center',
-                        flex: 1,
-                    }}
-                >
-                    <View style={{ flex: 1, paddingHorizontal: 5 }}>
-                        {/* Text at the top */}
-                        <View style={{ alignItems: 'center', marginTop: 25 }}>
-                            <Text style={{ fontSize: 16, alignSelf: "flex-start", paddingLeft: 15, fontWeight: 'bold' }}>
-                                {t("Redemption Confirmation")}
-                            </Text>
-                        </View>
-                        <View style={{ alignItems: 'center', marginTop: 2 }}>
-                            <Text style={{ fontSize: 18, alignSelf: "flex-start", paddingLeft: 15, }}>
-                                {/* Your points have been redeemed for the {address}
+                <ScrollView automaticallyAdjustKeyboardInsets={true}>
+                    <View
+                        style={{
+                            backgroundColor: lightColor,
+                            borderTopLeftRadius: 12,
+                            borderTopRightRadius: 12,
+                            width: '94%',
+                            alignSelf: 'center',
+                            flex: 1,
+                        }}
+                    >
+                        <View style={{ flex: 1, paddingHorizontal: 5 }}>
+                            {/* Text at the top */}
+                            <View style={{ alignItems: 'center', marginTop: 25 }}>
+                                <Text style={{ fontSize: 16, alignSelf: "flex-start", paddingLeft: 15, fontWeight: 'bold' }}>
+                                    {t("Redemption Confirmation")}
+                                </Text>
+                            </View>
+                            <View style={{ alignItems: 'center', marginTop: 2 }}>
+                                <Text style={{ fontSize: 18, alignSelf: "flex-start", paddingLeft: 15, }}>
+                                    {/* Your points have been redeemed for the {address}
                                 Please confirm the redemption by entering the OTP
                                 sent to your registered mobile numbe. */}
-                                {t("Please confirm the redemption by entering the OTP sent to your registered mobile number")}
+                                    {t("Please confirm the redemption by entering the OTP sent to your registered mobile number")}
 
-                            </Text>
-                        </View>
-
-                        {/* Centered Image */}
-                        <View style={{ flex: 1, alignItems: 'center', paddingHorizontal: 10 }}>
-
-                            <View style={[MainStyle.inputbox, { marginBottom: 18, marginTop: 18 }]}>
-                                <Input
-                                    readOnly
-                                    size="lg"
-                                    // onChangeText={(text) => setPhoneno(text.replace(/[^0-9]/g, ''))} // Restrict input to numbers
-                                    variant="unstyled"
-                                    keyboardType="phone-pad" // Ensure a numeric keyboard
-                                    InputLeftElement={
-                                        <Icon
-                                            name="call-outline" // Changed to phone icon
-                                            size={20}
-                                            color="#666666"
-                                            style={{
-                                                width: 25,
-                                                marginLeft: 10,
-                                                textAlign: 'center',
-                                            }}
-                                        />
-                                    }
-                                    // value={Phoneno != "" ? Phoneno : "" + " *"}
-                                    value={Phoneno}
-                                />
-                            </View>
-
-                            <View>
-                                <Text style={MainStyle.lable} fontSize="xs">
-                                    {t('OTP')}{' '}
-                                    <Text color={darkGrey} fontSize="10">
-                                        ({t('To Verify Mobile No.')})
-                                    </Text>{' '}
-                                    <Text color={dangerColor}>*</Text>
                                 </Text>
-                                <HStack justifyContent="space-between" alignItems="center">
-                                    <View style={MainStyle.inputbox} width={150}>
-                                        <Input
-                                            height={43}
-                                            value={otpValue}
-                                            fontFamily={fontBold}
-                                            size="xl"
-                                            letterSpacing={5}
-                                            variant="unstyled"
-                                            keyboardType="number-pad"
-                                            secureTextEntry={true}
-                                            maxLength={6}
-                                            onChangeText={text => setOtpValue(text)}
-                                        />
-                                    </View>
-
-                                    <TouchableOpacity style={{ alignSelf: 'flex-start', marginRight: "33%" }} onPress={() => {
-                                        // OTPcall()
-                                        OTPcall()
-                                        setTimeLeft(180)
-                                        setTimeUp(false)
-                                    }}>
-                                        <Text
-                                            fontFamily={fontSemiBold}
-                                            fontSize="sm"
-                                            style={{ color: 'blue', alignSelf: 'flex-start' }}
-                                        >
-                                            {t("Resend")}
-                                        </Text>
-                                    </TouchableOpacity>
-                                </HStack>
                             </View>
 
+                            {/* Centered Image */}
+                            <View style={{ flex: 1, alignItems: 'center', paddingHorizontal: 10 }}>
+
+                                <View style={[MainStyle.inputbox, { marginBottom: 18, marginTop: 18 }]}>
+                                    <Input
+                                        readOnly
+                                        size="lg"
+                                        // onChangeText={(text) => setPhoneno(text.replace(/[^0-9]/g, ''))} // Restrict input to numbers
+                                        variant="unstyled"
+                                        keyboardType="phone-pad" // Ensure a numeric keyboard
+                                        InputLeftElement={
+                                            <Icon
+                                                name="call-outline" // Changed to phone icon
+                                                size={20}
+                                                color="#666666"
+                                                style={{
+                                                    width: 25,
+                                                    marginLeft: 10,
+                                                    textAlign: 'center',
+                                                }}
+                                            />
+                                        }
+                                        // value={Phoneno != "" ? Phoneno : "" + " *"}
+                                        value={Phoneno}
+                                    />
+                                </View>
+
+                                <View>
+                                    <Text style={MainStyle.lable} fontSize="xs">
+                                        {t('OTP')}{' '}
+                                        <Text color={darkGrey} fontSize="10">
+                                            ({t('To Verify Mobile No.')})
+                                        </Text>{' '}
+                                        <Text color={dangerColor}>*</Text>
+                                    </Text>
+                                    <HStack justifyContent="space-between" alignItems="center">
+                                        <View style={MainStyle.inputbox} width={150}>
+                                            <Input
+                                                height={43}
+                                                value={otpValue}
+                                                fontFamily={fontBold}
+                                                size="xl"
+                                                letterSpacing={5}
+                                                variant="unstyled"
+                                                keyboardType="number-pad"
+                                                secureTextEntry={true}
+                                                maxLength={6}
+                                                onChangeText={text => setOtpValue(text)}
+                                            />
+                                        </View>
+
+                                        <TouchableOpacity style={{ alignSelf: 'flex-start', marginRight: "33%" }} onPress={() => {
+                                            // OTPcall()
+                                            OTPcall()
+                                            setTimeLeft(180)
+                                            setTimeUp(false)
+                                        }}>
+                                            <Text
+                                                fontFamily={fontSemiBold}
+                                                fontSize="sm"
+                                                style={{ color: 'blue', alignSelf: 'flex-start' }}
+                                            >
+                                                {t("Resend")}
+                                            </Text>
+                                        </TouchableOpacity>
+                                    </HStack>
+                                </View>
 
 
+                            </View>
+                            <Button style={{ height: 45, backgroundColor: baseColor, borderRadius: 8, overflow: 'hidden', width: "90%", marginTop: 5, alignSelf: "center", marginBottom: 8 }}
+                                onPress={() => {
+                                    // navigation.navigate('ViewOrder',{"pageTitle":"View Orders "}
+                                    // )
+
+                                    ConfarmOtpFunction()
 
 
-
-
-
+                                }}
+                            >
+                                <Text color={lightColor} fontFamily={fontSemiBold} fontSize="sm">{t("Submit")}</Text>
+                            </Button>
                         </View>
-                        <Button style={{ height: 45, backgroundColor: baseColor, borderRadius: 8, overflow: 'hidden', width: "90%", marginTop: 5, alignSelf: "center", marginBottom: 8 }}
-                            onPress={() => {
-                                // navigation.navigate('ViewOrder',{"pageTitle":"View Orders "}
-                                // )
 
-                                ConfarmOtpFunction()
-
-
-                            }}
-                        >
-                            <Text color={lightColor} fontFamily={fontSemiBold} fontSize="sm">{t("Submit")}</Text>
-                        </Button>
                     </View>
 
-                </View>
+                </ScrollView>
 
                 {/* <FooterComponents navigation={navigation} component={"Influencer"} /> */}
                 <FooterComponents navigation={navigation} component={userType} cartcount={cartcount} />

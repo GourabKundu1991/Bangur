@@ -25,6 +25,17 @@ const ChangeLanguageScreen = ({ navigation, route }) => {
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
             setLoading(true);
+
+            AsyncStorage.getItem('language').then(val => {
+                if (val != null) {
+                    setLanguage(val);
+                    i18n
+                        .changeLanguage(val)
+                        .then(() => console.log(val))
+                        .catch(err => console.log(err));
+                }
+            });
+
             getAllData();
         });
         return unsubscribe;

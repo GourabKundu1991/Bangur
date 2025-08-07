@@ -153,7 +153,7 @@
             var CryptoJS = _$$_REQUIRE(_dependencyMap[15]);
             var decryptData = CryptoJS.AES.decrypt(val, _Config.secretKey).toString(CryptoJS.enc.Utf8);
             setUserType(JSON.parse(decryptData).user_type);
-            if (JSON.parse(decryptData).user_type == "Dealer") {
+            if (JSON.parse(decryptData).user_type == "Dealer" || JSON.parse(decryptData).user_type == "Retailer") {
               getProduct(JSON.parse(decryptData).contactId);
               setDealer(JSON.parse(decryptData).contactId);
             } else {
@@ -382,9 +382,9 @@
       });
     };
     var onSubmit = function onSubmit() {
-      if (userType != "Dealer" && !dealerFound) {
+      if (userType != "Dealer" && userType != "Retailer" && !dealerFound) {
         _reactNativeSimpleToast.default.show(t("Please search and select Dealer"), _reactNativeSimpleToast.default.LONG);
-      } else if (userType != "Dealer" && dealerFound && dealer == "") {
+      } else if (dealerFound && dealer == "") {
         _reactNativeSimpleToast.default.show(t("Please select Dealer"), _reactNativeSimpleToast.default.LONG);
       } else if (contratorPhone.trim() == "") {
         _reactNativeSimpleToast.default.show(t("Please enter Contractor Mobile Number & Search"), _reactNativeSimpleToast.default.LONG);
@@ -448,6 +448,7 @@
           formdata.append("productId", productId);
           formdata.append("quantity", totalBag);
           formdata.append("saleToken", saleToken);
+          console.log(formdata);
           fetch(`${_Config.BASE_URL}/allocate-lifting`, {
             method: 'POST',
             headers: {
@@ -460,7 +461,7 @@
             return response.json();
           }).then(function (responseJson) {
             setLoading(false);
-            //console.log("Allocate Lifting:", responseJson);
+            console.log("Allocate Lifting:", responseJson);
             if (responseJson.bstatus == 1) {
               _reactNativeSimpleToast.default.show(responseJson.message, _reactNativeSimpleToast.default.LONG);
               setSuccessPop(true);
@@ -502,7 +503,7 @@
             padding: 8,
             children: [userType != "Dealer" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Stack, {
               space: 2,
-              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+              children: [userType != "Retailer" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
                 children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                   style: _MainStyle.MainStyle.lable,
                   fontSize: "xs",
@@ -708,7 +709,7 @@
                         height: 43
                       },
                       alignItems: "center",
-                      paddingY: '2.5',
+                      paddingY: '1.5',
                       justifyContent: "space-between",
                       children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                         color: purchaseDate != '' ? '#111111' : '#999999',

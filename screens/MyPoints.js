@@ -37,6 +37,13 @@ const MyPointsScreen = ({ navigation, route }) => {
 
     const [availablePoints, setAvailablePoints] = React.useState("");
 
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth();
+    const day = today.getDate();
+
+    const miniYear = new Date(year - 100, month, day);
+
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
             setLoading(true);
@@ -189,6 +196,7 @@ const MyPointsScreen = ({ navigation, route }) => {
             setLoading(true);
             getAllData(fromDate, toDate);
             setIsReset(true);
+            setPageNumber(1);
         }
     }
 
@@ -198,6 +206,7 @@ const MyPointsScreen = ({ navigation, route }) => {
         setIsReset(false);
         setFromDate("");
         setToDate("");
+        setPageNumber(1);
     }
 
     const onMore = (val) => {
@@ -296,6 +305,7 @@ const MyPointsScreen = ({ navigation, route }) => {
                             onConfirm={handleConfirm}
                             onCancel={hideDatePicker}
                             maximumDate={new Date()}
+                            minimumDate={miniYear}
                         />
                         {pointList.length == 0 && (
                             <VStack space={6} backgroundColor={lightColor} borderRadius={8} overflow="hidden" height={300} justifyContent="center" alignItems="center">
@@ -381,7 +391,7 @@ const MyPointsScreen = ({ navigation, route }) => {
                                 </VStack>
                             </Stack>
                         )}
-                        {pointList.length != 0 && pageNumber != totalPage && (
+                        {pointList.length > 0 && pageNumber != totalPage && (
                             <HStack paddingY="3" paddingX="6" justifyContent="center">
                                 <Button variant="outline" size={'xs'} rounded={30} onPress={() => loadMore()}>
                                     <Text color="#bbbbbb">{t("Load More")}</Text>

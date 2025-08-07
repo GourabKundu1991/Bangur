@@ -260,6 +260,7 @@ const IntroScreen = ({ navigation }) => {
                     }}>
                     <Select.Item label="Contractor" value="Contractor" />
                     <Select.Item label="Dealer" value="Dealer" />
+                    <Select.Item label="Retailer" value="Retailer" />
                     <Select.Item label="TSO" value="TSO" />
                     <Select.Item label="TTO" value="TTO" />
                     <Select.Item label="STH" value="STH" />

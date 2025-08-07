@@ -328,28 +328,32 @@ const ViewTransactionScreen = ({ navigation, route }) => {
                                             <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Transaction ID")}</Text>
                                             <Text width={'58%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.sale_id}</Text>
                                         </HStack>
+                                        {item.site_name != null && (
                                         <HStack alignItems="center" justifyContent="space-between" marginTop={3}>
                                             <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Site Name")}</Text>
                                             <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.site_name}</Text>
                                         </HStack>
+                                        )}
+                                        {item.site_mobile != null && (
                                         <HStack alignItems="center" justifyContent="space-between">
                                             <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Site Mobile No.")}</Text>
                                             <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.site_mobile}</Text>
                                         </HStack>
+                                        )}
                                         <HStack alignItems="center" justifyContent="space-between" marginTop={3}>
-                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Dealer Name")}</Text>
+                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{item.puchased_from_hierarchy + " " + t("Name")}</Text>
                                             <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.dealerName}</Text>
                                         </HStack>
                                         <HStack alignItems="center" justifyContent="space-between">
-                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Dealer ID")}</Text>
+                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{item.puchased_from_hierarchy + " " + t("ID")}</Text>
                                             <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.dealerId}</Text>
                                         </HStack>
                                         <HStack alignItems="center" justifyContent="space-between">
-                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Dealer Phone")}</Text>
+                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{item.puchased_from_hierarchy + " " + t("Phone")}</Text>
                                             <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.dealerPhone}</Text>
                                         </HStack>
                                         <HStack alignItems="center" justifyContent="space-between">
-                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Dealer's District")}</Text>
+                                            <Text width={'40%'} color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{item.puchased_from_hierarchy + " " + t("District")}</Text>
                                             <Text width={'57%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.dealerDistrictName}</Text>
                                         </HStack>
 

@@ -80,7 +80,7 @@ const PurchaseHistoryScreen = ({ navigation, route }) => {
                 })
                     .then((response) => response.json())
                     .then((responseJson) => {
-                        //console.log("Purchase:", responseJson);
+                        console.log("Purchase:", responseJson);
                         if (responseJson.bstatus == 1) {
                             setLoading(false);
                             setPurchaseList(responseJson.sale_details);
@@ -300,7 +300,7 @@ const PurchaseHistoryScreen = ({ navigation, route }) => {
                                             <Text width={'58%'} color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.id}</Text>
                                         </HStack>
                                         <HStack alignItems="center" justifyContent="space-between">
-                                            <Text color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{t("Dealer")}</Text>
+                                            <Text color={darkGrey} fontSize="xs" fontFamily={fontRegular}>{item.puchased_from_hierarchy}</Text>
                                             <Text color={darkColor} fontSize="xs" fontFamily={fontSemiBold} textAlign="right">{item.puchased_from}</Text>
                                         </HStack>
                                         <HStack alignItems="center" justifyContent="space-between">

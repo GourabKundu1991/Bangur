@@ -310,11 +310,9 @@
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
           var responseJson = yield response.json();
+          _reactNativeSimpleToast.default.show(responseJson.message);
           if (responseJson.bstatus == 1) {
             setForRelode(forrelode + 1);
-          } else {
-            setMycardData("");
-            // Toast.show(responseJson.message);
           }
         } catch (error) {
           console.error("Error in Mycart111111:", error);

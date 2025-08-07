@@ -329,7 +329,7 @@ const TransactionApprovalsScreen = ({ navigation, route }) => {
             <StatusBar barStyle="dark-content" backgroundColor={lightColor} />
             <VStack flex={1} backgroundColor={"#000000"}>
                 <HeaderComponents component={route.params.pageTitle} navigation={navigation}/>
-                <ScrollView backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
+                <ScrollView automaticallyAdjustKeyboardInsets={true} backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
                     <VStack space={5} padding={6}>
                         <View style={MainStyle.inputbox}>
                             <Input fontFamily={fontRegular} size="sm" variant="unstyled" InputLeftElement={<Icon name="search-outline" size={18} color={darkGrey} style={{ marginLeft: 10, textAlign: 'center' }} />} placeholder='Name / Member ID' onChangeText={(text) => setSearchTerms(text)}

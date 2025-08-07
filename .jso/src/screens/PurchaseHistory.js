@@ -119,7 +119,7 @@
           }).then(function (response) {
             return response.json();
           }).then(function (responseJson) {
-            //console.log("Purchase:", responseJson);
+            console.log("Purchase:", responseJson);
             if (responseJson.bstatus == 1) {
               setLoading(false);
               setPurchaseList(responseJson.sale_details);
@@ -588,7 +588,7 @@
                         color: _MainStyle.darkGrey,
                         fontSize: "xs",
                         fontFamily: _MainStyle.fontRegular,
-                        children: t("Dealer")
+                        children: item.puchased_from_hierarchy
                       }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
                         color: _MainStyle.darkColor,
                         fontSize: "xs",

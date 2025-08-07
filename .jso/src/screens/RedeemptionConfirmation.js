@@ -96,6 +96,7 @@
           component: "Confirmation",
           navigation: navigation
         }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.ScrollView, {
+          automaticallyAdjustKeyboardInsets: true,
           backgroundColor: _MainStyle.lightColor,
           borderTopLeftRadius: 12,
           borderTopRightRadius: 12,

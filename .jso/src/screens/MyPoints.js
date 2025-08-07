@@ -89,6 +89,11 @@
       _React$useState30 = (0, _slicedToArray2.default)(_React$useState29, 2),
       availablePoints = _React$useState30[0],
       setAvailablePoints = _React$useState30[1];
+    var today = new Date();
+    var year = today.getFullYear();
+    var month = today.getMonth();
+    var day = today.getDate();
+    var miniYear = new Date(year - 100, month, day);
     (0, _react.useEffect)(function () {
       var unsubscribe = navigation.addListener('focus', function () {
         setLoading(true);
@@ -222,6 +227,7 @@
         setLoading(true);
         getAllData(fromDate, toDate);
         setIsReset(true);
+        setPageNumber(1);
       }
     };
     var onReset = function onReset() {
@@ -230,6 +236,7 @@
       setIsReset(false);
       setFromDate("");
       setToDate("");
+      setPageNumber(1);
     };
     var onMore = function onMore(val) {
       setMoreValue(val);
@@ -399,7 +406,8 @@
               mode: "date",
               onConfirm: handleConfirm,
               onCancel: hideDatePicker,
-              maximumDate: new Date()
+              maximumDate: new Date(),
+              minimumDate: miniYear
             }), pointList.length == 0 && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {
               space: 6,
               backgroundColor: _MainStyle.lightColor,
@@ -643,7 +651,7 @@
                   }, index);
                 })
               })]
-            }), pointList.length != 0 && pageNumber != totalPage && /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.HStack, {
+            }), pointList.length > 0 && pageNumber != totalPage && /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.HStack, {
               paddingY: "3",
               paddingX: "6",
               justifyContent: "center",

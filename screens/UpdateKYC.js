@@ -513,11 +513,63 @@ const UpdateKYCScreen = ({ navigation, route }) => {
                                             <Input value={panNumber} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" textTransform={"uppercase"} readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
                                         </View>
                                     }
-                                    <DateTimePickerModal date={panDOB || undefined} maximumDate={today} isVisible={isDatePickerVisible} mode="date" onConfirm={handleConfirm} onCancel={hideDatePicker} />
+                                    <DateTimePickerModal date={panDOB || undefined} maximumDate={maxYear} minimumDate={miniYear} isVisible={isDatePickerVisible} mode="date" onConfirm={handleConfirm} onCancel={hideDatePicker} />
                                 </View>
                             )}
                             {fetchedDetails != "" && (
                                 <Stack space={3} marginTop={3}>
+                                    <View>
+                                        <Text style={MainStyle.lable} fontSize="xs">{t("Name as per ID Proof")} <Text color={dangerColor}>*</Text></Text>
+                                        <View style={MainStyle.inputbox}>
+                                            {fetchedDetails.name != "" ?
+                                                <Input value={fullName} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
+                                                :
+                                                <Input value={fullName} onChangeText={(text) => setFullName(text)} fontFamily={fontRegular} size="md" variant="unstyled" />
+                                            }
+                                        </View>
+                                    </View>
+                                    <View>
+                                        <Text style={MainStyle.lable} fontSize="xs">{t("Gender")} <Text color={dangerColor}>*</Text></Text>
+                                        <View style={MainStyle.inputbox}>
+                                            {fetchedDetails.gender != "" ?
+                                                <Input value={gender} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
+                                                :
+                                                <View style={MainStyle.inputbox}>
+                                                    <Select variant="unstyled" size="md" height={43}
+                                                        onValueChange={value => setGender(value)}
+                                                        selectedValue={gender}
+                                                        style={{ paddingLeft: 15 }}
+                                                        fontFamily={fontRegular}
+                                                        placeholder={t("Please Select")}
+                                                        dropdownCloseIcon={<Icon name="chevron-down-outline" style={{ marginRight: 10 }} size={20} />}
+                                                        dropdownOpenIcon={<Icon name="chevron-up-outline" style={{ marginRight: 10 }} size={20} />}
+                                                        _selectedItem={{
+                                                            backgroundColor: greyColor,
+                                                            endIcon: <Icon name="checkmark-circle" size={20} color={successColor} style={{ right: 0, position: 'absolute' }} />
+                                                        }}>
+                                                        <Select.Item label="Male" value="Male" />
+                                                        <Select.Item label="Female" value="Female" />
+                                                    </Select>
+                                                </View>
+                                            }
+                                        </View>
+                                    </View>
+                                    <View>
+                                        <Text style={MainStyle.lable} fontSize="xs">{t("Date of Birth")} <Text color={dangerColor}>*</Text></Text>
+                                        <View style={MainStyle.inputbox}>
+                                            {fetchedDetails.dob != "" ?
+                                                <Input value={fetchedDetails.dob} backgroundColor={lightGrey} fontFamily={fontRegular} size="md" variant="unstyled" readOnly InputRightElement={<Icon name="checkmark-circle" size={22} color={successColor} style={{ marginRight: 10, textAlign: 'center' }} />} />
+                                                :
+                                                <Pressable style={styles.inputbox} onPress={() => showDatePicker("DOB")}>
+                                                    <HStack style={{ paddingHorizontal: 10, height: 43 }} alignItems="center" paddingY={Platform.OS == 'ios' ? '1.5' : '2.5'} justifyContent="space-between">
+                                                        <Text color={dob != '' ? '#111111' : '#999999'} fontSize="sm"> {dob != '' ? moment(dob).format('DD-MM-YYYY') : ""}</Text>
+                                                        <Icon name="calendar-outline" size={18} color={warningColor} />
+                                                    </HStack>
+                                                </Pressable>
+                                            }
+                                        </View>
+                                    </View>
+                                    <DateTimePickerModal date={dob || undefined} maximumDate={maxYear} minimumDate={miniYear} isVisible={isDatePickerVisible} mode="date" onConfirm={handleConfirm} onCancel={hideDatePicker} />
                                     <VStack marginTop={5}>
                                         <Button style={[MainStyle.solidbtn, styles.fullbtn]} onPress={() => onNext()}>
                                             <Text color={lightColor} fontFamily={fontSemiBold} fontSize="sm">{t("Submit")}</Text>
@@ -555,7 +607,7 @@ const UpdateKYCScreen = ({ navigation, route }) => {
                 </View>
             )}
 
-{uploadImgBox && (
+            {uploadImgBox && (
                 <View style={MainStyle.spincontainer}>
                     <VStack space={3} style={{ backgroundColor: lightColor, paddingVertical: 30, paddingHorizontal: 25, borderRadius: 12, width: '85%' }}>
                         <Text color={darkColor} fontFamily={fontBold} fontSize="lg" textAlign="center" marginBottom={3}>{t("Upload Doccuments")}</Text>

@@ -17,10 +17,9 @@
   var _reactNativeSimpleToast = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12]));
   var _Header = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13]));
   var _moment = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14]));
-  var _reactNativeModalDatetimePicker = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15]));
-  var _Footer = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[16]));
-  var _native = _$$_REQUIRE(_dependencyMap[17]);
-  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[18]);
+  var _Footer = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15]));
+  var _native = _$$_REQUIRE(_dependencyMap[16]);
+  var _jsxRuntime = _$$_REQUIRE(_dependencyMap[17]);
   function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
   var RedemptionStatusScreen = function RedemptionStatusScreen(_ref) {
     var navigation = _ref.navigation,
@@ -101,7 +100,7 @@
     var getAllData = function getAllData(dateValue, filterVal) {
       _asyncStorage.default.getItem('userToken').then(function (val) {
         if (val != null) {
-          var CryptoJS = _$$_REQUIRE(_dependencyMap[19]);
+          var CryptoJS = _$$_REQUIRE(_dependencyMap[18]);
           var decryptData = CryptoJS.AES.decrypt(val, _Config.secretKey).toString(CryptoJS.enc.Utf8);
           setUserType(JSON.parse(decryptData).user_type);
           var formdata = new FormData();
@@ -162,7 +161,7 @@
       setLoading(true);
       _asyncStorage.default.getItem('userToken').then(function (val) {
         if (val != null) {
-          var CryptoJS = _$$_REQUIRE(_dependencyMap[19]);
+          var CryptoJS = _$$_REQUIRE(_dependencyMap[18]);
           var decryptData = CryptoJS.AES.decrypt(val, _Config.secretKey).toString(CryptoJS.enc.Utf8);
           setUserType(JSON.parse(decryptData).user_type);
           var formdata = new FormData();
@@ -220,7 +219,7 @@
     var getProfileData = function getProfileData() {
       _asyncStorage.default.getItem('userToken').then(function (val) {
         if (val != null) {
-          var CryptoJS = _$$_REQUIRE(_dependencyMap[19]);
+          var CryptoJS = _$$_REQUIRE(_dependencyMap[18]);
           var decryptData = CryptoJS.AES.decrypt(val, _Config.secretKey).toString(CryptoJS.enc.Utf8);
           var formdata = new FormData();
           formdata.append("os_type", `${_Config.OS_TYPE}`);
@@ -265,7 +264,7 @@
           setShowDropdown(true);
           var val = yield _asyncStorage.default.getItem('userToken');
           if (val != null) {
-            var CryptoJS = _$$_REQUIRE(_dependencyMap[19]);
+            var CryptoJS = _$$_REQUIRE(_dependencyMap[18]);
             var decryptData = CryptoJS.AES.decrypt(val, _Config.secretKey).toString(CryptoJS.enc.Utf8);
             var formdata = new FormData();
             formdata.append("os_type", _Config.OS_TYPE);
@@ -506,7 +505,7 @@
               justifyContent: "center",
               alignItems: "center",
               children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Image, {
-                source: _$$_REQUIRE(_dependencyMap[20]),
+                source: _$$_REQUIRE(_dependencyMap[19]),
                 alt: "hours",
                 style: {
                   width: 100,
@@ -537,7 +536,7 @@
                     resizeMode: "contain",
                     borderWidth: "2",
                     size: "60",
-                    source: item.profile_image == "" ? _$$_REQUIRE(_dependencyMap[21]) : {
+                    source: item.profile_image == "" ? _$$_REQUIRE(_dependencyMap[20]) : {
                       uri: item.profile_image
                     }
                   }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.VStack, {

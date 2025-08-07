@@ -396,7 +396,7 @@ const AddPurchaseScreen = ({ navigation, route }) => {
             <StatusBar barStyle="dark-content" backgroundColor={lightColor} />
             <VStack flex={1} backgroundColor={"#000000"}>
                 <HeaderComponents component={route.params.pageTitle} navigation={navigation} />
-                <ScrollView backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
+                <ScrollView automaticallyAdjustKeyboardInsets={true} backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
                     <VStack space={4} padding={8}>
                         <Stack space={2}>
                             <Pressable onPress={() => setStep1(!step1)}>
@@ -431,7 +431,7 @@ const AddPurchaseScreen = ({ navigation, route }) => {
                                     <DateTimePickerModal date={purchaseDate || undefined} maximumDate={purchaseMaxData} minimumDate={miniData} isVisible={isDatePickerVisible} mode="date" onConfirm={handleConfirm} onCancel={hideDatePicker} />
                                     <Stack space={2}>
                                         <View>
-                                            <Text style={MainStyle.lable} fontSize="xs">{t("Dealer Phone Number")} <Text color={dangerColor}>*</Text></Text>
+                                            <Text style={MainStyle.lable} fontSize="xs">{t("Dealer / Retailer Phone Number")} <Text color={dangerColor}>*</Text></Text>
                                             <View style={MainStyle.inputbox}>
                                                 <Input value={dealerPhone} readOnly={dealerFound} backgroundColor={dealerFound ? lightGrey : lightColor} fontFamily={fontRegular} size="md" variant="unstyled" onChangeText={(text) => setDealerPhone(text)} keyboardType='number-pad' maxLength={10}
                                                     InputRightElement={

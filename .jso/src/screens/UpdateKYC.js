@@ -664,7 +664,7 @@
                           height: 43
                         },
                         alignItems: "center",
-                        paddingY: '2.5',
+                        paddingY: '1.5',
                         justifyContent: "space-between",
                         children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
                           color: panDOB != '' ? '#111111' : '#999999',
@@ -715,16 +715,189 @@
                   })
                 }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNativeModalDatetimePicker.default, {
                   date: panDOB || undefined,
-                  maximumDate: today,
+                  maximumDate: maxYear,
+                  minimumDate: miniYear,
                   isVisible: isDatePickerVisible,
                   mode: "date",
                   onConfirm: handleConfirm,
                   onCancel: hideDatePicker
                 })]
-              }), fetchedDetails != "" && /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Stack, {
+              }), fetchedDetails != "" && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Stack, {
                 space: 3,
                 marginTop: 3,
-                children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.VStack, {
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                    style: _MainStyle.MainStyle.lable,
+                    fontSize: "xs",
+                    children: [t("Name as per ID Proof"), " ", /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                      color: _MainStyle.dangerColor,
+                      children: "*"
+                    })]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                    style: _MainStyle.MainStyle.inputbox,
+                    children: fetchedDetails.name != "" ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
+                      value: fullName,
+                      backgroundColor: _MainStyle.lightGrey,
+                      fontFamily: _MainStyle.fontRegular,
+                      size: "md",
+                      variant: "unstyled",
+                      readOnly: true,
+                      InputRightElement: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                        name: "checkmark-circle",
+                        size: 22,
+                        color: _MainStyle.successColor,
+                        style: {
+                          marginRight: 10,
+                          textAlign: 'center'
+                        }
+                      })
+                    }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
+                      value: fullName,
+                      onChangeText: function onChangeText(text) {
+                        return setFullName(text);
+                      },
+                      fontFamily: _MainStyle.fontRegular,
+                      size: "md",
+                      variant: "unstyled"
+                    })
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                    style: _MainStyle.MainStyle.lable,
+                    fontSize: "xs",
+                    children: [t("Gender"), " ", /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                      color: _MainStyle.dangerColor,
+                      children: "*"
+                    })]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                    style: _MainStyle.MainStyle.inputbox,
+                    children: fetchedDetails.gender != "" ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
+                      value: gender,
+                      backgroundColor: _MainStyle.lightGrey,
+                      fontFamily: _MainStyle.fontRegular,
+                      size: "md",
+                      variant: "unstyled",
+                      readOnly: true,
+                      InputRightElement: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                        name: "checkmark-circle",
+                        size: 22,
+                        color: _MainStyle.successColor,
+                        style: {
+                          marginRight: 10,
+                          textAlign: 'center'
+                        }
+                      })
+                    }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                      style: _MainStyle.MainStyle.inputbox,
+                      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Select, {
+                        variant: "unstyled",
+                        size: "md",
+                        height: 43,
+                        onValueChange: function onValueChange(value) {
+                          return setGender(value);
+                        },
+                        selectedValue: gender,
+                        style: {
+                          paddingLeft: 15
+                        },
+                        fontFamily: _MainStyle.fontRegular,
+                        placeholder: t("Please Select"),
+                        dropdownCloseIcon: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                          name: "chevron-down-outline",
+                          style: {
+                            marginRight: 10
+                          },
+                          size: 20
+                        }),
+                        dropdownOpenIcon: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                          name: "chevron-up-outline",
+                          style: {
+                            marginRight: 10
+                          },
+                          size: 20
+                        }),
+                        _selectedItem: {
+                          backgroundColor: _MainStyle.greyColor,
+                          endIcon: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                            name: "checkmark-circle",
+                            size: 20,
+                            color: _MainStyle.successColor,
+                            style: {
+                              right: 0,
+                              position: 'absolute'
+                            }
+                          })
+                        },
+                        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Select.Item, {
+                          label: "Male",
+                          value: "Male"
+                        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Select.Item, {
+                          label: "Female",
+                          value: "Female"
+                        })]
+                      })
+                    })
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                    style: _MainStyle.MainStyle.lable,
+                    fontSize: "xs",
+                    children: [t("Date of Birth"), " ", /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Text, {
+                      color: _MainStyle.dangerColor,
+                      children: "*"
+                    })]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.View, {
+                    style: _MainStyle.MainStyle.inputbox,
+                    children: fetchedDetails.dob != "" ? /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Input, {
+                      value: fetchedDetails.dob,
+                      backgroundColor: _MainStyle.lightGrey,
+                      fontFamily: _MainStyle.fontRegular,
+                      size: "md",
+                      variant: "unstyled",
+                      readOnly: true,
+                      InputRightElement: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                        name: "checkmark-circle",
+                        size: 22,
+                        color: _MainStyle.successColor,
+                        style: {
+                          marginRight: 10,
+                          textAlign: 'center'
+                        }
+                      })
+                    }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Pressable, {
+                      style: styles.inputbox,
+                      onPress: function onPress() {
+                        return showDatePicker("DOB");
+                      },
+                      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.HStack, {
+                        style: {
+                          paddingHorizontal: 10,
+                          height: 43
+                        },
+                        alignItems: "center",
+                        paddingY: '1.5',
+                        justifyContent: "space-between",
+                        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_nativeBase.Text, {
+                          color: dob != '' ? '#111111' : '#999999',
+                          fontSize: "sm",
+                          children: [" ", dob != '' ? (0, _moment.default)(dob).format('DD-MM-YYYY') : ""]
+                        }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Ionicons.default, {
+                          name: "calendar-outline",
+                          size: 18,
+                          color: _MainStyle.warningColor
+                        })]
+                      })
+                    })
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNativeModalDatetimePicker.default, {
+                  date: dob || undefined,
+                  maximumDate: maxYear,
+                  minimumDate: miniYear,
+                  isVisible: isDatePickerVisible,
+                  mode: "date",
+                  onConfirm: handleConfirm,
+                  onCancel: hideDatePicker
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.VStack, {
                   marginTop: 5,
                   children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Button, {
                     style: [_MainStyle.MainStyle.solidbtn, styles.fullbtn],
@@ -738,7 +911,7 @@
                       children: t("Submit")
                     })
                   })
-                })
+                })]
               })]
             })]
           })

@@ -69,7 +69,7 @@ const RedeemptionConfirmationScreen = ({ navigation, route }) => {
             <StatusBar barStyle="dark-content" backgroundColor={lightColor} />
             <VStack flex={1} backgroundColor={"#000000"}>
                 <HeaderComponents component={"Confirmation"} navigation={navigation} />
-                <ScrollView backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
+                <ScrollView automaticallyAdjustKeyboardInsets={true} backgroundColor={lightColor} borderTopLeftRadius={12} borderTopRightRadius={12} width={'94%'} alignSelf="center">
                     <VStack padding={5}>
                         <Text color={darkColor} fontWeight="bold" fontSize='lg' marginBottom={3}>{t("Redeemption Confirmation")}</Text>
                         <Text color={darkGrey} fontFamily={fontSemiBold} fontSize='xs'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</Text>

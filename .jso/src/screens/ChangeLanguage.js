@@ -40,6 +40,16 @@
     (0, _react.useEffect)(function () {
       var unsubscribe = navigation.addListener('focus', function () {
         setLoading(true);
+        _asyncStorage.default.getItem('language').then(function (val) {
+          if (val != null) {
+            setLanguage(val);
+            _i18n.default.changeLanguage(val).then(function () {
+              return console.log(val);
+            }).catch(function (err) {
+              return console.log(err);
+            });
+          }
+        });
         getAllData();
       });
       return unsubscribe;

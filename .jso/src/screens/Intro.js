@@ -279,6 +279,9 @@
                       label: "Dealer",
                       value: "Dealer"
                     }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Select.Item, {
+                      label: "Retailer",
+                      value: "Retailer"
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Select.Item, {
                       label: "TSO",
                       value: "TSO"
                     }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_nativeBase.Select.Item, {
